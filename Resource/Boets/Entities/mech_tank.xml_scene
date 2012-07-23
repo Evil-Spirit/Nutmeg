@@ -1,0 +1,30 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials/>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="skinned_mesh" name="skinned_mesh">
+					<transform pos="3 1 0.5" scale="0.1104614 0.1104614 0.1104614"/>
+					<mesh>Boets/Meshes/mech_tank.mesh</mesh>
+					<skeleton>Boets/Meshes/mech_tank.skl</skeleton>
+					<idle_fps>20</idle_fps>
+					<idle_start>0</idle_start>
+					<idle_end>34</idle_end>
+				</node>
+				<node type="light" name="light">
+					<transform pos="-19 -5 10.5"/>
+					<radius>55.5</radius>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

@@ -1,0 +1,67 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic="EntityBulletRifle"/>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">boets/texutres/ogs.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>6</blending>
+		</material>
+		<material name="material1">
+			<diffuse color="0.9999708 0.9999708 0.9999708">boets/texutres/rpg7_d.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+		</material>
+		<material name="material0_copy">
+			<diffuse color="0.9999708 0.9999708 0.9999708">boets/texutres/ogs.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>6</blending>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="particle_system" name="tracer" material="0">
+					<transform rot="-0.7071068 0 0 0.7071068" scale="0.1278573 0.1345909 0.167996"/>
+					<emitter>0</emitter>
+					<spawn_rate>500</spawn_rate>
+					<life_time dispersion="0">0.1</life_time>
+					<size dispersion="0">0.25</size>
+					<growth dispersion="0">0.02</growth>
+					<speed mag_dispersion="0" dir_dispersion="0">0</speed>
+					<src_color dispersion="0 0 0">1 1 0</src_color>
+					<dst_color dispersion="0 0 0">1 0.5019608 0.5019608</dst_color>
+					<gravity>0</gravity>
+				</node>
+				<node type="particle_system" name="sparks" material="0">
+					<transform rot="-0.7071068 0 0 0.7071068" scale="4.365163 4.365162 4.365162"/>
+					<emitter>0</emitter>
+					<spawn_rate>224</spawn_rate>
+					<life_time dispersion="0.1">0.4</life_time>
+					<size dispersion="0.1">0.38</size>
+					<growth dispersion="0">0.92</growth>
+					<speed mag_dispersion="5.15" dir_dispersion="1">7.09</speed>
+					<src_color dispersion="0 0 0">1 1 0</src_color>
+					<dst_color dispersion="0 0 0">1 0.5019608 0.5019608</dst_color>
+					<gravity>-10</gravity>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

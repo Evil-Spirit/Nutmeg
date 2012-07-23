@@ -1,0 +1,270 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic=""/>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.7355295 1.321229 0.8444968">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material0">
+			<diffuse color="0.6733509 0.972618 1.265084">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material1">
+			<diffuse color="1.42958 0.9122084 0.3471838">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material2">
+			<diffuse color="0.9269105 0.5316104 1.363104">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material3">
+			<diffuse color="1.425448 0.6956732 0.6956732">core/textures/checker.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material5">
+			<diffuse color="1.546888 0.7768512 0">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="physics" name="physics" material="0">
+					<transform pos="0 0.5 -2" scale="2 156 1"/>
+					<init_transform pos="0 0.5 -2" scale="2 156 1"/>
+					<object_2d>1</object_2d>
+				</node>
+				<node type="light" name="light">
+					<transform pos="2 3.5 -0.5"/>
+					<radius>8</radius>
+				</node>
+				<node type="light" name="light2">
+					<transform pos="2 -2.5 -0.5"/>
+					<radius>8</radius>
+				</node>
+				<node type="light" name="light4">
+					<transform pos="2 -8 -0.5"/>
+					<radius>8</radius>
+				</node>
+				<node type="entity" name="main_player">
+					<transform pos="0 -3 -1"/>
+					<scene>Game/Entities/player.xml_scene</scene>
+				</node>
+				<node type="physics" name="physics2" material="0">
+					<transform pos="0 -17 -2" rot="0.3007057 0 0 -0.953717" scale="2 28 0.9999999"/>
+					<init_transform pos="0 -17 -2" rot="0.3007057 0 0 -0.953717" scale="2 28 0.9999999"/>
+					<object_2d>1</object_2d>
+				</node>
+				<node type="physics" name="physics4" material="0">
+					<transform pos="0 -42 6" scale="2 28 0.9999999"/>
+					<init_transform pos="0 -42 6" scale="2 28 0.9999999"/>
+					<object_2d>1</object_2d>
+				</node>
+				<node type="physics" name="physics6" material="0">
+					<transform pos="0 -63.5 12" rot="-0.3007058 0 0 0.953717" scale="2 28 0.9999999"/>
+					<init_transform pos="0 -63.5 12" rot="-0.3007058 0 0 0.953717" scale="2 28 0.9999999"/>
+					<object_2d>1</object_2d>
+				</node>
+				<node type="entity" name="entity2">
+					<transform pos="0 4.5 -1"/>
+					<scene>Game/Entities/player.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity4">
+					<transform pos="0 10.5 -1"/>
+					<scene>Game/Entities/player.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity5">
+					<transform pos="0 0.4 -1.5"/>
+					<scene>Game/Entities/player_sphere.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity7">
+					<transform pos="0 14.8 -1.5"/>
+					<scene>Game/Entities/player_sphere.xml_scene</scene>
+				</node>
+				<node type="mesh" name="mesh138" material="5">
+					<transform pos="-6.8 20.3 4.6"/>
+					<mesh>Core/Primitives/pCone.mesh</mesh>
+					<children>
+						<node type="mesh" name="mesh152" material="5">
+							<transform pos="0 1.9 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh154" material="5">
+							<transform pos="0 -2.5 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh156" material="5">
+							<transform pos="0 -7.9 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh158" material="5">
+							<transform pos="0 -11.7 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh160" material="5">
+							<transform pos="0 -5.1 1.4"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh162" material="5">
+							<transform pos="0 -5.1 4.399999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh164" material="5">
+							<transform pos="0 -0.8000011 5.399999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh166" material="5">
+							<transform pos="0 -1.5 3.099999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh168" material="5">
+							<transform pos="0 -4.1 4.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh170" material="5">
+							<transform pos="0 -8.6 4.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh172" material="5">
+							<transform pos="0 -9 4.5"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh174" material="5">
+							<transform pos="0 -9 6.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+					</children>
+				</node>
+				<node type="mesh" name="mesh176" material="5">
+					<transform pos="-6.5 28.2 7.9"/>
+					<mesh>Core/Primitives/pCone.mesh</mesh>
+					<children>
+						<node type="mesh" name="mesh178" material="5">
+							<transform pos="0 1.9 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh180" material="5">
+							<transform pos="0 -2.5 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh182" material="5">
+							<transform pos="0 -7.9 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh184" material="5">
+							<transform pos="0 -11.7 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh186" material="5">
+							<transform pos="0 -5.1 1.4"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh188" material="5">
+							<transform pos="0 -5.1 4.399999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh190" material="5">
+							<transform pos="0 -0.8000011 5.399999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh192" material="5">
+							<transform pos="0 -1.5 3.099999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh194" material="5">
+							<transform pos="0 -4.1 4.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh196" material="5">
+							<transform pos="0 -8.6 4.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh198" material="5">
+							<transform pos="0 -9 4.5"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh200" material="5">
+							<transform pos="0 -9 6.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+					</children>
+				</node>
+				<node type="mesh" name="mesh202" material="5">
+					<transform pos="-7.099999 28.2 0.2"/>
+					<mesh>Core/Primitives/pCone.mesh</mesh>
+					<children>
+						<node type="mesh" name="mesh204" material="5">
+							<transform pos="0 1.9 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh206" material="5">
+							<transform pos="0 -2.5 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh208" material="5">
+							<transform pos="0 -7.9 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh210" material="5">
+							<transform pos="0 -11.7 1.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh212" material="5">
+							<transform pos="0 -5.1 1.4"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh214" material="5">
+							<transform pos="0 -5.1 4.399999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh216" material="5">
+							<transform pos="0 -0.8000011 5.399999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh218" material="5">
+							<transform pos="0 -1.5 3.099999"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh220" material="5">
+							<transform pos="0 -4.1 4.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh222" material="5">
+							<transform pos="0 -8.6 4.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh224" material="5">
+							<transform pos="0 -9 4.5"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh226" material="5">
+							<transform pos="0 -9 6.1"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

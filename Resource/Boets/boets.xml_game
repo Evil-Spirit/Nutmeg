@@ -1,0 +1,19 @@
+<game version="0">
+	
+	<info>
+		<name>The Game</name>
+		<description>The First Test Game</description>
+		<developer>One More Studio</developer>
+		<copyright>One More Strudio (c) 2008-2011</copyright>
+		<version>0.1</version>
+	</info>
+	
+	<levels>
+		
+		<level name="level1" file="Boets/Levels/level0.xml_scene" logic="Level01">
+			<description>the first game level</description>
+		</level>
+		
+	</levels>
+	
+</game>

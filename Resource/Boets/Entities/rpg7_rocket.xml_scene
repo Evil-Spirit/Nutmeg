@@ -1,0 +1,73 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic="EntityWeaponRpgRocket"/>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Boets/Texutres/ogs.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>6</blending>
+		</material>
+		<material name="material1">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Boets/Texutres/rpg7_d.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+		</material>
+		<material name="material0_copy">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Boets/Texutres/ogs.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>6</blending>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="mesh" name="rocket" material="1">
+					<transform scale="0.07 0.07 0.07"/>
+					<mesh>Boets/Meshes/rpg7_rocket.mesh</mesh>
+					<children>
+						<node type="particle_system" name="engine" material="0">
+							<transform pos="0 14.28571 0" rot="-0.7071068 0 0 0.7071068" scale="1.826533 1.922727 2.399943"/>
+							<emitter>2</emitter>
+							<spawn_rate>172</spawn_rate>
+							<life_time dispersion="0">0.5</life_time>
+							<size dispersion="0.15">0.25</size>
+							<growth dispersion="0">10</growth>
+							<speed mag_dispersion="0.6" dir_dispersion="0.31">1.12</speed>
+							<src_color dispersion="0 0 0">1 1 0</src_color>
+							<dst_color dispersion="0 0 0">1 0.5019608 0.5019608</dst_color>
+							<gravity>0</gravity>
+						</node>
+						<node type="particle_system" name="explosion" material="0">
+							<transform rot="-0.7071068 0 0 0.7071068" scale="62.35947 62.35946 62.35946"/>
+							<emitter>0</emitter>
+							<spawn_rate>1</spawn_rate>
+							<life_time dispersion="0.1">0.4</life_time>
+							<size dispersion="0.36">1.25</size>
+							<growth dispersion="0">10</growth>
+							<speed mag_dispersion="4.92" dir_dispersion="1">10</speed>
+							<src_color dispersion="0 0 0">1 1 0</src_color>
+							<dst_color dispersion="0 0 0">1 0.5019608 0.5019608</dst_color>
+							<gravity>0</gravity>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

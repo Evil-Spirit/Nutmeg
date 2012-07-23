@@ -1,0 +1,85 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic="EntityWeaponRifle"/>
+	<environment>
+		<ambient>1 1 1</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">boets/texutres/ogs.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>6</blending>
+			<lighting>0</lighting>
+		</material>
+		<material name="material1">
+			<diffuse color="0.9999708 0.9999708 0.9999708">core/textures/flare.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>1</blending>
+			<lighting>0</lighting>
+		</material>
+		<material name="ak">
+			<diffuse color="1.907565 1.907565 1.907565">boets/texutres/ppsha_d.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="mesh" name="mesh" material="2">
+					<transform pos="2 1.5 1.5" rot="0 0 -0.7372773 -0.6755902"/>
+					<mesh>Boets/Meshes/ak-47.mesh</mesh>
+					<children>
+						<node type="particle_system" name="shoot_blow" material="0">
+							<transform pos="-0.4937272 -20.23525 2.00622" rot="0.5213339 0.4777144 -0.5213339 0.4777144"/>
+							<emitter>0</emitter>
+							<spawn_rate>1</spawn_rate>
+							<life_time dispersion="0">0.2</life_time>
+							<size dispersion="0">0.3</size>
+							<growth dispersion="0">7.5</growth>
+							<speed mag_dispersion="0" dir_dispersion="0">2.53</speed>
+							<src_color dispersion="0 0 0">1 1 1</src_color>
+							<dst_color dispersion="0 0 0">1 1 1</dst_color>
+							<gravity>0</gravity>
+						</node>
+						<node type="particle_system" name="shoot_shells" material="1">
+							<transform pos="-0.3107245 -5.793287 2.231318" rot="0 0 0.7071068 -0.7071068"/>
+							<emitter>0</emitter>
+							<spawn_rate>2</spawn_rate>
+							<life_time dispersion="0">1.7</life_time>
+							<size dispersion="0">0.18</size>
+							<growth dispersion="0">0.98</growth>
+							<speed mag_dispersion="0.43" dir_dispersion="0.2">5.67</speed>
+							<src_color dispersion="0 0 0">1 1 0</src_color>
+							<dst_color dispersion="0 0 0">1 1 0</dst_color>
+							<gravity>-10</gravity>
+						</node>
+						<node type="particle_system" name="bullets" material="1">
+							<transform pos="-0.4937271 -20.23525 2.00622" rot="0.5213339 0.4777144 -0.5213339 0.4777144"/>
+							<emitter>0</emitter>
+							<spawn_rate>1</spawn_rate>
+							<life_time dispersion="0">1.7</life_time>
+							<size dispersion="0">0.58</size>
+							<growth dispersion="0">1</growth>
+							<speed mag_dispersion="0" dir_dispersion="0">10</speed>
+							<src_color dispersion="0 0 0">0.4901961 0.4901961 0</src_color>
+							<dst_color dispersion="0 0 0">1 0 0</dst_color>
+							<gravity>-10</gravity>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

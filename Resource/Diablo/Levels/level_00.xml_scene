@@ -1,0 +1,825 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic="ûô"/>
+	<user_data/>
+	<environment>
+		<ambient>0.7529412 0.7529412 0.7529412</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.2580756 0.2580756 0.2580756">Core/Textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material1">
+			<diffuse color="0.7736494 0.7736494 0.7736494">Diablo/Textures/firewall.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<depth_mask>0</depth_mask>
+			<blending>4</blending>
+			<animation w_frames="8" h_frames="2" fps="9" phase="0"/>
+		</material>
+		<material name="material2">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Diablo/Textures/diablo1.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="0" phase="0"/>
+		</material>
+		<material name="material3">
+			<diffuse color="0.6189196 0.6189196 0.6189196">Diablo/Textures/tex0.jpg</diffuse>
+			<specular color="0.0005773503 0.0005773503 0.0005773503">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material2_copy">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Diablo/Textures/monk4.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="7.8" phase="0"/>
+		</material>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Diablo/Textures/monk1.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="1" phase="0"/>
+		</material>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Diablo/Textures/monk1.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="18.7" phase="0"/>
+		</material>
+		<material name="material0_copy">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Diablo/Textures/garg4.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="18.7" phase="0"/>
+		</material>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Diablo/Textures/monk7.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="0" phase="0"/>
+		</material>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Diablo/Textures/garg1.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="0" phase="0"/>
+		</material>
+		<material name="material0">
+			<diffuse color="0 1.732 0">Diablo/Textures/garg1.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="0" phase="0"/>
+		</material>
+		<material name="material11">
+			<diffuse color="1.031148 1.031148 1.031148">Diablo/Textures/pool4.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<lighting>0</lighting>
+			<animation w_frames="5" h_frames="2" fps="19.2" phase="0"/>
+		</material>
+		<material name="material11_copy">
+			<diffuse color="1.031148 1.031148 1.031148">Diablo/Textures/pool2.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<lighting>0</lighting>
+			<animation w_frames="5" h_frames="2" fps="10.6" phase="0"/>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<transform pos="0 -7.3 0"/>
+			<children>
+				<node type="origin" name="origin">
+					<transform pos="0 7.3 0" scale="0.3935884 0.4230871 1"/>
+					<children>
+						<node type="mesh" name="mesh" material="3">
+							<transform pos="26.30238 -24.44525 0" scale="5.765603 4.455488 1"/>
+							<mesh>Core/Primitives/pPlane.mesh</mesh>
+							<children>
+								<node type="mesh" name="mesh2" material="3">
+									<transform pos="0 1 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh4" material="3">
+									<transform pos="0 2 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh6" material="3">
+									<transform pos="0 3 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh8" material="3">
+									<transform pos="0 4 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh10" material="3">
+									<transform pos="0 5 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh12" material="3">
+									<transform pos="0 6 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh14" material="3">
+									<transform pos="0 7 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh16" material="3">
+									<transform pos="0 8 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh18" material="3">
+									<transform pos="0 9 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh20" material="3">
+									<transform pos="0 10 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh22" material="3" expanded="0">
+									<transform pos="0 11 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+								</node>
+								<node type="mesh" name="mesh24" material="3">
+									<transform pos="-1 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh26" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh28" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh30" material="3">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh32" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh34" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh36" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh38" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh40" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh42" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh44" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh46" material="3" expanded="0">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh48" material="3">
+									<transform pos="-2 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh50" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh52" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh54" material="3">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh56" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh58" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh60" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh62" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh64" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh66" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh68" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh70" material="3" expanded="0">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh72" material="3">
+									<transform pos="-3 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh74" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh76" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh80" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh82" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh84" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh86" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh88" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh90" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh92" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh94" material="3">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh240" material="3" expanded="0">
+											<transform pos="-1 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh242" material="3" expanded="0">
+											<transform pos="-1 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh244" material="3" expanded="0">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh96" material="3">
+									<transform pos="-4 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh98" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh100" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh106" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh108" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh110" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh112" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh114" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh116" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh118" material="3" expanded="0">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh120" material="3">
+									<transform pos="-5 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh122" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh124" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh126" material="3">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh128" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh130" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh132" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh134" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh136" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh138" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh140" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh142" material="3" expanded="0">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh144" material="3">
+									<transform pos="-6 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh146" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh148" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh150" material="3">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh152" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh154" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh156" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh158" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh160" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh162" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh164" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh166" material="3" expanded="0">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh168" material="3">
+									<transform pos="-7 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh170" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh172" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh174" material="3">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh176" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh178" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh180" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh182" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh184" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh186" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh188" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh190" material="3" expanded="0">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh192" material="3">
+									<transform pos="-8 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh194" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh196" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh198" material="3">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh200" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh202" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh204" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh206" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh208" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh210" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh212" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh214" material="3" expanded="0">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+								<node type="mesh" name="mesh216" material="3">
+									<transform pos="-9 0 0"/>
+									<mesh>Core/Primitives/pPlane.mesh</mesh>
+									<children>
+										<node type="mesh" name="mesh218" material="3">
+											<transform pos="0 1 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh220" material="3">
+											<transform pos="0 2 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh222" material="3">
+											<transform pos="0 3 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh224" material="3">
+											<transform pos="0 4 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh226" material="3">
+											<transform pos="0 5 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh228" material="3">
+											<transform pos="0 6 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh230" material="3">
+											<transform pos="0 7 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh232" material="3">
+											<transform pos="0 8 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh234" material="3">
+											<transform pos="0 9 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh236" material="3">
+											<transform pos="0 10 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh238" material="3">
+											<transform pos="0 11 0"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh249" material="3">
+											<transform pos="-0.7658654 5.000056 0.325248" rot="0 -0.3182959 0 -0.9479915"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh251" material="3">
+											<transform pos="-1.555052 4.956061 0.6" scale="0.8813389 1 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh253" material="3">
+											<transform pos="-2.436391 4.956061 0.6" scale="0.8813389 1 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh255" material="3">
+											<transform pos="-3.31773 4.956061 0.6" scale="0.8813389 1 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh257" material="3">
+											<transform pos="-4.199069 4.956061 0.6" scale="0.8813389 0.8487795 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh259" material="3">
+											<transform pos="-4.199069 5.910938 0.6" scale="0.8813389 1.060974 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh261" material="3">
+											<transform pos="-4.199069 6.971912 0.6" scale="0.8813389 1.060974 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh263" material="3">
+											<transform pos="-4.199069 8.032887 0.6" scale="0.8813389 1.060974 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh265" material="3">
+											<transform pos="-4.199069 9.093861 0.6" scale="0.8813389 1.060974 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+										<node type="mesh" name="mesh267" material="3">
+											<transform pos="-3.31773 9.093861 0.6" scale="0.8813389 1.060974 1"/>
+											<mesh>Core/Primitives/pPlane.mesh</mesh>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node type="particle" name="particle20" material="1">
+					<transform pos="2.149802 -1.50948 0.2991771"/>
+					<size>0.6</size>
+				</node>
+				<node type="light" name="light">
+					<transform pos="10.10427 -14.28915 12.759"/>
+					<color>1.7 1.7 1.7</color>
+					<radius>389.2761</radius>
+				</node>
+				<node type="entity" name="entity">
+					<transform pos="-9.050942 7.290971 4.768372e-07"/>
+					<scene>Diablo/Entities/Monk.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity1">
+					<transform pos="2.754641 1.178544 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity3">
+					<transform pos="4.838398 1.632051 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity5">
+					<transform pos="-5.362932 0.1518779 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity7">
+					<transform pos="-7.455565 -5.214668 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity9">
+					<transform pos="-6.16102 -8.386703 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity11">
+					<transform pos="-1.562475 -4.640106 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity13">
+					<transform pos="-3.029166 3.193852 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity15">
+					<transform pos="4.178173 -3.71441 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity17">
+					<transform pos="5.717807 -1.450094 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity19">
+					<transform pos="6.397376 -3.929237 -9.536743e-07"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity21">
+					<transform pos="5.100775 -4.949571 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity23">
+					<transform pos="3.709582 -6.928409 9.536743e-07"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity25">
+					<transform pos="-2.109582 -2.355402 -9.536743e-07"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity27">
+					<transform pos="4.217406 -1.53793 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity29">
+					<transform pos="4.478105 -3.226761 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity31">
+					<transform pos="5.231068 -6.397596 9.536743e-07"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity35">
+					<transform pos="0.8219021 -5.114527 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity37">
+					<transform pos="-2.941078 -7.070995 -9.536743e-07"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity39">
+					<transform pos="3.992382 -6.413453 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity41">
+					<transform pos="7.08883 -1.676821 9.536743e-07"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity43">
+					<transform pos="7.427103 0.2416115 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity45">
+					<transform pos="6.550876 -3.752168 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity47">
+					<transform pos="3.615921 -2.519713 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity49">
+					<transform pos="3.0663 -5.636955 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity51">
+					<transform pos="-4.481501 -0.7907312 -1.3"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="entity" name="entity53">
+					<transform pos="4.101564 -4.483855 0"/>
+					<scene>Diablo/Entities/gargulator.xml_scene</scene>
+				</node>
+				<node type="particle" name="particle21" material="1">
+					<transform pos="2.149802 -0.4327402 0.2991771"/>
+					<size>0.6</size>
+				</node>
+				<node type="particle" name="particle22" material="1">
+					<transform pos="2.149802 -2.789791 0.2991771"/>
+					<size>0.6</size>
+				</node>
+				<node type="particle" name="particle23" material="1">
+					<transform pos="2.149802 -4.245275 0.2991771"/>
+					<size>0.6</size>
+				</node>
+				<node type="particle" name="particle24" material="1">
+					<transform pos="2.149802 -5.068156 0.2991771"/>
+					<size>0.6</size>
+				</node>
+				<node type="entity" name="entity54">
+					<transform pos="0.7925675 0.7108841 0" scale="1 1 0.02362204"/>
+					<scene>Diablo/Entities/gargulator1.xml_scene</scene>
+				</node>
+				<node type="mesh" name="mesh245" material="11">
+					<transform pos="-9.882142 7.292581 0.06388147" rot="-0.0459968 -0.01197409 -0.04507101 -0.9978525" scale="1 0.8316785 1"/>
+					<mesh>Core/Primitives/pPlane.mesh</mesh>
+				</node>
+				<node type="mesh" name="mesh247" material="12">
+					<transform pos="-10.10481 5.826846 0.1830618" rot="0.1650802 0.02603735 0.1256183 0.9779012" scale="0.9999999 1.24199 0.9999999"/>
+					<mesh>Core/Primitives/pPlane.mesh</mesh>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

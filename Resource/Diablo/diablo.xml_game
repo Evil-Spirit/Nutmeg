@@ -1,0 +1,19 @@
+<game version="0">
+	
+	<info>
+		<name>Slasher</name>
+		<description>The Slasher Game</description>
+		<developer>One More Studio</developer>
+		<copyright>One More Strudio (c) 2008-2011</copyright>
+		<version>0.0</version>
+	</info>
+	
+	<levels>
+		
+		<level name="level0" file="Diablo/Levels/level_00.xml_scene" logic="Level00">
+			<description>forest game level</description>
+		</level>
+		
+	</levels>
+	
+</game>

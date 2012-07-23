@@ -1,0 +1,103 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic="EntityPlayer"/>
+	<user_data/>
+	<environment>
+		<ambient>0.9372549 0.9372549 0.9372549</ambient>
+	</environment>
+	<materials>
+		<material name="material3">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Boets/Texutres/boets_d.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Boets/Texutres/boets_s.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Boets/Texutres/ogs.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>6</blending>
+			<lighting>0</lighting>
+		</material>
+		<material name="ak">
+			<diffuse color="1.906988 1.906988 1.906988">Boets/Texutres/rpg7_d.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material1">
+			<diffuse color="0.9999708 0.9999708 0.9999708">Core/Textures/flare.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>1</blending>
+			<lighting>0</lighting>
+		</material>
+		<material name="ak">
+			<diffuse color="1.907565 1.907565 1.907565">Boets/Texutres/ppsha_d.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="physics" name="hero_body" traceable="0">
+					<transform scale="2 2 4.4"/>
+					<init_transform pos="0 0 0" scale="2 2 4.4"/>
+					<body>4</body>
+					<render_body>0</render_body>
+					<children>
+						<node type="origin" name="body_origin" expanded="0">
+							<transform pos="4.018163e-05 2.376101e-08 -0.4545456" rot="0 0.707107 0 0.7071066" scale="0.5 0.5000001 0.2272727"/>
+						</node>
+					</children>
+				</node>
+				<node type="camera" name="hero_camera">
+					<transform pos="-14.54742 0 3.888425" rot="0.4632092 -0.466454 -0.5347064 0.5309868"/>
+					<min_z>0.05</min_z>
+					<max_z>70</max_z>
+					<min_angle>-180 0 86</min_angle>
+					<max_angle>0 0 97</max_angle>
+					<min_distance>23.79</min_distance>
+					<max_distance>29.37</max_distance>
+					<yaw_fixed>1</yaw_fixed>
+					<pitch_fixed>1</pitch_fixed>
+				</node>
+				<node type="origin" name="skin_origin">
+					<transform pos="0 0 -2"/>
+					<children>
+						<node type="skinned_mesh" name="hero_skin" material="0">
+							<transform pos="0 -0.2 -0.25" rot="0 0 1 -7.54979e-08" scale="0.07 0.07 0.07"/>
+							<mesh>Boets/Meshes/soldier.mesh</mesh>
+							<skeleton>Boets/Meshes/soldier.skl</skeleton>
+							<sequence>Boets/Animations/boets.xml_seq</sequence>
+							<idle_fps>8</idle_fps>
+							<idle_start>20</idle_start>
+							<idle_end>20</idle_end>
+							<children>
+								<node type="bone" name="weapon_bone">
+									<transform pos="-27.83251 -111.2277 26.80642" rot="0 -0 1 7.54979e-08" scale="14.286 14.286 14.286"/>
+									<bone>right_hand_bone02</bone>
+									<children>
+										<node type="entity" name="weapon_entity">
+											<scene>Boets/Entities/ak.xml_scene</scene>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

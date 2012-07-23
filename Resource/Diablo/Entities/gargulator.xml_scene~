@@ -1,0 +1,36 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic="EntityEnemy"/>
+	<user_data>
+		<entity logic="EntityCreature"/>
+	</user_data>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">diablo/textures/garg1.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
+			<normal>Core/Textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+			<blending>3</blending>
+			<animation w_frames="8" h_frames="8" fps="0" phase="0"/>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="particle" name="sprite" material="0">
+					<sprite>Diablo/Sprites/garg.xml_sprite</sprite>
+					<size>0.7251431</size>
+					<draw_shadow>1</draw_shadow>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

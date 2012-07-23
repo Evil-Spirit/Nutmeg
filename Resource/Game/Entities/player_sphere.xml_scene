@@ -1,0 +1,111 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<entity logic="EntityPlayer"/>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.6733509 0.972618 1.265084">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material1">
+			<diffuse color="1.42958 0.9122084 0.3471838">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material2">
+			<diffuse color="0.9269105 0.5316104 1.363104">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material3">
+			<diffuse color="1.425448 0.6956732 0.6956732">core/textures/checker.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="physics" name="player_body" material="0">
+					<transform pos="0 0 0.5"/>
+					<init_transform pos="0 0 0.5"/>
+					<body>2</body>
+					<mass>4</mass>
+					<children>
+						<node type="mesh" name="mesh" material="1">
+							<transform pos="0 0 0.5999999" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh2" material="2">
+							<transform pos="0 -0.3 0.4999999" rot="0.258819 -0 0 0.9659259" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh4" material="1">
+							<transform pos="0 -0.5 0.3" rot="0.5 -0 0 0.8660254" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh6" material="2">
+							<transform pos="0 -0.6 -2.980232e-08" rot="0.7071068 -0 0 0.7071068" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh8" material="1">
+							<transform pos="0 0.5 0.3" rot="-0.5 0 0 0.8660254" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh10" material="2">
+							<transform pos="0 0.3 0.4999999" rot="-0.258819 0 0 0.9659259" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh12" material="2">
+							<transform pos="0 0.6 -2.980232e-08" rot="0.7071068 0 0 -0.7071068" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh24" material="2">
+							<transform pos="4.529875e-08 0.3000001 -0.4999999" rot="7.292537e-08 0.9659259 0.2588191 1.95403e-08" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh22" material="1">
+							<transform pos="7.549791e-08 0.5000001 -0.3" rot="6.538311e-08 0.8660254 0.5000001 3.774896e-08" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh18" material="1">
+							<transform pos="-7.549789e-08 -0.4999999 -0.3000001" rot="6.538312e-08 0.8660254 -0.4999999 -3.774895e-08" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh16" material="2">
+							<transform pos="-4.529873e-08 -0.2999999 -0.5" rot="7.292537e-08 0.9659259 -0.258819 -1.954029e-08" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh14" material="1">
+							<transform pos="1.367984e-14 9.059747e-08 -0.5999999" rot="-7.54979e-08 -1 -7.54979e-08 -5.699933e-15" scale="0.2 0.2 0.2"/>
+							<mesh>Core/Primitives/pCone.mesh</mesh>
+						</node>
+					</children>
+				</node>
+				<node type="camera" name="player_camera">
+					<transform pos="3.639553 -0.000189607 1.840182" rot="0.4075992 0.4075992 0.5778087 0.5778087"/>
+					<min_z>0.05</min_z>
+					<max_z>70</max_z>
+					<min_angle>-180 0 0</min_angle>
+					<max_angle>0 0 0</max_angle>
+					<min_distance>14.27</min_distance>
+					<max_distance>26.19</max_distance>
+					<yaw_fixed>1</yaw_fixed>
+					<pitch_fixed>1</pitch_fixed>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

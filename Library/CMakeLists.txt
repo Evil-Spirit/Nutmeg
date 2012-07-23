@@ -1,0 +1,8 @@
+
+set(LIBRARY_OUTPUT_PATH ${BUILD_ROOT})
+set(EXECUTABLE_OUTPUT_PATH ${BUILD_ROOT})
+
+set(NUTMEG_LIBRARY_SRC OpenGL/OpenGL.cpp
+							OpenGL/OpenGL.h)
+
+add_library(NutmegLib SHARED ${NUTMEG_LIBRARY_SRC})

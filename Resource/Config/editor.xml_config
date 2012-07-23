@@ -1,0 +1,23 @@
+<scene_editor>
+	<snap_rot>5</snap_rot>
+	<snap_pos>0.2</snap_pos>
+	<snap_scale>0.2</snap_scale>
+	<snap_rot_enabled>0</snap_rot_enabled>
+	<snap_pos_enabled>0</snap_pos_enabled>
+	<snap_scale_enabled>0</snap_scale_enabled>
+	<manipulator_size>0.02</manipulator_size>
+	<clone_children>1</clone_children>
+	<remove_children>1</remove_children>
+	<select_parent>0</select_parent>
+	<trace_node_type>0</trace_node_type>
+	<trace_by_order>0</trace_by_order>
+	<camera_affect_parent>0</camera_affect_parent>
+	<show_fps>1</show_fps>
+	<helper_alpha>0.5</helper_alpha>
+	<helper_line_width>1.5</helper_line_width>
+	<manipulator_line_width>2</manipulator_line_width>
+	<camera_speed>10</camera_speed>
+	<camera_near>0.05</camera_near>
+	<camera_far>1000</camera_far>
+	<resource_path>../Resource/</resource_path>
+</scene_editor>
