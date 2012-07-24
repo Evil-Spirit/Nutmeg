@@ -40,7 +40,7 @@ namespace Nutmeg {
 
 	class Engine;
 	class BadaSound;
-	
+
 	//--------------------------------------------------------------------------
 	//
 	// struct AudioChannel
@@ -65,7 +65,7 @@ namespace Nutmeg {
 	// class AudioBada
 	//
 	//--------------------------------------------------------------------------
-	
+
 	class AudioBada : public AbstractAudio, public Osp::Media::IPlayerEventListener {
 
 		AudioChannel channels[10];
@@ -84,7 +84,7 @@ namespace Nutmeg {
 		virtual void loadSound(const char *name, Sound &sound);
 		virtual Sound *loadSound(const char *name);
 		virtual void releaseSound(Sound &sound);
-		
+
 		virtual void playSound(const Sound &sound, bool loop = false, bool stream = false);
 		virtual void stopSound(const Sound &sound);
 		virtual void pauseSound(const Sound &sound);
@@ -112,7 +112,7 @@ namespace Nutmeg {
         void OnPlayerInterrupted() { }
         void OnPlayerReleased() { }
         void OnPlayerSeekCompleted(result r) { }
-		
+
 	};
 
 	//--------------------------------------------------------------------------
@@ -122,20 +122,20 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	class BadaSound : public Sound {
-		
+
 		friend class AudioBada;
 
 		AudioChannel *channel;
 		Str file_name;
 		int volume;
 		mutable Timer timer;
-		
+
 		BadaSound(AbstractAudio *audio) : Sound(audio) {
 			channel = NULL;
 			volume = 100;
 			timer.start();
 		}
-		
+
 	public:
 
 		virtual void play(bool loop, bool stream) const {
@@ -145,13 +145,13 @@ namespace Nutmeg {
 		}
 
 	};
-	
+
 	//--------------------------------------------------------------------------
 	//
 	// class AudioBada
 	//
 	//--------------------------------------------------------------------------
-	
+
 	AudioBada::AudioBada() {
 		volume = 100;
 		paused = false;
@@ -170,14 +170,14 @@ namespace Nutmeg {
 			}
 		}
 	}
-	
+
 	//--------------------------------------------------------------------------
 
 	void AudioBada::update(float dt) {
 	}
-	
+
 	//--------------------------------------------------------------------------
-	
+
 	void AudioBada::shutdown() {
 
 		for (int i=0; i<10; i++) {
@@ -192,42 +192,42 @@ namespace Nutmeg {
 		}
 
 	}
-	
+
 	//--------------------------------------------------------------------------
 
 	void AudioBada::loadSound(const char *name, Sound &s) {
-		
+
 		releaseSound(s);
-		
+
 		BadaSound &sound = (BadaSound &)s;
-		
+
 		debugLog("Setting sound file \"%s\"...", name);
 		sound.file_name = name;
-		
+
 	}
-	
+
 	//--------------------------------------------------------------------------
-	
+
 	Sound *AudioBada::loadSound(const char *name) {
-		
+
 		BadaSound *sound = new BadaSound(this);
 		loadSound(name, *sound);
 		return sound;
-		
+
 	}
-	
+
 	//--------------------------------------------------------------------------
-	
+
 	void AudioBada::releaseSound(Sound &s) {
-		
+
 		BadaSound &sound = (BadaSound &)s;
 		if (sound.channel == NULL) return;
 		sound.channel = NULL;
-		
+
 	}
-	
+
 	//--------------------------------------------------------------------------
-	
+
 	void AudioBada::playSound(const Sound &s, bool loop, bool stream) {
 
 
@@ -285,17 +285,17 @@ namespace Nutmeg {
 
 
 	}
-	
+
 	//--------------------------------------------------------------------------
-	
+
 	void AudioBada::stopSound(const Sound &s) {
 		BadaSound &sound = (BadaSound &)s;
 		if (sound.channel == NULL) return;
 		sound.channel->player->Stop();
 	}
-	
+
 	//--------------------------------------------------------------------------
-	
+
 	void AudioBada::pauseSound(const Sound &s) {
 		BadaSound &sound = (BadaSound &)s;
 		if (sound.channel == NULL) return;
@@ -420,6 +420,8 @@ namespace Nutmeg {
 		AbstractAudio *createAudioBada() {
 			return new AudioBada();
 		}
+
+		NUTMEG_INIT_SUBSYSTEM(AbstractAudio, AudioBada);
 
 	#else
 

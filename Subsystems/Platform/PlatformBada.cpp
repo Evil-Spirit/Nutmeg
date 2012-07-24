@@ -77,9 +77,9 @@ namespace Nutmeg {
 	// class PlatformBada
 	//
 	//--------------------------------------------------------------------------
-	
+
 	class PlatformBada : public AbstractPlatform {
-		
+
 		GlesForm *form;
 
 	public:
@@ -90,7 +90,7 @@ namespace Nutmeg {
 
 		PlatformBada();
 		virtual ~PlatformBada();
-		
+
 		virtual int main(Nutmeg::Application *application, int argc, const char **argv);
 
 		//----------------------------------------------------------------------
@@ -187,7 +187,7 @@ namespace Nutmeg {
 		}
 
 	};
-	
+
 	//--------------------------------------------------------------------------
 	//
 	// class BadaApplication
@@ -952,6 +952,8 @@ namespace Nutmeg {
 		AbstractPlatform *createPlatformBada(Engine *engine) {
 			return new PlatformBada(engine);
 		}
+
+		NUTMEG_INIT_SUBSYSTEM(AbstractPlatform, PlatformBada);
 
 	#else
 

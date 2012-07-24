@@ -29,6 +29,12 @@
 #include "Profiler.h"
 #include "Resource.h"
 
+#include <stdexcept>
+
+#ifdef NUTMEG_PLATFORM_LINUX
+#include <dlfcn.h>
+#endif
+
 //------------------------------------------------------------------------------
 //
 // namespace Nutmeg
@@ -135,7 +141,7 @@ namespace Nutmeg {
 		//----------------------------------------------------------------------
 
 		AbstractRender::init();
-		render = AbstractRender::create(subsystem_render_id);
+		render = AbstractRender::createImplementation(subsystem_render_id, this);
 
 		if (render == NULL) {
 			fatal("Engine::onStartup(): can not create Render with id \"%s\".\n", subsystem_render_id.str());
@@ -157,7 +163,7 @@ namespace Nutmeg {
 		// physics
 		//----------------------------------------------------------------------
 
-		AbstractPhysics::init();
+//		physics = AbstractPhysics::createImplementation(subsystem_physics_id, this);
 
 		//----------------------------------------------------------------------
 		// resource manager
@@ -433,6 +439,48 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
+	void Engine::selectSubsystemCoreId() {
+		#ifdef NUTMEG_PLATFORM_WINDOWS
+		setSubsystemCoreId("PlatformWindows");
+		#endif
+
+		#ifdef NUTMEG_PLATFORM_LINUX
+		setSubsystemCoreId("PlatformLinux");
+		#endif
+
+		#ifdef NUTMEG_PLATFORM_BADA
+		setSubsystemCoreId("PlatformBada");
+		#endif
+	}
+
+	//--------------------------------------------------------------------------
+
+	void Engine::selectSubsystemAudioId() {
+		#ifdef NUTMEG_PLATFORM_WINDOWS
+		setSubsystemAudioId("AudioSquall");
+		#else
+		setSubsystemAudioId("AudioDummy");
+		#endif
+	}
+
+	//--------------------------------------------------------------------------
+
+	void Engine::selectSubsystemRenderId() {
+		#ifdef NUTMEG_PLATFORM_BADA
+		setSubsystemRenderId("RenderBadaOpenGL1");
+		#else
+		setSubsystemRenderId("RenderOpenGL1");
+		#endif
+	}
+
+	//--------------------------------------------------------------------------
+
+	void Engine::selectSubsystemPhysicsId() {
+		setSubsystemPhysicsId("NewtonPhysics");
+	}
+
+	//--------------------------------------------------------------------------
+
 	void Engine::redraw() {
 		onRender();
 		platform->swap();
@@ -446,6 +494,45 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
+	//--------------------------------------------------------------------------
+	void Engine::loadSubsystems() {
+		typedef void (*initfunc)();
+		initfunc initPlatform;
+		initfunc initRender;
+		initfunc initAudio;
+		initfunc initPhysics;
+
+		#ifdef NUTMEG_PLATFORM_LINUX
+		void* handle = dlopen("libNutmegPlatform.so", RTLD_LAZY);
+		if (!handle) throw std::runtime_error("Failed to load platform library");
+		initPlatform = (initfunc)dlsym(handle, "init");
+		if (!initPlatform) throw std::runtime_error("Failed to resolve initPlatform");
+		dlclose(handle);
+
+		handle = dlopen("libNutmegRender.so", RTLD_LAZY);
+		if (!handle) throw std::runtime_error("Failed to load render library");
+		initRender = (initfunc)dlsym(handle, "init");
+		if (!initRender) throw std::runtime_error("Failed to resolve initRender");
+		dlclose(handle);
+
+		handle = dlopen("libNutmegAudio.so", RTLD_LAZY);
+		if (!handle) throw std::runtime_error("Failed to load audio library");
+		initAudio = (initfunc)dlsym(handle, "init");
+		if (!initAudio) throw std::runtime_error("Failed to resolve initAudio");
+		dlclose(handle);
+
+		handle = dlopen("libNutmegPhysics.so", RTLD_LAZY);
+		if (!handle) throw std::runtime_error("Failed to load physics library");
+		initPhysics = (initfunc)dlsym(handle, "init");
+		if (!initPhysics) throw std::runtime_error("Failed to resolve initPhysics");
+		dlclose(handle);
+		#endif
+
+		initPlatform();
+		initRender();
+		initAudio();
+		initPhysics();
+	}
 }
 
 //------------------------------------------------------------------------------

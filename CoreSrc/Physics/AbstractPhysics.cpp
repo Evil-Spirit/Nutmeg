@@ -19,7 +19,7 @@
 //
 //------------------------------------------------------------------------------
 
-#include "PhysicsNewton.h"
+#include "AbstractPhysics.h"
 //#include "PhysicsTokamak.h"
 
 //------------------------------------------------------------------------------
@@ -29,34 +29,8 @@
 //------------------------------------------------------------------------------
 
 namespace Nutmeg {
-	
-	//--------------------------------------------------------------------------
 
-	Factory <PhysicsWorld, void> physicsFactory;
-
-	//--------------------------------------------------------------------------
-	
-	void AbstractPhysics::init() {
-	
-		// Newton
-		if (isNewtonPhysicsSupported() == true) {
-			physicsFactory.addType("Newton", createNewtonPhysics);
-		}
-
-		/*
-		// Tokamak
-		if (isTokamakPhysicsSupported() == true) {
-			physicsFactory.addType("Tokamak", createTokamakPhysics);
-		}
-		*/
-		
-	}
-
-	//--------------------------------------------------------------------------
-
-	PhysicsWorld *AbstractPhysics::createWorld(const char *name) {
-		return physicsFactory.create(name);
-	}
+	IMP_SUBSYSTEM(PhysicsWorld);
 
 	//--------------------------------------------------------------------------
 

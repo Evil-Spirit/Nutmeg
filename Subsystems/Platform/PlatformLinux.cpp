@@ -619,20 +619,6 @@ public:
 
 #endif
 
-
-
-#ifndef NUTMEG_BUILD_DLL
-
-#if 0
-int main() {
-	return Nutmeg::engineMain(0, NULL);
-}
-#endif
-
-#endif
-
-
-
 namespace Nutmeg {
 
 //--------------------------------------------------------------------------
@@ -646,6 +632,8 @@ bool isPlatformLinuxSupported() {
 AbstractPlatform *createPlatformLinux(Engine *engine) {
 	return new PlatformLinux(engine);
 }
+
+NUTMEG_INIT_SUBSYSTEM(AbstractPlatform, PlatformLinux);
 
 #else
 
@@ -661,6 +649,10 @@ AbstractPlatform *createPlatformLinux(Engine *engine) {
 
 //--------------------------------------------------------------------------
 
+}
+
+int main() {
+	return Nutmeg::engineMain(0, NULL);
 }
 
 //------------------------------------------------------------------------------

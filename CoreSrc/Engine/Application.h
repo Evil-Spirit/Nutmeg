@@ -35,6 +35,7 @@ namespace Nutmeg {
 	class Console;
 	class Profiler;
 	class ResourceManager;
+	class PhysicsWorld;
 
 	//--------------------------------------------------------------------------
 	//
@@ -52,6 +53,7 @@ namespace Nutmeg {
 		AbstractPlatform *platform;
 		AbstractRender *render;
 		AbstractAudio *audio;
+		PhysicsWorld* physics;
 		Console *console;
 		Profiler *profiler;
 		ResourceManager *resource_manager;

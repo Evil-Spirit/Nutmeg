@@ -1650,6 +1650,8 @@ namespace Nutmeg {
 			return new PlatformWindows(engine);
 		}
 
+		NUTMEG_INIT_SUBSYSTEM(AbstractPlatform, PlatformWindows);
+
 	#else
 
 		bool isPlatformWindowsSupported() {

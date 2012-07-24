@@ -239,8 +239,8 @@ namespace Nutmeg {
 		//----------------------------------------------------------------------
 
 		Scene *loadResource(const char *name) const {
-			Scene *scene = new Scene(NULL);
-			scene->init("Newton");
+			Scene *scene = new Scene(engine);
+			scene->init("NewtonPhysics");
 			scene->load(name);
 			return scene;
 		}

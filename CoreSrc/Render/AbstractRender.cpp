@@ -23,7 +23,7 @@
 //
 //------------------------------------------------------------------------------
 
-#include "RenderOpenGL1.h"
+//#include "RenderOpenGL1.h"
 //#include "RenderOpenGL2.h"
 //#include "RenderBadaOpenGL1.h"
 
@@ -37,11 +37,12 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
-	Factory <AbstractRender, void> renderFactory;
+	IMP_SUBSYSTEM(AbstractRender);
 
 	//--------------------------------------------------------------------------
 
-	AbstractRender::AbstractRender() {
+	AbstractRender::AbstractRender(Engine* engine)
+		: Subsystem(engine) {
 		font = NULL;
 		font_size = 16.0f;
 	}
@@ -272,29 +273,6 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	void AbstractRender::init() {
-
-		// RenderOpenGL1
-		if (isRenderOpenGL1Supported() == true) {
-			renderFactory.addType("OpenGL1", createRenderOpenGL1);
-		}
-		/*
-		// RenderOpenGL2
-		if (isRenderOpenGL2Supported() == true) {
-			renderFactory.addType("OpenGL2", createRenderOpenGL2);
-		}
-
-		// RenderBadaOpenGL1
-		if (isRenderBadaOpenGL1Supported() == true) {
-			renderFactory.addType("BadaOpenGL1", createRenderBadaOpenGL1);
-		}
-		*/
-
-	}
-
-	//--------------------------------------------------------------------------
-
-	AbstractRender *AbstractRender::create(const char *name) {
-		return renderFactory.create(name);
 	}
 
 	//--------------------------------------------------------------------------

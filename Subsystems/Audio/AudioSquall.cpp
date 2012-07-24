@@ -156,7 +156,7 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	void AudioSquall::onShutdown() {
-		
+
 		ResourceMan <Sound> *man = SoundRef::getManager();
 		if (man == NULL) return;
 		for (int i=0; i<man->getItemsCount(); i++) {
@@ -332,6 +332,8 @@ namespace Nutmeg {
 		AbstractAudio *createAudioSquall(Engine *engine) {
 			return new AudioSquall(engine);
 		}
+
+		NUTMEG_INIT_SUBSYSTEM(AbstractAudio, AudioSquall);
 
 	#else
 

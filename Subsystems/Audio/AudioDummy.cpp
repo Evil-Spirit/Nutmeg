@@ -113,6 +113,8 @@ namespace Nutmeg {
 			return new AudioDummy(engine);
 		}
 
+		NUTMEG_INIT_SUBSYSTEM(AbstractAudio, AudioDummy);
+
 }
 
 //------------------------------------------------------------------------------

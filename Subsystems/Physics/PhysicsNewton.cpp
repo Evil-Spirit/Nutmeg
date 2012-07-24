@@ -225,7 +225,7 @@ namespace Nutmeg {
 
 	public:
 
-		WorldNewton();
+		WorldNewton(Engine* engine);
 		~WorldNewton();
 
 		void update(float dt);
@@ -284,7 +284,7 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
-	WorldNewton::WorldNewton() : world(NULL), bodies(false) {
+	WorldNewton::WorldNewton(Engine* engine) : PhysicsWorld(engine), world(NULL), bodies(false) {
 		clear();
 	}
 
@@ -1221,9 +1221,11 @@ namespace Nutmeg {
 			return true;
 		}
 
-		PhysicsWorld *createNewtonPhysics() {
-			return (PhysicsWorld *)new WorldNewton();
+		PhysicsWorld *createNewtonPhysics(Engine* engine) {
+			return (PhysicsWorld *)new WorldNewton(engine);
 		}
+
+		NUTMEG_INIT_SUBSYSTEM(PhysicsWorld, NewtonPhysics);
 
 	#else
 

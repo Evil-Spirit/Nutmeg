@@ -34,7 +34,7 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	class NUTMEG_API AbstractRender {
+	class NUTMEG_API AbstractRender : public Subsystem<AbstractRender> {
 
 	protected:
 
@@ -45,7 +45,7 @@ namespace Nutmeg {
 
 	public:
 
-		AbstractRender();
+		AbstractRender(Engine* engine);
 		virtual ~AbstractRender() { }
 
 		//----------------------------------------------------------------------
@@ -216,10 +216,6 @@ namespace Nutmeg {
 		//----------------------------------------------------------------------
 
 		static void init();
-
-		//----------------------------------------------------------------------
-
-		static AbstractRender *create(const char *name);
 
 		//----------------------------------------------------------------------
 

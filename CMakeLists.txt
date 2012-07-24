@@ -21,16 +21,10 @@ set(NUTMEG_INCLUDES CoreSrc
 					CoreSrc/Physics
 					CoreSrc/Render
 					CoreSrc/Scene
-					CoreSrc/Physics/Tokamak
-					CoreSrc/Physics/Tokamak/math
 					Library/Squall
 					Library/OpenGL
 					Library/Newton
-					Library/DevIL
-					Subsystems/Platform
-					Subsystems/Audio
-					Subsystems/Physics
-					Subsystems/Render)
+					Library/DevIL)
 include_directories(${NUTMEG_INCLUDES})
 link_directories(${CMAKE_CURRENT_BINARY_DIR})
 

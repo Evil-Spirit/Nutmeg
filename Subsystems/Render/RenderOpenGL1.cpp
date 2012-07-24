@@ -90,7 +90,7 @@ namespace Nutmeg {
 		//
 		//----------------------------------------------------------------------
 
-		RenderOpenGL1();
+		RenderOpenGL1(Engine* engine);
 		virtual ~RenderOpenGL1();
 
 		//----------------------------------------------------------------------
@@ -577,7 +577,8 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	RenderOpenGL1::RenderOpenGL1() {
+	RenderOpenGL1::RenderOpenGL1(Engine* engine)
+		: AbstractRender(engine) {
 
 		textureMatrixIdentity = true;
 
@@ -1840,9 +1841,11 @@ namespace Nutmeg {
 			return true;
 		}
 
-		AbstractRender *createRenderOpenGL1() {
-			return new RenderOpenGL1();
+		AbstractRender *createRenderOpenGL1(Engine* engine) {
+			return new RenderOpenGL1(engine);
 		}
+
+		NUTMEG_INIT_SUBSYSTEM(AbstractRender, RenderOpenGL1);
 
 	#else
 

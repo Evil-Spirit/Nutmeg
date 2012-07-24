@@ -114,6 +114,11 @@ namespace Nutmeg {
 		const char *getSubsystemPhysicsId() const;
 		void setSubsystemPhysicsId(const char *id);
 
+		void selectSubsystemCoreId();
+		void selectSubsystemRenderId();
+		void selectSubsystemAudioId();
+		void selectSubsystemPhysicsId();
+
 		//----------------------------------------------------------------------
 		// execute control
 		//----------------------------------------------------------------------
@@ -129,6 +134,7 @@ namespace Nutmeg {
 		void resize();
 
 		//----------------------------------------------------------------------
+		void loadSubsystems();
 
 	};
 

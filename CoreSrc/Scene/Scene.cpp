@@ -82,8 +82,7 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	void Scene::init(const char *physics_name) {
-
-		physics = AbstractPhysics::createWorld(physics_name);
+		physics = PhysicsWorld::createImplementation("NewtonPhysics", engine);
 		assert(physics != NULL);
 
 		primitives[0].load("Core/Primitives/pPlane.mesh");

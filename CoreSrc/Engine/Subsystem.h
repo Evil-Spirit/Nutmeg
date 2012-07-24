@@ -20,6 +20,11 @@
 #include "Factory.h"
 #include "LibApi.h"
 
+#define NUTMEG_INIT_SUBSYSTEM(S, X) \
+	extern "C" void init() { \
+		S::addImplementation(#X, create##X); \
+	}
+
 //------------------------------------------------------------------------------
 //
 // namespace Nutmeg

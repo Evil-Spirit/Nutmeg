@@ -1266,6 +1266,14 @@ namespace Nutmeg {
 			return new RenderBadaOpenGL1();
 		}
 
+		struct BadaOpenGL1Initializer {
+			BadaOpenGL1Initializer() {
+				AbstractRender::addImplementation("BadaOpenGL1", createRenderBadaOpenGL1);
+			}
+		};
+
+		BadaOpenGL1Initializer badainitializer;
+
 	#else
 
 		bool isRenderBadaOpenGL1Supported() {

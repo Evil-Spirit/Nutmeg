@@ -19,6 +19,7 @@
 #include "MathCore.h"
 #include "Str.h"
 #include "LibApi.h"
+#include "Subsystem.h"
 
 //------------------------------------------------------------------------------
 //
@@ -29,7 +30,7 @@
 namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
-	
+
 	enum BodyType {
 
 		BODY_NULL,
@@ -195,11 +196,11 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	class NUTMEG_API PhysicsWorld {
+	class NUTMEG_API PhysicsWorld : public Subsystem<PhysicsWorld> {
 
 	protected:
-        
-		PhysicsWorld() { }
+
+		PhysicsWorld(Engine* engine) : Subsystem(engine) { }
 
 	public:
 
@@ -247,7 +248,7 @@ namespace Nutmeg {
 		//----------------------------------------------------------------------
 
 		virtual PhysicsBody *createBody() = 0;
-            
+
 		//----------------------------------------------------------------------
 
 		virtual void setCollisionCallback(PhysicsCollisionFunction callback, void *user_data) = 0;
@@ -258,20 +259,6 @@ namespace Nutmeg {
 
 	};
 
-
-	//--------------------------------------------------------------------------
-	//
-	// namespace AbstractPhysics
-	//
-	//--------------------------------------------------------------------------
-
-	namespace AbstractPhysics {
-
-        NUTMEG_API void init();
-		NUTMEG_API PhysicsWorld *createWorld(const char *id);
-		
-	}
-	
 	//--------------------------------------------------------------------------
 
 }

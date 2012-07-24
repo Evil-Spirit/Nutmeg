@@ -18,16 +18,6 @@
 #include "Game.h"
 #include "EntityPlayer.h"
 #include "EntityWeapon.h"
-#include "RenderOpenGL1.h"
-#include "PlatformWindows.h"
-#include "AudioSquall.h"
-
-#include "Game.h"
-#include "RenderOpenGL1.h"
-#include "PlatformWindows.h"
-#include "PlatformLinux.h"
-#include "AudioSquall.h"
-#include "AudioDummy.h"
 
 //------------------------------------------------------------------------------
 //
@@ -276,7 +266,7 @@ namespace Nutmeg {
 				}
 
 				if (key == KEY_L) {
-					use_fake_aa = !use_fake_aa;
+					//use_fake_aa = !use_fake_aa;
 				}
 
 				if (key == KEY_BACKSPACE) {
@@ -340,38 +330,22 @@ namespace Nutmeg {
 	};
 
 	//--------------------------------------------------------------------------
-
-}
-
-using namespace Nutmeg;
-
-int main(int argc, const char **argv) {
-
-		if (isPlatformWindowsSupported() == true) {
-			AbstractPlatform::addImplementation("Windows", createPlatformWindows);
-		}
-
-		if (isPlatformLinuxSupported()) {
-			AbstractPlatform::addImplementation("Linux", createPlatformLinux);
-		}
-
-		if (isAudioSquallSupported() == true) {
-			AbstractAudio::addImplementation("Squall", createAudioSquall);
-		}
-
-		AbstractAudio::addImplementation("Dummy", createAudioDummy);
+	int engineMain(int argc, const char **argv) {
 
 		Engine engine;
+		engine.loadSubsystems();
 
-		engine.setSubsystemCoreId("Linux");
-		engine.setSubsystemRenderId("OpenGL1");
-		engine.setSubsystemAudioId("Dummy");
+		engine.selectSubsystemCoreId();
+		engine.selectSubsystemRenderId();
+		engine.selectSubsystemAudioId();
+		engine.selectSubsystemPhysicsId();
 
 		BoetsApp *application = new BoetsApp();
 
 		return engine.execute(application, argc, argv);
-
 	}
+}
+
 
 //------------------------------------------------------------------------------
 
