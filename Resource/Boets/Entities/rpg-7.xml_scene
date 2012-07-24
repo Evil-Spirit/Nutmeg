@@ -10,7 +10,7 @@
 	</environment>
 	<materials>
 		<material name="material0">
-			<diffuse color="0.9999708 0.9999708 0.9999708">Boets/Texutres/ogs.png</diffuse>
+			<diffuse color="0.9999708 0.9999708 0.9999708">Boets/Texutres/Ogs.png</diffuse>
 			<specular color="0.9999708 0.9999708 0.9999708">Core/Textures/white.jpg</specular>
 			<normal>Core/Textures/empty_norm.png</normal>
 			<shininess>10</shininess>

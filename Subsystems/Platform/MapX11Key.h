@@ -131,5 +131,23 @@ inline int MapX11Key(KeySym key)
 	}
 }
 
+inline int MapX11Button(unsigned int btn) {
+	switch (btn) {
+		case Button1:
+			return Nutmeg::BUTTON_LEFT;
+			break;
+		case Button2:
+			return Nutmeg::BUTTON_MIDDLE;
+			break;
+		case Button3:
+			return Nutmeg::BUTTON_RIGHT;
+			break;
+
+		default:
+			break;
+	}
+	return 0;
+}
+
 #undef MAP_KEY2
 #undef MAP_KEY

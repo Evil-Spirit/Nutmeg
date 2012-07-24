@@ -81,6 +81,7 @@ class PlatformLinux : public AbstractPlatform {
 	FPSTimer renderTimer;
 
 	bool key_hold[KEY_COUNT];
+	bool button_hold[3];
 
 	bool queryMouse(MouseData& md) const {
 		uint mask = 0;
@@ -107,6 +108,7 @@ public:
 		started = false;
 		skip_render = false;
 		memset(key_hold, false, sizeof(bool) * KEY_COUNT);
+		memset(button_hold, false, sizeof(bool) * 3);
 	}
 
 	virtual ~PlatformLinux() {
@@ -285,11 +287,21 @@ public:
 					break;
 					// handle mouse button press
 					case ButtonPress:
-						application->onMouseDown(evt.xbutton.x, evt.xbutton.y, 0);
-						break;
+					{
+						unsigned int mapped_button = MapX11Button(evt.xbutton.button);
+						button_hold[mapped_button] = true;
+						application->onMouseDown(evt.xbutton.x, evt.xbutton.y,
+													mapped_button);
+					}
+					break;
 						// handle mouse button release
 					case ButtonRelease:
-						application->onMouseUp(evt.xbutton.x, evt.xbutton.y, 0);
+					{
+						unsigned int mapped_button = MapX11Button(evt.xbutton.button);
+						button_hold[mapped_button] = false;
+						application->onMouseUp(evt.xbutton.x, evt.xbutton.y,
+													mapped_button);
+					}
 						break;
 						// handle mouse motion
 					case MotionNotify:
@@ -544,7 +556,7 @@ public:
 		return 0;
 	}
 	virtual bool buttonHold(int button) const {
-		return false;
+		return button_hold[button];
 	}
 
 	//----------------------------------------------------------------------
