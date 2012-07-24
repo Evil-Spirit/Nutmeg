@@ -50,6 +50,13 @@
 
 namespace Nutmeg {
 
+struct MouseData {
+	int root_x;
+	int root_y;
+	int x;
+	int y;
+};
+
 //--------------------------------------------------------------------------
 // class PlatformLinux
 //--------------------------------------------------------------------------
@@ -74,6 +81,23 @@ class PlatformLinux : public AbstractPlatform {
 	FPSTimer renderTimer;
 
 	bool key_hold[KEY_COUNT];
+
+	bool queryMouse(MouseData& md) const {
+		uint mask = 0;
+		Window dummy = None;
+
+		for (int i = 0; i < XScreenCount(display); ++i) {
+			if (XQueryPointer(display, window,
+								&dummy, &dummy,
+								&md.root_x, &md.root_y,
+								&md.x, &md.y,
+								&mask)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
 
 public:
 
@@ -494,11 +518,22 @@ public:
 	virtual void setMouseClip(bool state) {}
 
 	virtual int getMouseX(bool global = false) const {
+		MouseData md;
+		if (queryMouse(md)) {
+			return global ? md.root_x : md.x;
+		}
 		return 0;
 	}
+
 	virtual int getMouseY(bool global = false) const {
+		MouseData md;
+		if (queryMouse(md)) {
+			return global ? md.root_y : md.y;
+		}
 		return 0;
 	}
+
+
 	virtual int getMouseDeltaX() const {
 		return 0;
 	}
