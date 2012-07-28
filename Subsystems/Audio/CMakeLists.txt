@@ -7,3 +7,4 @@ set(NUTMEG_AUDIO_SUBSYSTEM_SRC AudioBada.cpp AudioBada.h
 								AudioPlugin.cpp)
 
 add_library(NutmegAudio SHARED ${NUTMEG_AUDIO_SUBSYSTEM_SRC})
+target_link_libraries(NutmegAudio NutmegCore)

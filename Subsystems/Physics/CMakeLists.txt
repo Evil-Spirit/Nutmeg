@@ -6,4 +6,4 @@ set(NUTMEG_PHYSICS_SUBSYSTEM_SRC PhysicsNewton.cpp PhysicsNewton.h
 								PhysicsPlugin.cpp)
 
 add_library(NutmegPhysics SHARED ${NUTMEG_PHYSICS_SUBSYSTEM_SRC})
-target_link_libraries(NutmegPhysics Newton)
+target_link_libraries(NutmegPhysics NutmegCore Newton)
