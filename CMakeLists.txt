@@ -11,6 +11,14 @@ message("Source located in " ${PROJECT_SOURCE_DIR})
 
 add_definitions(-g -ggdb)
 
+if(WIN32)
+add_definitions(-DNUTMEG_PLATFORM_WINDOWS)
+endif()
+
+if(UNIX)
+add_definitions(-DNUTMEG_PLATFORM_LINUX)
+endif()
+
 set(NUTMEG_INCLUDES CoreSrc
 					CoreSrc/Common
 					CoreSrc/Audio
