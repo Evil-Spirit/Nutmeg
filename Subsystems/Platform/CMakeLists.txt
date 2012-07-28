@@ -8,6 +8,6 @@ set(NUTMEG_PLATFORM_SUBSYSTEM_SRC MapX11Key.h
 								PlatformPlugin.cpp)
 
 add_library(NutmegPlatform SHARED ${NUTMEG_PLATFORM_SUBSYSTEM_SRC})
-if(LINUX)
+if(UNIX)
 target_link_libraries(NutmegPlatform X11)
 endif()
