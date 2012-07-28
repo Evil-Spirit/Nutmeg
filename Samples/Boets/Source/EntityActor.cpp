@@ -55,10 +55,8 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
-	// обновление углов
 	void EntityActor::updateAngle(float dt) {
 
-		// поворот в сторону движения
 		float old_angle_yaw = angle_yaw;
 		if (climbing) {
 			angle_yaw += move_delta * 1000.0f * dt;
@@ -66,13 +64,11 @@ namespace Nutmeg {
 			angle_yaw += left_speed * 100.0f * dt;
 		}
 
-		// ограничение угла вертикальной оси
 		if (angle_yaw > +90.0f) angle_yaw = +90.0f;
 		if (angle_yaw < -90.0f) angle_yaw = -90.0f;
 
 		turn_speed = angle_yaw - old_angle_yaw;
 
-		// ограничение угла наклона физ объекта
 		vec3 angles = body_origin->getRot(true).getAngles();
 		vec3 old_body_angles = body->getRot(true).getAngles();
 		vec3 body_angles = old_body_angles;
@@ -89,13 +85,11 @@ namespace Nutmeg {
 		}
 		*/
 
-		// расчет нормали от земли
 		float new_angle_pitch = 0.0f;
 		ground_count = 0;
 		vec3 ground_normal(0.0f, 0.0f, 0.0f);
 		vec3 ground_pos;
 
-		// выбор нормали точки закрепления
 		if (climbing) {
 			ground_normal = push_point.normal;
 			ground_pos = push_point.point;
@@ -137,7 +131,6 @@ namespace Nutmeg {
 			}
 		}
 
-		// расчет угла наклона тела
 		if (climbing) {
 			if (ground_normal.y > EPSILON) {
 				new_angle_pitch = math::arctg(-ground_normal.z, ground_normal.y);
@@ -150,19 +143,16 @@ namespace Nutmeg {
 			}
 		}
 
-		// плавное приближение к результирующему углу наклона тела
 		if (math::abs(new_angle_pitch - angle_pitch) < dt * 1.5f) {
 			angle_pitch = new_angle_pitch;
 		} else {
 			angle_pitch += math::sign(new_angle_pitch - angle_pitch) * dt * 1.5f;
 		}
 
-		// установка угла физического объекта
 		if (old_body_angles.equals(body_angles, 0.0001) == false) {
 			body->setRot(body_angles, true);
 		}
 
-		// расчет вектора смещения кожи к земле
 		float up_offset = 0.0f;
 
 		vec3 body_origin_pos = body_origin->getPos(true);
@@ -181,7 +171,6 @@ namespace Nutmeg {
 
 		}
 
-		// плавное приближение к результирующему вектору смещения кожи
 		vec3 new_ground_offset = -ground_normal * up_offset;
 		if ((new_ground_offset - ground_offset).length() > dt * 1.0f) {
 			ground_offset += normalize(new_ground_offset - ground_offset) * dt * 1.0f;
@@ -189,7 +178,6 @@ namespace Nutmeg {
 			ground_offset = new_ground_offset;
 		}
 
-		// установка положения кожи
 		skin_origin->setRot(quat(vec3(-1.0f, 0.0f, 0.0f), angle_pitch) * quat(vec3(0.0f, 0.0f, 1.0f), angle_yaw * DEG_TO_RAD + PI / 2.0f));
 		skin_origin->setPos(body_origin_pos + ground_offset, true);
 	}
@@ -235,7 +223,7 @@ namespace Nutmeg {
 	void EntityActor::calculateState() {
 
 		mat4 cat_mat = quat(vec3(-1.0f, 0.0f, 0.0f), angle_pitch).getMatrix() * mat4::translate(body->getPos(true));
-		// статистика положения кошки
+
 		position = body->getPos(true);
 		dir_up = normalize(cat_mat * vec3(0, 0, 1) - position);
 		dir_left = normalize(cat_mat * vec3(0, -1, 0) - position);
@@ -252,7 +240,6 @@ namespace Nutmeg {
 
 		//aim_angle_pitch = getAngle(dir_left);
 
-		// земля
 		//ground_ray[0] = Line(position + dir_left * 0.6f + dir_up * 0.2f, position - dir_up * 0.8f + dir_left * 0.6f);
 		//ground_ray[1] = Line(position - dir_left * 0.6f + dir_up * 0.2f, position - dir_up * 0.8f - dir_left * 0.6f);
 		//ground_ray[2] = Line(position + dir_up * 0.2f, position - dir_up * 0.8f);
@@ -276,13 +263,11 @@ namespace Nutmeg {
 		if (ground[2] != NULL) main_ground = ground[2];
 		if (ground[1] != NULL) main_ground = ground[1];
 
-		// прицепление
 		if (main_ground == NULL) {
 			hang_ray = Line(position + vec3(0.0f, 0.0f, 1.0f), vec3(position + dir_left * math::sign(move_delta) * 1.2f + vec3(0.0f, 0.0f, 1.0f)));
 			hang_object = NULL;//scene->trace(hang_ray, hang_point, true, true, NODE_PHYSICS);
 		}
 
-		// относительная скорость (считается только когда кошка на земле)
 		float v_len = velocity.length();
 		vec3 v_dir = normalize(velocity);
 
@@ -300,7 +285,6 @@ namespace Nutmeg {
 			//}
 		}
 
-		// флаги движения
 		run = move_delta != 0.0f || math::abs(left_speed) > pl_walk_speed_threshold;
 		start_run = !old_run && run;
 		end_run = old_run && !run;
@@ -681,7 +665,6 @@ namespace Nutmeg {
 		cam.setDistance(camera_zoom);
 
 
-		// удаление/приближение камеры
 		/*
 		float camera_min_distance = camera->getCamera().getMinDistance();
 		float camera_max_distance = camera->getCamera().getMaxDistance();

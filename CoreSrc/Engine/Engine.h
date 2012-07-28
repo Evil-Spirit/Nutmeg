@@ -19,6 +19,7 @@
 #include "Application.h"
 #include "LibApi.h"
 #include "Str.h"
+#include "PluginManager.h"
 
 //------------------------------------------------------------------------------
 //
@@ -49,6 +50,9 @@ namespace Nutmeg {
 		Str subsystem_audio_id;
 		Str subsystem_physics_id;
 
+		//----------------------------------------------------------------------
+
+		PluginManager pluginManager;
 		//----------------------------------------------------------------------
 
 	protected:

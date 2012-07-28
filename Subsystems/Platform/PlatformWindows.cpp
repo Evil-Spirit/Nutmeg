@@ -1601,36 +1601,6 @@ namespace Nutmeg {
 }
 
 //------------------------------------------------------------------------------
-//
-// Borland C++ Builder entry point
-//
-//------------------------------------------------------------------------------
-
-#ifndef NUTMEG_BUILD_DLL
-
-	#include <windows.h>
-
-	#ifdef NUTMEG_COMPILER_BCPP
-
-		WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
-
-			return Nutmeg::engineMain(0, NULL);
-
-		}
-
-	#else
-
-		int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
-
-			return Nutmeg::engineMain(0, NULL);
-
-		}
-
-	#endif
-
-#endif
-
-//------------------------------------------------------------------------------
 
 #endif
 

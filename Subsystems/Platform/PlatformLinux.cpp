@@ -651,8 +651,4 @@ AbstractPlatform *createPlatformLinux(Engine *engine) {
 
 }
 
-int main() {
-	return Nutmeg::engineMain(0, NULL);
-}
-
 //------------------------------------------------------------------------------

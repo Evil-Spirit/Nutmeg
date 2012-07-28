@@ -1,4 +1,4 @@
- 
+
 set(LIBRARY_OUTPUT_PATH ${BUILD_ROOT})
 set(EXECUTABLE_OUTPUT_PATH ${BUILD_ROOT})
 
@@ -15,7 +15,19 @@ set(NUTMEG_CORE_COMMON_SRC Common/Debug.cpp
 							Common/Str.cpp
 							Common/Str.h
 							Common/Xml.cpp
-							Common/Xml.h)
+							Common/Xml.h
+							Common/DynLib.h
+							Common/DynLib.cpp
+							Common/PluginManager.h
+							Common/PluginManager.cpp
+							Common/Action.h
+							Common/Array.h
+							Common/Factory.h
+							Common/Functor.h
+							Common/LibApi.h
+							Common/Map.h
+							Common/SolidArray.h
+							Common/Stream.h)
 set(NUTMEG_CORE_ENGINE_SRC Engine/Application.cpp
 							Engine/Application.h
 							Engine/Console.cpp
@@ -86,13 +98,14 @@ set(NUTMEG_CORE_SCENE_SRC Scene/BoneNode.cpp
 							Scene/TextNode.h
 							Scene/TriggerNode.cpp
 							Scene/TriggerNode.h)
-							
+
 set(NUTMEG_SRC ${NUTMEG_CORE_AUDIO_SRC} ${NUTMEG_CORE_COMMON_SRC} ${NUTMEG_CORE_ENGINE_SRC}
 				${NUTMEG_CORE_GAME_SRC} ${NUTMEG_CORE_MATH_SRC} ${NUTMEG_CORE_PHYSICS_SRC}
-				${NUTMEG_CORE_PLATFORM_SRC} ${NUTMEG_CORE_RENDER_SRC} ${NUTMEG_CORE_SCENE_SRC})
+				${NUTMEG_CORE_PLATFORM_SRC} ${NUTMEG_CORE_RENDER_SRC} ${NUTMEG_CORE_SCENE_SRC}
+				Nutmeg.h Settings.h)
 if(LINUX)
 set(NUTMEG_PLATFORM_LIBS X11)
 endif()
 
 add_library(NutmegCore SHARED ${NUTMEG_SRC})
-target_link_libraries(NutmegCore IL ILU ILUT GL Newton ${NUTMEG_PLATFORM_LIBS})
+target_link_libraries(NutmegCore IL ILU ILUT GL Newton dl ${NUTMEG_PLATFORM_LIBS})

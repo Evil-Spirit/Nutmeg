@@ -27,13 +27,6 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
-	// каждый тип логических объектов наследуем от Entity
-	// и реализуем логику
-	// затем, нам нужно его зарегистрировать, указав логический идентификатор (см. ниже)
-	// потом нам необходимо создать для него сцену и указать
-	// на 5ой вкладке и указать для сцены логический идентификатор
-	// затем нам нужно сохранить сцену, открыть сцену уровня
-	// и добавить туда EntityNode в нужном количестве
 	class EntityPlayer : public Entity {
 
 		PhysicsNode *body;
@@ -44,53 +37,39 @@ namespace Nutmeg {
 
 	protected:
 
-		// вызывается при создании экземпляра Entity.
-		// здесь нам можно получать ноды из сцены нашего Entity
 		virtual void onCreate() {
 
-			// получаем физический объект
 			body = node->getEntityNode <PhysicsNode> ("player_body");
 
-			// получаем камеру
 			camera = node->getEntityNode <CameraNode> ("player_camera");
 			camera->setTarget(body);
 
 		}
 
-		// вызывается после создания всех Entity уровня
-		// здесь мы можем получать другие Entity уровня, чтобы с ними взаимодействовать.
 		virtual void onAfterCreate() {
 
-			// устанавливаем активный Entity
 			level->setActiveEntity(this);
 
 		}
 
-		// вызывается при уничтожении экземпляра Entity
 		virtual void onDestroy() {
 
 		}
 
-		// это событие вызывается при активации Entity (setActiveEntity)
 		virtual void onActivate() {
 			scene->setActiveCamera(camera);
 		}
-
-		// сюда попадают события, если энтити активно
-		// например, если при создании мы сделали level->setActiveEntity(this)
 
 		//virtual void onMouseDown(int x, int y, int b) { }
 		//virtual void onMouseMove(int x, int y) { }
 		virtual void onKeyDown(int key) {
 
-			// переключение активного объекта по tab
 			if (key == KEY_TAB) {
 				int index = level->findEntity(this);
 				index = (index + 1) % level->getEntitiesCount();
 				level->setActiveEntity(&level->getEntity(index));
 			}
 
-			// прыжок
 			if (key == KEY_W || key == KEY_UP) jump();
 
 		}
@@ -99,14 +78,11 @@ namespace Nutmeg {
 		//virtual void onKeyRepeat(int key) { }
 		//virtual void onKeyChar(char c) { }
 
-		// это событие вызывается каждый кадр для активного Entity
 		virtual void onControl(AbstractPlatform *platform) {
 			if (platform->keyHold(KEY_LEFT) || platform->keyHold(KEY_A)) moveLeft();
 			if (platform->keyHold(KEY_RIGHT) || platform->keyHold(KEY_D)) moveRight();
 		}
 
-		// это событие вызывается каждый кадр и здесь нужно менять положение
-		// объектов, выполнять бизнес-логику Entity
 		virtual bool onUpdate(float dt) {
 
 			Node *old_ground = ground;
@@ -116,13 +92,9 @@ namespace Nutmeg {
 			ground = scene->trace(ray, tp, true, true, NODE_PHYSICS);
 			if (old_ground == NULL && ground != NULL) jumping = false;
 
-			return true;	// если вернуть false объект уничтожится
+			return true;
 		}
 
-		// здесь мы можем рисовать на экране всякие гуи, относящиеся к Entity.
-		// например, отображать здоровье и запас патронов для игрока-человека
-		// и скорость и запас горючего для транспортного средства.
-		// вызявается для активного Entity
 		virtual void onRender2d(AbstractRender *render) {
 			render->drawText2d(render->getWidth() - 220, render->getHeight() - 40, format("entity index: %d", level->findEntity(this)));
 			if (ground != NULL) {
@@ -170,59 +142,41 @@ namespace Nutmeg {
 
 	};
 
-	// наследуемся от Level
-	// регистрируем по id
-	// id указываем в файле описания уровней xml_game
 	class Level0 : public Level {
 
 
-		Array <EntityPlayer> players;											// мой хитрый массив (см. конструктор Level0)
-		EntityPlayer *main_player;												// главный игрок
+		Array <EntityPlayer> players;
+		EntityPlayer *main_player;
 
 	protected:
 
-		// вызывается после создания всех Entity
 		virtual void onCreate() {
 
-			// получаем главного игрока, приведенного к типу с проверкой на косяки
-			// на самом деле только что сделал :)
-			// до этого было просто getEntity()
 			main_player = get <EntityPlayer> ("main_player");
 
-			// проходим по всем Entity
 			for (int i=0; i<getEntitiesCount(); i++) {
-				if (Str(getEntity(i).getName()) == "main_player") continue;		// если главный игрок - идет лесом
-				if (Str(getEntity(i).getType()) != "EntityPlayer") continue;	// если тип логики не такой - идет лесом
-				EntityPlayer *player = &get <EntityPlayer> (i);					// получаем плеера
-				players.append(player);											// добавляем плеера
+				if (Str(getEntity(i).getName()) == "main_player") continue;
+				if (Str(getEntity(i).getType()) != "EntityPlayer") continue;
+				EntityPlayer *player = &get <EntityPlayer> (i);
+				players.append(player);
 			}
 
-			setActiveEntity(main_player);										// ставим главного плеера активным
+			setActiveEntity(main_player);
 
 		}
 
-		// апдейт
 		virtual void onUpdate(float dt) {
 
-			// проходим по всем плеерам
 			for (int i=0; i<players.count(); i++) {
 
-				// ежели расстояние от главного плеера до текущего маленькое
 				if (distance(main_player->getPos(), players[i].getPos()) < 1.5f) {
-					// прыгаем текущего плеера
 					players[i].jump();
 				}
 			}
-
-			// короче, тут мы сдели так, что если подъезжаем главным плеером
-			// к другому - он со страха улетает в небеса
-
 		}
 
 	public:
 
-		// вот здесь мы говорим массиву, что он должен быть массивом указтелей
-		// то бишь не должен автоматически очищаться при удалении
 		Level0() : players(false) {
 
 		}
@@ -238,7 +192,6 @@ namespace Nutmeg {
 	class EntitySampleApp : public Application, ResourceEventListener {
 
 		//----------------------------------------------------------------------
-		// чтобы использовать систему Entity, нужно создать корневой объект Game
 		Game *game;
 
 		bool debug;
@@ -281,32 +234,30 @@ namespace Nutmeg {
 
 			resource_manager->beginDelayedLoading();
 
-			Log::open("engine.log");											// открываем запись в лог
+			Log::open("engine.log");
 
-			platform->setTitle("EntityTest");									// устанавливаем заголовок
-			platform->setUpdateFPS(0.0f);										// задаем шаг update 0 - вызывается каждый кадр
+			platform->setTitle("EntityTest");
+			platform->setUpdateFPS(0.0f);
 
-			font.load("/Core/Fonts/ms_sans_serif_24.xml_font");					// загружаем шрифт
-			render->bindFont(font);												// устнавливаем шрифт
+			font.load("/Core/Fonts/ms_sans_serif_24.xml_font");
+			render->bindFont(font);
 
-			// делаем текущий объект приемником событий от менеджера ресурсов
-			// (с помощью этого можно делать индиктор загрузки)
 			resource_manager->setEventListener(this);
 
-			platform->setSystemCursor(false);									// устанавливаем другой курсор вместо системного
+			platform->setSystemCursor(false);
 
-			engine->setResizingRedraw(true);										// отображать содержимое окна при перетаскивании
+			engine->setResizingRedraw(true);
 
 			//------------------------------------------------------------------
 			// entities
 			//------------------------------------------------------------------
 
-			game = new Game(engine);											// создаем экземпляр нашей игры
-			game->addEntityLogic <EntityPlayer> ("EntityPlayer");				// регистрируем логику для Entity
-			game->addLevelLogic <Level0> ("Level0");							// регистрируем логику для Level
+			game = new Game(engine);
+			game->addEntityLogic <EntityPlayer> ("EntityPlayer");
+			game->addLevelLogic <Level0> ("Level0");
 
-			game->load("../Resource/Game/sample.xml_game");						// загружаем конфигурацию игровых уровней
-			game->startLevel(0);												// запускаем первый уровень
+			game->load("../Resource/Game/sample.xml_game");
+			game->startLevel(0);
 
 			//------------------------------------------------------------------
 
@@ -325,18 +276,16 @@ namespace Nutmeg {
 		virtual void onRender() {
 
 
-			render->begin();													// начинаем отрисовку
-			render->clear(true, true);											// очишаем экран
+			render->begin();
+			render->clear(true, true);
 
-			game->render(render);												// рисуем игру
+			game->render(render);
 
 			render->bindMaterial(Material());
 			game->renderDebug(render);
 
-			render->begin2d(-1, -1);											// начинаем отрисовку 2d
+			render->begin2d(-1, -1);
 
-
-			// рисуем отладочную информацию
 			int top = 0;
 			if (console->isActive()) top = console->getHeight(render);
 
@@ -348,9 +297,9 @@ namespace Nutmeg {
 			render->drawText2d(10, 30 + top, format("update : %.2f ms", platform->getUpdateTime()));
 			if (game->getActiveLevel() != NULL) render->drawText2d(10, 50 + top, format("scene nodes : %d", game->getActiveLevel()->getScene()->getNodesCount()));
 
-			render->end2d();													// заканчиваем отрисовку 2d
+			render->end2d();
 
-			render->end();														// заканчиваем отрисовку
+			render->end();
 
 		}
 
@@ -358,7 +307,7 @@ namespace Nutmeg {
 
 		virtual void onUpdate(float dt) {
 
-			game->update(dt);													// вызываем update игры
+			game->update(dt);
 
 		}
 

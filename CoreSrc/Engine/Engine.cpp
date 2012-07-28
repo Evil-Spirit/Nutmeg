@@ -496,44 +496,68 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 	void Engine::loadSubsystems() {
-		typedef void (*initfunc)();
-		initfunc initPlatform;
-		initfunc initRender;
-		initfunc initAudio;
-		initfunc initPhysics;
-
-		#ifdef NUTMEG_PLATFORM_LINUX
-		void* handle = dlopen("libNutmegPlatform.so", RTLD_LAZY);
-		if (!handle) throw std::runtime_error("Failed to load platform library");
-		initPlatform = (initfunc)dlsym(handle, "init");
-		if (!initPlatform) throw std::runtime_error("Failed to resolve initPlatform");
-		dlclose(handle);
-
-		handle = dlopen("libNutmegRender.so", RTLD_LAZY);
-		if (!handle) throw std::runtime_error("Failed to load render library");
-		initRender = (initfunc)dlsym(handle, "init");
-		if (!initRender) throw std::runtime_error("Failed to resolve initRender");
-		dlclose(handle);
-
-		handle = dlopen("libNutmegAudio.so", RTLD_LAZY);
-		if (!handle) throw std::runtime_error("Failed to load audio library");
-		initAudio = (initfunc)dlsym(handle, "init");
-		if (!initAudio) throw std::runtime_error("Failed to resolve initAudio");
-		dlclose(handle);
-
-		handle = dlopen("libNutmegPhysics.so", RTLD_LAZY);
-		if (!handle) throw std::runtime_error("Failed to load physics library");
-		initPhysics = (initfunc)dlsym(handle, "init");
-		if (!initPhysics) throw std::runtime_error("Failed to resolve initPhysics");
-		dlclose(handle);
-		#endif
-
-		initPlatform();
-		initRender();
-		initAudio();
-		initPhysics();
+		pluginManager.load("NutmegPlatform");
+		pluginManager.load("NutmegAudio");
+		pluginManager.load("NutmegPhysics");
+		pluginManager.load("NutmegRender");
 	}
 }
 
+#ifdef NUTMEG_PLATFORM_WINDOWS
+//------------------------------------------------------------------------------
+//
+// Borland C++ Builder entry point
+//
+//------------------------------------------------------------------------------
+
+#ifndef NUTMEG_BUILD_DLL
+
+	#include <windows.h>
+
+	#ifdef NUTMEG_COMPILER_BCPP
+
+		WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+
+			return Nutmeg::engineMain(0, NULL);
+
+		}
+
+	#else
+
+		int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+
+			return Nutmeg::engineMain(0, NULL);
+
+		}
+
+	#endif
+
+#endif
+
+#endif
+
+#ifdef NUTMEG_PLATFORM_LINUX
+int main() {
+	return Nutmeg::engineMain(0, NULL);
+}
+#endif
+
+#ifdef NUTMEG_PLATFORM_BADA
+
+extern "C" {
+
+	//--------------------------------------------------------------------------
+
+	int OspMain(int argc, const char **argv) {
+//		debugLog("Entry Point");
+
+		return Nutmeg::engineMain(argc, argv);
+	}
+
+	//--------------------------------------------------------------------------
+
+}
+
+#endif
 //------------------------------------------------------------------------------
 

@@ -130,6 +130,10 @@ namespace Nutmeg {
 			return res;
 		}
 
+		Str& operator+= (const char* s) {
+			return *this = *this + s;
+		}
+
 		Str operator+ (char c) const {
 			Str res(size() + 1);
 			for (int i=0; i<size(); i++) {
