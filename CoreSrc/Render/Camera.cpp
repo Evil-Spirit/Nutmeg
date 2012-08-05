@@ -262,52 +262,52 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	// обновление положения камеры
-	// получаем цель - target
-	// получаем флаг слежения за целью
+	//   
+	//   - target
+	//     
 	void Camera::update(const vec3 &t, bool tgt) {
 
-		// anchor - это смещение точки слежения относительно цели
+		// anchor -      
 		vec3 target = t + anchor;
 
-		// запоминаем в темп текущие углы
+		//     
 		vec3 temp = ang;
 
-		// если следим за целью и одна из осей не зафиксирована
+		//          
 		if (tgt && (yaw_fixed == false || pitch_fixed == false)) {
 			lookAt(target);
 		}
 
-		// приводим угол к дипазону 0...360
+		//     0...360
 		ang.z -= floor(ang.z / 360.0f) * 360.0f;
 
 		if (yaw_fixed == true) {
-			// если ось зафиксирована - то берем угол который стоял в камере
+			//    -       
 			ang.z = temp.z;
 		} else {
-			// делаем ограничения для угла
+			//    
 			if (ang.z < min.z) ang.z = min.z;
 			if (ang.z > max.z) ang.z = max.z;
 		}
 
-		// если фиксированый пич, то ставим изначальный угол
+		//   ,    
 		if (pitch_fixed == true) ang.x = temp.x;
 
-		// деалем ограничения (всегда, т.к. first person camera)
+		//   (, .. first person camera)
 		if (ang.x < min.x) ang.x = min.x;
 		if (ang.x > max.x) ang.x = max.x;
 
-		// если нужна цель
+		//   
 		if (tgt) {
 
 			//float d = (target - pos).length();
 
-			// ограничение дистанции
+			//  
 			if (distance < min_distance) distance = min_distance;
 			if (distance > max_distance) distance = max_distance;
 
-			// задаем позцию камеры
-			// getDirection - направление камеры
+			//   
+			// getDirection -  
 			pos = target - getDirection() * distance;
 		}
 

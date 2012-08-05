@@ -51,7 +51,7 @@ namespace Nutmeg {
 
 		File file(name, "rb");
 
-		// заголовок
+		// 
 		int magic;
 		int formatVersion;
 		int modelVersion;
@@ -69,7 +69,7 @@ namespace Nutmeg {
 		int bonesCount = 0;
 		int framesCount = 0;
 
-		// загрузка стуктуры скелета
+		//   
 		file.readData(&bonesCount, sizeof(bonesCount));
 		bones.clear();
 		roots.clear();
@@ -82,7 +82,7 @@ namespace Nutmeg {
 			bones.append(bone);
 		}
 
-		// загрузка кадров анимации
+		//   
 		file.readData(&framesCount, sizeof(framesCount));
 		frames.clear();
 
@@ -109,7 +109,7 @@ namespace Nutmeg {
 		}
 		*/
 
-		// относительные преобразования
+		//  
 		for (int i=0; i<framesCount; i++) {
 			Pose *pose = new Pose(this);
 			for (int j=0; j<bonesCount; j++) {
@@ -133,7 +133,7 @@ namespace Nutmeg {
 		}
 
 
-		// дерево
+		// 
 		for (int i=0; i<bones.count(); i++) {
 			if (bones[i].parent_index == -1) {
 				roots.append(&bones[i]);
@@ -142,7 +142,7 @@ namespace Nutmeg {
 			}
 		}
 
-		// базовое преобразование
+		//  
 		for (int i=0; i<bonesCount; i++) {
 			bones[i].inv_bind = absolute[0].getBonePose(i).getInverseMatrix();
 		}

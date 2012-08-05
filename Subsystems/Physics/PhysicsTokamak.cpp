@@ -402,7 +402,7 @@ namespace Nutmeg {
 		float updDt = dt + stepRestDt;
 
 		if (updDt > maxDt) {
-			// шаг слишком большой
+			//   
 			clearForce = false;
 			while (updDt > maxDt) {
 				simulator->Advance(maxDt);
@@ -413,10 +413,10 @@ namespace Nutmeg {
 			simulator->Advance(updDt);
 			updDt = 0.0f;
 		} else if (updDt < minDt) {
-			// шаг слишком маленький
+			//   
 
 		} else {
-			// шаг в норме
+			//   
 			simulator->Advance(updDt);
 			num_steps ++;
 			updDt = 0.0f;

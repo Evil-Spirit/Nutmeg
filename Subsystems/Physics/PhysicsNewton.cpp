@@ -345,7 +345,7 @@ namespace Nutmeg {
 		float updDt = dt + stepRestDt;
 
 		if (updDt > maxDt) {
-			// шаг слишком большой
+			//   
 			clearForce = false;
 			while (updDt > maxDt) {
 				NewtonUpdate(world,  maxDt);
@@ -356,10 +356,10 @@ namespace Nutmeg {
 			NewtonUpdate(world,  updDt);
 			updDt = 0.0f;
 		} else if (updDt < minDt) {
-			// шаг слишком маленький
+			//   
 
 		} else {
-			// шаг в норме
+			//   
 			NewtonUpdate(world,  updDt);
 			num_steps ++;
 			updDt = 0.0f;
