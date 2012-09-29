@@ -93,7 +93,7 @@ namespace Nutmeg {
 		if (on_destroy != NULL) on_destroy->run();
 
 		while (children.count() > 0) {
-			children[0].setParent(NULL);
+			children[0].setParentForced(NULL, false);
 		}
 
 		setParentForced(NULL, false);

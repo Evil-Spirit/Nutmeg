@@ -62,6 +62,7 @@ namespace Nutmeg {
 
 		const char *parseXml(const char *str);
 		void saveToFile(FILE *f, int depth = 0) const;
+		void writeToStr(Str &str, int depth);
 
 	public:
 
@@ -190,12 +191,15 @@ namespace Nutmeg {
 		bool load(const char *name);
 		void save(const char *name) const;
 
+		void read(const char *data, int size);
+		void write(Str &str);
+
 		//----------------------------------------------------------------------
 
 		void clear();
-		
+
 		//----------------------------------------------------------------------
-		
+
 		Xml &operator= (const Xml &xml);
 
 		//----------------------------------------------------------------------

@@ -87,7 +87,7 @@ namespace Nutmeg {
 			if (copy_count > size) copy_count = size;
 
 			memcpy(new_items, items, sizeof(Class) * copy_count);
-			memset(items, 0, sizeof(Class) * size);
+			//memset(items, 0, sizeof(Class) * size);
 			delete [] items;
 			size = s;
 			items = new_items;
@@ -102,6 +102,16 @@ namespace Nutmeg {
 			items[size - 1] = item;
 		}
 
+		void removeFast(int i) {
+			#ifdef NUTMEG_DEBUG
+			if (i < 0 || i >= size) fatal("SolidArray::operator[] : index out of bounds");
+			#endif
+			if (i < size - 1 && size > 1) {
+				memcpy(&items[i], &items[size - 1], sizeof(Class));
+			}
+			count --;
+		}
+
 		void reserve(int capacity_) {
 			if (capacity == capacity_) return;
 			Class *new_items = new Class[capacity_];
@@ -109,7 +119,7 @@ namespace Nutmeg {
 			if (copy_count > capacity) copy_count = capacity_;
 
 			memcpy(new_items, items, sizeof(Class) * copy_count);
-			memset(items, 0, sizeof(Class) * size);
+			//memset(items, 0, sizeof(Class) * size);
 			delete [] items;
 			capacity = capacity_;
 			if (size > capacity) size = capacity;

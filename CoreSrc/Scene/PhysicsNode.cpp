@@ -438,6 +438,11 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	PhysicsNode::~PhysicsNode() {
+
+		while (children.count() > 0) {
+			children[0].setParent(NULL);
+		}
+
 		delete body;
 		body = NULL;
 	}

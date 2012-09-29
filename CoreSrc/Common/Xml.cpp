@@ -326,7 +326,7 @@ namespace Nutmeg {
 			data_node = true;
 
 		}
-	
+
 		do {
 
 			SKIP_SPACES(str);
@@ -376,7 +376,7 @@ namespace Nutmeg {
 		#undef SKIP_CHAR
 		#undef GET_NAME
 		#undef GET_DATA
-		
+
      	return str;
 	}
 
@@ -395,19 +395,8 @@ namespace Nutmeg {
 		buffer = new char[size + 1];
 		file.readData(buffer,size);
 		buffer[size] = '\0';
-		const char *str = buffer;
 
-		//Timer timer;
-
-		//FILE *f = fopen("optimize.txt", "a");
-		//timer.start();
-		do {
-			comment = "";
-			str = parseXml(str);
-		} while (comment != "");
-		//fprintf(f,"parse time: %lf\n", timer.elapsed() * 1000.0);
-		//printf("parse time: %lf\n", timer.elapsed() * 1000.0);
-		//fclose(f);
+		read(buffer, size);
 
 		delete [] buffer;
 		return true;
@@ -569,6 +558,63 @@ namespace Nutmeg {
 		comment = "";
 		args.clear();
 		children.clear();
+	}
+
+	//--------------------------------------------------------------------------
+
+	void Xml::read(const char *buffer, int size) {
+
+		do {
+			comment = "";
+			buffer = parseXml(buffer);
+		} while (comment != "");
+
+	}
+
+	//--------------------------------------------------------------------------
+
+	void Xml::write(Str &str) {
+		writeToStr(str, 0);
+	}
+
+	//--------------------------------------------------------------------------
+
+	void Xml::writeToStr(Str &str, int depth) {
+
+		if (comment != "") {
+			for(int i=0; i<depth; i++) str += "\t";
+			str += "<!--";
+			str += comment + "-->\n";
+		}
+
+		for(int i=0; i<depth; i++) str += "\t";
+
+		str += "<"; str += name;
+
+		if (args.count() > 0) {
+			for (int i=0; i<args.count(); i++) {
+				str += " ";
+				str += args[i].name + "=\"" + args[i].data + "\"";
+			}
+		}
+
+		if (children.count() > 0) {
+			str += ">\n";
+
+			for(int i=0; i<children.count(); i++) {
+				children[i].writeToStr(str, depth + 1);
+			}
+
+			for(int i=0; i<depth; i++) str += "\t";
+			str += "</";
+			str += name + ">\n";
+
+		} else if(data != "") {
+			str += ">";
+			str += data + "</"+ name + ">\n";
+		} else {
+			str += "/>\n";
+		}
 	}
 
 	//--------------------------------------------------------------------------

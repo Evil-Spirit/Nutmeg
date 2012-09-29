@@ -1175,7 +1175,7 @@ namespace Nutmeg {
 
 		for (int i=0; i<6; i++) {
 			if (/*distance(planes[i], l.src) > 0 && */planes[i].trace(l, itr, fs, fd)) {
-				vec3 p = itr.point - planes[i].normal * getExtents(); //    ,      
+				vec3 p = itr.point - planes[i].normal * getExtents(); // смещаем пересечение к центру, чтобы не применять эпсилон в проверке
 				if (p >= min && p <= max - planes[i].normal * 0.01f) {
 					float len = (itr.point - l.src).lengthSquared();
 					if (len < dist || dist < 0) {
