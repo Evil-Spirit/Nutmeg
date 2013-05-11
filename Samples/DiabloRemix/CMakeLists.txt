@@ -1,5 +1,6 @@
-set(LIBRARY_OUTPUT_PATH ${BUILD_ROOT})
-set(EXECUTABLE_OUTPUT_PATH ${BUILD_ROOT})
-add_executable(DiabloRemix Source/EntityCreature.cpp Source/EntityCreature.h
-							Source/main.cpp)
-target_link_libraries(DiabloRemix NutmegCore NutmegLib)
+
+FILE (GLOB SRC Source/*.cpp)
+FILE (GLOB HDR Source/*.h)
+
+ADD_EXECUTABLE (DiabloRemix ${SRC} ${HDR})
+TARGET_LINK_LIBRARIES (DiabloRemix NutmegCore NutmegLib)

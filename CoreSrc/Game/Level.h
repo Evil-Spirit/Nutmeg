@@ -30,7 +30,7 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
-	class LevelDef;
+	struct LevelDef;
 	class Game;
 	class Entity;
 	class AbstractRender;

@@ -101,7 +101,7 @@ namespace Nutmeg {
 
 		template <class NodeType>
 		const NodeType *getEntityNode(const char *id) const {
-			Node *result = nodes.get(id);
+			Node *result = const_cast<Node*>(nodes.get(id));
 			if (result == NULL) fatal(format("EntityNode::getEntityNode(): can not found node \"%s\" in entity \"%s\".", id, getName()));
 			if (NodeType::getStaticType() != NODE_NULL && NodeType::getStaticType() != result->getType()) fatal(format("EntityNode::getEntityNode(): type of node \"%s\" mismatch in entity \"%s\"; wanted type is \"%s\".", id, getName(), Node::typeToName(NodeType::getStaticType())));
 			return (NodeType *)result;

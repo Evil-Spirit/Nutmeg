@@ -691,7 +691,7 @@ namespace Nutmeg {
 	public:
 
 		Skeleton();
-		~Skeleton();
+		virtual ~Skeleton();
 
 		virtual void load(const char *name);
 		virtual bool isExternal() const { return true; }

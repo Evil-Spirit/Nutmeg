@@ -1,4 +1,6 @@
-set(LIBRARY_OUTPUT_PATH ${BUILD_ROOT})
-set(EXECUTABLE_OUTPUT_PATH ${BUILD_ROOT})
-add_executable(EntitySample Source/main.cpp)
-target_link_libraries(EntitySample NutmegCore NutmegLib)
+
+FILE (GLOB SRC Source/*.cpp)
+FILE (GLOB HDR Source/*.h)
+
+ADD_EXECUTABLE (EntitySample ${SRC} ${HDR})
+TARGET_LINK_LIBRARIES (EntitySample NutmegCore NutmegLib)

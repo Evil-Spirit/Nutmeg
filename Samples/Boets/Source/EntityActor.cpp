@@ -476,7 +476,11 @@ namespace Nutmeg {
 		scene = level->getScene();
 
 		scene->getPhysicsWorld().setElasticity(0.0);
-		scene->getPhysicsWorld().setSoftness(0.1f);		scene->getPhysicsWorld().setMinFps(5.0f);		scene->getPhysicsWorld().setUpdateFps(0.0f);		scene->getPhysicsWorld().setGravity(vec3(0.0f, 0.0f, -20.0f));
+		scene->getPhysicsWorld().setSoftness(0.1f);
+		scene->getPhysicsWorld().setMinFps(5.0f);
+		scene->getPhysicsWorld().setUpdateFps(0.0f);
+		scene->getPhysicsWorld().setGravity(vec3(0.0f, 0.0f, -20.0f));
+
 		body = node->getEntityNode <PhysicsNode> ("hero_body");
 		skin = node->getEntityNode <SkinnedMeshNode> ("hero_skin");
 		camera = node->getEntityNode <CameraNode> ("hero_camera");

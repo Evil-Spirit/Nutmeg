@@ -1,3 +1,3 @@
-add_subdirectory(EntitySample) 
-add_subdirectory(DiabloRemix)
-add_subdirectory(Boets)
+ADD_SUBDIRECTORY (EntitySample) 
+ADD_SUBDIRECTORY (DiabloRemix)
+ADD_SUBDIRECTORY (Boets)
