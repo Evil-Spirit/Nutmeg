@@ -545,7 +545,7 @@ namespace Nutmeg {
 			fatal("PlatformWindows::init(): Can not create window");
 		}
 
-		SetWindowLong(wnd, GWL_USERDATA, (LONG)(this));
+		SetWindowLongPtr(wnd, GWLP_USERDATA, (LONG_PTR)(this));
 
 		//dc = GetDC(wnd);
 		dc = GetDCEx(wnd, 0, DCX_WINDOW);
@@ -564,7 +564,7 @@ namespace Nutmeg {
 			PFD_SWAP_EXCHANGE,				// double buffered
 			//PFD_SWAP_COPY,				// double buffered
 			PFD_TYPE_RGBA,					// RGBA type
-			videoMode.bits,		   			// color depth
+			(BYTE)videoMode.bits,  			// color depth
 			0, 0, 0, 0, 0, 0,				// color bits
 			0,								// alpha buffer
 			0,								// shift bit
@@ -949,7 +949,7 @@ namespace Nutmeg {
 			case OS_CURSOR_SIZE_LT_RB:	cursor = LoadCursor(NULL, IDC_SIZENESW); break;
 			default:					cursor = LoadCursor(NULL, IDC_ARROW);
 		}
-		SetClassLong(wnd, GCL_HCURSOR, (DWORD)cursor);
+		SetClassLongPtr(wnd, GCLP_HCURSOR, (ULONG_PTR)cursor);
 		SetCursor(cursor);
 	}
 
@@ -1368,7 +1368,7 @@ namespace Nutmeg {
 
 	LRESULT CALLBACK wndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
-		PlatformWindows *core = (PlatformWindows *)GetWindowLong(hWnd, GWL_USERDATA);
+		PlatformWindows *core = (PlatformWindows *)GetWindowLongPtr(hWnd, GWLP_USERDATA);
 		Application *application = NULL;
 		if (core != NULL) application = core->getApplication();
 
@@ -1388,7 +1388,7 @@ namespace Nutmeg {
 				creation = (CREATESTRUCT *)(lParam);
 				core = (PlatformWindows *)creation->lpCreateParams;
 				if (core == NULL) fatal("Can not get the host engine instance");
-				SetWindowLong(hWnd, GWL_USERDATA, (LONG)core);
+				SetWindowLongPtr(hWnd, GWLP_USERDATA, (LONG_PTR)core);
 				break;
 
 			case WM_CLOSE:
