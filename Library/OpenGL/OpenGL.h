@@ -17,8 +17,7 @@
 #include <windows.h>
 #endif
 
-#include "gl/GLee.h"
-//#include <GL/glew.h>
+#include <GL/glew.h>
 
 //------------------------------------------------------------------------------
 

@@ -610,12 +610,14 @@ namespace Nutmeg {
 		// GL
 		//----------------------------------------------------------------------
 
-		//glewInit();
-		if (GLEE_ARB_multitexture == false) {
+		if (glewInit() != GLEW_OK) {
+			fatal("GLEW initialization failed");
+		}
+		if (GLEW_ARB_multitexture == false) {
 			fatal("MultiTexture support required");
 		}
 
-        if (GLEE_ARB_vertex_buffer_object == false) {
+        if (GLEW_ARB_vertex_buffer_object == false) {
 			fatal("ARB_vertex_buffer_object support required");
 		}
 

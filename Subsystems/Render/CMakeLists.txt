@@ -7,4 +7,5 @@ set(NUTMEG_RENDER_SRC RenderBadaOpenGL1.cpp RenderBadaOpenGL1.h
 						RenderPlugin.cpp)
 
 add_library(NutmegRender SHARED ${NUTMEG_RENDER_SRC})
-target_link_libraries(NutmegRender NutmegCore NutmegLib GL)
+target_compile_definitions(NutmegRender PRIVATE ILUT_USE_OPENGL)
+target_link_libraries(NutmegRender NutmegCore NutmegLib GLEW::GLEW OpenGL::GL ${IL_LIBRARIES} ${ILU_LIBRARIES} ${ILUT_LIBRARIES})

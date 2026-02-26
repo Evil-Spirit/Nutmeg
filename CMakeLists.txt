@@ -1,53 +1,59 @@
-CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
+cmake_minimum_required(VERSION 3.10)
 
-PROJECT (NutmegCore)
+project(NutmegCore)
 
-SET (BUILD_ROOT ${CMAKE_CURRENT_BINARY_DIR})
+if(POLICY CMP0072)
+	cmake_policy(SET CMP0072 NEW)
+endif()
 
-SET (LIBRARY_OUTPUT_PATH ${BUILD_ROOT})
-SET (EXECUTABLE_OUTPUT_PATH ${BUILD_ROOT})
-SET (RUNTIME_OUTPUT_DIRECTORY ${BUILD_ROOT})
+set(BUILD_ROOT ${CMAKE_CURRENT_BINARY_DIR})
 
-MESSAGE ("Source located in " ${PROJECT_SOURCE_DIR})
+set(LIBRARY_OUTPUT_PATH ${BUILD_ROOT})
+set(EXECUTABLE_OUTPUT_PATH ${BUILD_ROOT})
+set(RUNTIME_OUTPUT_DIRECTORY ${BUILD_ROOT})
 
-IF (UNIX)
-	SET (FLAGS -Wall)
+message("Source located in " ${PROJECT_SOURCE_DIR})
 
-	IF (USE_CLANG)
-		#SET (FLAGS ${FLAGS} "")
-		SET (CMAKE_C_COMPILER   "/usr/bin/clang")
-		SET (CMAKE_CXX_COMPILER "/usr/bin/clang++")
-		SET (CMAKE_AR           "/usr/bin/llvm-ar")
-		SET (CMAKE_LINKER       "/usr/bin/llvm-ld")
-		SET (CMAKE_NM           "/usr/bin/llvm-nm")
-		SET (CMAKE_OBJDUMP      "/usr/bin/llvm-objdump")
-		SET (CMAKE_RANLIB       "/usr/bin/llvm-ranlib")
-	ELSE ()
-		SET (FLAGS ${FLAGS} -Wno-parentheses)
-	ENDIF ()
+if(UNIX)
+	set(FLAGS -Wall)
 
-	SET (CMAKE_C_FLAGS                "-Wall -Wno-parentheses")
-	SET (CMAKE_C_FLAGS_DEBUG          "-g")
-	SET (CMAKE_C_FLAGS_MINSIZEREL     "-Os -DNDEBUG")
-	SET (CMAKE_C_FLAGS_RELEASE        "-O4 -DNDEBUG")
-	SET (CMAKE_C_FLAGS_RELWITHDEBINFO "-O2 -g")
+	if(USE_CLANG)
+		set(CMAKE_C_COMPILER   "/usr/bin/clang")
+		set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+		set(CMAKE_AR           "/usr/bin/llvm-ar")
+		set(CMAKE_NM           "/usr/bin/llvm-nm")
+		set(CMAKE_OBJDUMP      "/usr/bin/llvm-objdump")
+		set(CMAKE_RANLIB       "/usr/bin/llvm-ranlib")
+	else()
+		set(FLAGS ${FLAGS} -Wno-parentheses)
+	endif()
 
-	SET (CMAKE_CXX_FLAGS                "-Wall -Wno-parentheses -Wno-strict-overflow -Wno-maybe-uninitialized")
-	SET (CMAKE_CXX_FLAGS_DEBUG          "-g")
-	SET (CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG")
-	SET (CMAKE_CXX_FLAGS_RELEASE        "-O4 -DNDEBUG")
-	SET (CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
-ENDIF ()
+	set(CMAKE_C_FLAGS                "-Wall -Wno-parentheses")
+	set(CMAKE_C_FLAGS_DEBUG          "-g")
+	set(CMAKE_C_FLAGS_MINSIZEREL     "-Os -DNDEBUG")
+	set(CMAKE_C_FLAGS_RELEASE        "-O3 -DNDEBUG")
+	set(CMAKE_C_FLAGS_RELWITHDEBINFO "-O2 -g")
 
-IF (WIN32)
-	ADD_DEFINITIONS (-DNUTMEG_PLATFORM_WINDOWS)
-ENDIF()
+	set(CMAKE_CXX_FLAGS                "-Wall -Wno-parentheses -Wno-strict-overflow -Wno-maybe-uninitialized")
+	set(CMAKE_CXX_FLAGS_DEBUG          "-g")
+	set(CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG")
+	set(CMAKE_CXX_FLAGS_RELEASE        "-O3 -DNDEBUG")
+	set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
+endif()
 
-IF(UNIX)
-	ADD_DEFINITIONS (-DNUTMEG_PLATFORM_LINUX)
-endIF()
+if(WIN32)
+	add_definitions(-DNUTMEG_PLATFORM_WINDOWS)
+endif()
 
-SET (NUTMEG_INCLUDES
+if(UNIX)
+	add_definitions(-DNUTMEG_PLATFORM_LINUX)
+endif()
+
+find_package(GLEW REQUIRED)
+find_package(DevIL REQUIRED)
+find_package(OpenGL REQUIRED)
+
+set(NUTMEG_INCLUDES
 	CoreSrc
 	CoreSrc/Common
 	CoreSrc/Audio
@@ -61,13 +67,13 @@ SET (NUTMEG_INCLUDES
 	Library/Squall
 	Library/OpenGL
 	Library/Newton
-	Library/DevIL)
+	${IL_INCLUDE_DIR})
 
-INCLUDE_DIRECTORIES (${NUTMEG_INCLUDES})
-LINK_DIRECTORIES (${CMAKE_CURRENT_BINARY_DIR})
-LINK_DIRECTORIES (${CMAKE_CURRENT_SOURCE_DIR}/External)
+include_directories(${NUTMEG_INCLUDES})
+link_directories(${CMAKE_CURRENT_BINARY_DIR})
 
-ADD_SUBDIRECTORY (CoreSrc)
-ADD_SUBDIRECTORY (Library)
-ADD_SUBDIRECTORY (Subsystems)
-ADD_SUBDIRECTORY (Samples)
+add_subdirectory(External/newton-dynamics-2.35)
+add_subdirectory(CoreSrc)
+add_subdirectory(Library)
+add_subdirectory(Subsystems)
+add_subdirectory(Samples)
