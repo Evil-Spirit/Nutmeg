@@ -83,9 +83,9 @@ target_include_directories(Newton PUBLIC
 	${NEWTON_NEWTON_PATH})
 
 if(MSVC)
-	# On MSVC Newton.h uses __declspec(dllimport) unless _NEWTON_USE_LIB is defined.
+	# Newton.h uses __declspec(dllimport) unless _NEWTON_STATIC_LIB is defined.
 	# Mark PUBLIC so consumers that include Newton.h also see the definition.
-	target_compile_definitions(Newton PUBLIC _NEWTON_USE_LIB)
+	target_compile_definitions(Newton PUBLIC _NEWTON_STATIC_LIB)
 	target_compile_definitions(Newton PRIVATE _CRT_SECURE_NO_WARNINGS)
 	target_compile_options(Newton PRIVATE /O2 /fp:fast /W3)
 else()
