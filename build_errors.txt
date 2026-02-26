@@ -1,0 +1,1464 @@
+Found Conan version 2.26.0
+Adding ConanCenter remote...
+
+Installing dependencies via Conan...
+
+Configuring CMake...
+-- Using Conan toolchain: E:/Nutmeg/Nutmeg/build/conan_toolchain.cmake
+-- Conan toolchain: CMAKE_GENERATOR_TOOLSET=v143
+-- Conan toolchain: Setting CMAKE_MSVC_RUNTIME_LIBRARY=$<$<CONFIG:Release>:MultiThreadedDLL>
+-- Conan toolchain: C++ Standard 14 with extensions OFF
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Conan: Component target declared 'GLEW::glew_s'
+-- Conan: Target declared 'GLEW::GLEW'
+-- Conan: Target declared 'glu::glu'
+-- Conan: Target declared 'opengl::opengl'
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: E:/Nutmeg/Nutmeg/build
+
+Building...
+MSBuild version 17.11.2+c078802d4 for .NET Framework
+
+  Newton.cpp
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(115,5): warning C4273: 'NewtonGetMemoryUsed': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(368,16):
+      see previous definition of 'NewtonGetMemoryUsed'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(128,6): warning C4273: 'NewtonSetMemorySystem': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(369,17):
+      see previous definition of 'NewtonSetMemorySystem'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(168,14): warning C4273: 'NewtonCreate': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(371,25):
+      see previous definition of 'NewtonCreate'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(203,6): warning C4273: 'NewtonDestroy': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(372,17):
+      see previous definition of 'NewtonDestroy'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(229,6): warning C4273: 'NewtonInvalidateCache': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(376,17):
+      see previous definition of 'NewtonInvalidateCache'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(281,6): warning C4273: 'NewtonSetPlatformArchitecture': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(380,17):
+      see previous definition of 'NewtonSetPlatformArchitecture'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(314,5): warning C4273: 'NewtonGetPlatformArchitecture': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(381,16):
+      see previous definition of 'NewtonGetPlatformArchitecture'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(346,6): warning C4273: 'NewtonWorldCriticalSectionLock': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(389,17):
+      see previous definition of 'NewtonWorldCriticalSectionLock'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(377,6): warning C4273: 'NewtonWorldCriticalSectionUnlock': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(390,17):
+      see previous definition of 'NewtonWorldCriticalSectionUnlock'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(402,6): warning C4273: 'NewtonSetThreadsCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(391,17):
+      see previous definition of 'NewtonSetThreadsCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(423,5): warning C4273: 'NewtonGetThreadsCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(392,16):
+      see previous definition of 'NewtonGetThreadsCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(444,5): warning C4273: 'NewtonGetMaxThreadsCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(393,16):
+      see previous definition of 'NewtonGetMaxThreadsCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(497,6): warning C4273: 'NewtonSetMultiThreadSolverOnSingleIsland': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(382,17):
+      see previous definition of 'NewtonSetMultiThreadSolverOnSingleIsland'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(507,5): warning C4273: 'NewtonGetMultiThreadSolverOnSingleIsland': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(383,16):
+      see previous definition of 'NewtonGetMultiThreadSolverOnSingleIsland'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(542,6): warning C4273: 'NewtonSetSolverModel': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(379,17):
+      see previous definition of 'NewtonSetSolverModel'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(577,6): warning C4273: 'NewtonSetFrictionModel': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(395,17):
+      see previous definition of 'NewtonSetFrictionModel'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(599,6): warning C4273: 'NewtonSetPerformanceClock': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(385,17):
+      see previous definition of 'NewtonSetPerformanceClock'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(633,10): warning C4273: 'NewtonReadPerformanceTicks': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(386,21):
+      see previous definition of 'NewtonReadPerformanceTicks'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(643,10): warning C4273: 'NewtonReadThreadPerformanceTicks': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(387,21):
+      see previous definition of 'NewtonReadThreadPerformanceTicks'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(681,6): warning C4273: 'NewtonUpdate': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(375,17):
+      see previous definition of 'NewtonUpdate'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(727,6): warning C4273: 'NewtonCollisionUpdate': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(377,17):
+      see previous definition of 'NewtonCollisionUpdate'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(756,6): warning C4273: 'NewtonSetMinimumFrameRate': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(396,17):
+      see previous definition of 'NewtonSetMinimumFrameRate'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(800,6): warning C4273: 'NewtonDestroyAllBodies': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(373,17):
+      see previous definition of 'NewtonDestroyAllBodies'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(836,6): warning C4273: 'NewtonSetWorldSize': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(398,17):
+      see previous definition of 'NewtonSetWorldSize'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(865,6): warning C4273: 'NewtonSetIslandUpdateEvent': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(399,17):
+      see previous definition of 'NewtonSetIslandUpdateEvent'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(883,6): warning C4273: 'NewtonSetCollisionDestructor': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(400,17):
+      see previous definition of 'NewtonSetCollisionDestructor'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(903,6): warning C4273: 'NewtonSetDestroyBodyByExeciveForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(401,17):
+      see previous definition of 'NewtonSetDestroyBodyByExeciveForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(930,6): warning C4273: 'NewtonSetBodyLeaveWorldEvent': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(397,17):
+      see previous definition of 'NewtonSetBodyLeaveWorldEvent'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(952,13): warning C4273: 'NewtonWorldGetFirstBody': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(462,24):
+      see previous definition of 'NewtonWorldGetFirstBody'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(989,13): warning C4273: 'NewtonWorldGetNextBody': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(463,24):
+      see previous definition of 'NewtonWorldGetNextBody'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1025,6): warning C4273: 'NewtonWorldForEachJointDo': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(405,17):
+      see previous definition of 'NewtonWorldForEachJointDo'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1076,6): warning C4273: 'NewtonWorldForEachBodyInAABBDo': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(406,17):
+      see previous definition of 'NewtonWorldForEachBodyInAABBDo'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1099,5): warning C4273: 'NewtonWorldGetVersion': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(365,16):
+      see previous definition of 'NewtonWorldGetVersion'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1111,5): warning C4273: 'NewtonWorldFloatSize': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(366,16):
+      see previous definition of 'NewtonWorldFloatSize'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1130,6): warning C4273: 'NewtonWorldSetUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(409,17):
+      see previous definition of 'NewtonWorldSetUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1151,7): warning C4273: 'NewtonWorldGetUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(410,18):
+      see previous definition of 'NewtonWorldGetUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1170,6): warning C4273: 'NewtonWorldSetDestructorCallBack': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(411,17):
+      see previous definition of 'NewtonWorldSetDestructorCallBack'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1190,20): warning C4273: 'NewtonWorldGetDestructorCallBack': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(412,31):
+      see previous definition of 'NewtonWorldGetDestructorCallBack'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1209,5): warning C4273: 'NewtonWorldGetBodyCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(421,16):
+      see previous definition of 'NewtonWorldGetBodyCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1232,5): warning C4273: 'NewtonWorldGetConstraintCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(422,16):
+      see previous definition of 'NewtonWorldGetConstraintCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1277,6): warning C4273: 'NewtonWorldRayCast': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(414,17):
+      see previous definition of 'NewtonWorldRayCast'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1332,5): warning C4273: 'NewtonWorldConvexCast': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(416,16):
+      see previous definition of 'NewtonWorldConvexCast'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1368,13): warning C4273: 'NewtonIslandGetBody': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(435,24):
+      see previous definition of 'NewtonIslandGetBody'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1396,6): warning C4273: 'NewtonIslandGetBodyAABB': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(436,17):
+      see previous definition of 'NewtonIslandGetBodyAABB'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1424,5): warning C4273: 'NewtonMaterialGetDefaultGroupID': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(444,16):
+      see previous definition of 'NewtonMaterialGetDefaultGroupID'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1447,5): warning C4273: 'NewtonMaterialCreateGroupID': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(443,16):
+      see previous definition of 'NewtonMaterialCreateGroupID'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1467,6): warning C4273: 'NewtonMaterialDestroyAllGroupID': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(445,17):
+      see previous definition of 'NewtonMaterialDestroyAllGroupID'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1506,6): warning C4273: 'NewtonMaterialSetDefaultCollidable': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(456,17):
+      see previous definition of 'NewtonMaterialSetDefaultCollidable'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1557,6): warning C4273: 'NewtonMaterialSetContinuousCollisionMode': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(450,17):
+      see previous definition of 'NewtonMaterialSetContinuousCollisionMode'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1599,6): warning C4273: 'NewtonMaterialSetSurfaceThickness': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(449,17):
+      see previous definition of 'NewtonMaterialSetSurfaceThickness'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1627,6): warning C4273: 'NewtonMaterialSetDefaultFriction': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(457,17):
+      see previous definition of 'NewtonMaterialSetDefaultFriction'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1677,6): warning C4273: 'NewtonMaterialSetDefaultElasticity': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(455,17):
+      see previous definition of 'NewtonMaterialSetDefaultElasticity'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1705,6): warning C4273: 'NewtonMaterialSetDefaultSoftness': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(454,17):
+      see previous definition of 'NewtonMaterialSetDefaultSoftness'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1751,6): warning C4273: 'NewtonMaterialSetCollisionCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(451,17):
+      see previous definition of 'NewtonMaterialSetCollisionCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1822,7): warning C4273: 'NewtonMaterialGetUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(448,18):
+      see previous definition of 'NewtonMaterialGetUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1844,17): warning C4273: 'NewtonWorldGetFirstMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(459,28):
+      see previous definition of 'NewtonWorldGetFirstMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1864,17): warning C4273: 'NewtonWorldGetNextMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(460,28):
+      see previous definition of 'NewtonWorldGetNextMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1910,7): warning C4273: 'NewtonMaterialGetMaterialPairUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(471,18):
+      see previous definition of 'NewtonMaterialGetMaterialPairUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1931,10): warning C4273: 'NewtonMaterialGetContactFaceAttribute': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(472,21):
+      see previous definition of 'NewtonMaterialGetContactFaceAttribute'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(1972,8): warning C4273: 'NewtonMaterialGetContactNormalSpeed': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(475,19):
+      see previous definition of 'NewtonMaterialGetContactNormalSpeed'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2008,8): warning C4273: 'NewtonMaterialGetContactTangentSpeed': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(479,19):
+      see previous definition of 'NewtonMaterialGetContactTangentSpeed'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2054,6): warning C4273: 'NewtonMaterialGetContactPositionAndNormal': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(477,17):
+      see previous definition of 'NewtonMaterialGetContactPositionAndNormal'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2093,6): warning C4273: 'NewtonMaterialGetContactForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(476,17):
+      see previous definition of 'NewtonMaterialGetContactForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2130,6): warning C4273: 'NewtonMaterialGetContactTangentDirections': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(478,17):
+      see previous definition of 'NewtonMaterialGetContactTangentDirections'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2189,18): warning C4273: 'NewtonMaterialGetBodyCollidingShape': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(473,29):
+      see previous definition of 'NewtonMaterialGetBodyCollidingShape'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2214,6): warning C4273: 'NewtonMaterialSetContactSoftness': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(481,17):
+      see previous definition of 'NewtonMaterialSetContactSoftness'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2234,6): warning C4273: 'NewtonMaterialSetContactElasticity': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(482,17):
+      see previous definition of 'NewtonMaterialSetContactElasticity'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2258,6): warning C4273: 'NewtonMaterialSetContactFrictionState': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(483,17):
+      see previous definition of 'NewtonMaterialSetContactFrictionState'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2311,6): warning C4273: 'NewtonMaterialSetContactFrictionCoef': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(484,17):
+      see previous definition of 'NewtonMaterialSetContactFrictionCoef'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2354,6): warning C4273: 'NewtonMaterialSetContactNormalAcceleration': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(486,17):
+      see previous definition of 'NewtonMaterialSetContactNormalAcceleration'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2381,6): warning C4273: 'NewtonMaterialSetContactTangentAcceleration': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(489,17):
+      see previous definition of 'NewtonMaterialSetContactTangentAcceleration'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2425,6): warning C4273: 'NewtonMaterialSetContactNormalDirection': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(487,17):
+      see previous definition of 'NewtonMaterialSetContactNormalDirection'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2462,6): warning C4273: 'NewtonMaterialContactRotateTangentDirections': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(490,17):
+      see previous definition of 'NewtonMaterialContactRotateTangentDirections'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2505,18): warning C4273: 'NewtonCreateNull': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(499,29):
+      see previous definition of 'NewtonCreateNull'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2532,18): warning C4273: 'NewtonCreateBox': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(501,29):
+      see previous definition of 'NewtonCreateBox'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2571,18): warning C4273: 'NewtonCreateSphere': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(500,29):
+      see previous definition of 'NewtonCreateSphere'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2616,18): warning C4273: 'NewtonCreateCone': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(502,29):
+      see previous definition of 'NewtonCreateCone'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2650,18): warning C4273: 'NewtonCreateCapsule': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(503,29):
+      see previous definition of 'NewtonCreateCapsule'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2683,18): warning C4273: 'NewtonCreateCylinder': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(504,29):
+      see previous definition of 'NewtonCreateCylinder'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2720,18): warning C4273: 'NewtonCreateChamferCylinder': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(505,29):
+      see previous definition of 'NewtonCreateChamferCylinder'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2779,18): warning C4273: 'NewtonCreateConvexHull': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(506,29):
+      see previous definition of 'NewtonCreateConvexHull'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2811,18): warning C4273: 'NewtonCreateConvexHullFromMesh': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(507,29):
+      see previous definition of 'NewtonCreateConvexHullFromMesh'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2838,18): warning C4273: 'NewtonCreateConvexHullModifier': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(509,29):
+      see previous definition of 'NewtonCreateConvexHullModifier'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2872,6): warning C4273: 'NewtonConvexHullModifierGetMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(510,17):
+      see previous definition of 'NewtonConvexHullModifierGetMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2900,6): warning C4273: 'NewtonConvexHullModifierSetMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(511,17):
+      see previous definition of 'NewtonConvexHullModifierSetMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2930,18): warning C4273: 'NewtonCreateCompoundCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(551,29):
+      see previous definition of 'NewtonCreateCompoundCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(2969,29): error C2491: 'NewtonCreateCompoundCollisionFromMesh': definition of dllimport function not allowed [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3001,29): error C2491: 'NewtonCreateCompoundBreakable': definition of dllimport function not allowed [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3021,6): warning C4273: 'NewtonCompoundBreakableResetAnchoredPieces': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(571,17):
+      see previous definition of 'NewtonCompoundBreakableResetAnchoredPieces'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3037,6): warning C4273: 'NewtonCompoundBreakableSetAnchoredPieces': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(572,17):
+      see previous definition of 'NewtonCompoundBreakableSetAnchoredPieces'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3056,31): warning C4273: 'NewtonBreakableGetMainMesh': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(579,42):
+      see previous definition of 'NewtonBreakableGetMainMesh'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3075,6): warning C4273: 'NewtonBreakableBeginDelete': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(583,17):
+      see previous definition of 'NewtonBreakableBeginDelete'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3092,13): warning C4273: 'NewtonBreakableCreateDebrieBody': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(584,24):
+      see previous definition of 'NewtonBreakableCreateDebrieBody'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3116,6): warning C4273: 'NewtonBreakableDeleteComponent': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(585,17):
+      see previous definition of 'NewtonBreakableDeleteComponent'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3136,6): warning C4273: 'NewtonBreakableEndDelete': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(586,17):
+      see previous definition of 'NewtonBreakableEndDelete'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3153,31): warning C4273: 'NewtonBreakableGetFirstComponent': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(580,42):
+      see previous definition of 'NewtonBreakableGetFirstComponent'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3172,31): warning C4273: 'NewtonBreakableGetNextComponent': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(581,42):
+      see previous definition of 'NewtonBreakableGetNextComponent'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3184,5): warning C4273: 'NewtonCompoundBreakableGetVertexCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(574,16):
+      see previous definition of 'NewtonCompoundBreakableGetVertexCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3203,6): warning C4273: 'NewtonCompoundBreakableGetVertexStreams': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(575,17):
+      see previous definition of 'NewtonCompoundBreakableGetVertexStreams'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3222,7): warning C4273: 'NewtonBreakableGetFirstSegment': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(591,18):
+      see previous definition of 'NewtonBreakableGetFirstSegment'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3233,7): warning C4273: 'NewtonBreakableGetNextSegment': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(592,18):
+      see previous definition of 'NewtonBreakableGetNextSegment'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3242,5): warning C4273: 'NewtonBreakableGetComponentsInRadius': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(589,16):
+      see previous definition of 'NewtonBreakableGetComponentsInRadius'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3266,5): warning C4273: 'NewtonBreakableSegmentGetMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(594,16):
+      see previous definition of 'NewtonBreakableSegmentGetMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3275,5): warning C4273: 'NewtonBreakableSegmentGetIndexCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(595,16):
+      see previous definition of 'NewtonBreakableSegmentGetIndexCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3284,5): warning C4273: 'NewtonBreakableSegmentGetIndexStream': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(596,16):
+      see previous definition of 'NewtonBreakableSegmentGetIndexStream'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3307,5): warning C4273: 'NewtonBreakableSegmentGetIndexStreamShort': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(597,16):
+      see previous definition of 'NewtonBreakableSegmentGetIndexStreamShort'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3343,5): warning C4273: 'NewtonCollisionIsTriggerVolume': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(513,16):
+      see previous definition of 'NewtonCollisionIsTriggerVolume'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3367,6): warning C4273: 'NewtonCollisionSetAsTriggerVolume': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(514,17):
+      see previous definition of 'NewtonCollisionSetAsTriggerVolume'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3378,6): warning C4273: 'NewtonCollisionSetMaxBreakImpactImpulse': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(516,17):
+      see previous definition of 'NewtonCollisionSetMaxBreakImpactImpulse'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3388,8): warning C4273: 'NewtonCollisionGetMaxBreakImpactImpulse': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(517,19):
+      see previous definition of 'NewtonCollisionGetMaxBreakImpactImpulse'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3410,6): warning C4273: 'NewtonCollisionSetUserID': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(519,17):
+      see previous definition of 'NewtonCollisionSetUserID'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3432,10): warning C4273: 'NewtonCollisionGetUserID': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(520,21):
+      see previous definition of 'NewtonCollisionGetUserID'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3456,5): warning C4273: 'NewtonConvexHullGetFaceIndices': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(522,16):
+      see previous definition of 'NewtonConvexHullGetFaceIndices'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3488,8): warning C4273: 'NewtonConvexCollisionCalculateVolume': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(523,19):
+      see previous definition of 'NewtonConvexCollisionCalculateVolume'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3509,6): warning C4273: 'NewtonConvexCollisionCalculateInertialMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(524,17):
+      see previous definition of 'NewtonConvexCollisionCalculateInertialMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3567,18): warning C4273: 'NewtonCreateUserMeshCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(600,29):
+      see previous definition of 'NewtonCreateUserMeshCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3619,18): warning C4273: 'NewtonCreateTreeCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(640,29):
+      see previous definition of 'NewtonCreateTreeCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3633,18): warning C4273: 'NewtonCreateTreeCollisionFromMesh': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(641,29):
+      see previous definition of 'NewtonCreateTreeCollisionFromMesh'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3658,6): warning C4273: 'NewtonStaticCollisionSetDebugCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(654,17):
+      see previous definition of 'NewtonStaticCollisionSetDebugCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3727,6): warning C4273: 'NewtonTreeCollisionSetUserRayCastCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(643,17):
+      see previous definition of 'NewtonTreeCollisionSetUserRayCastCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3740,6): warning C4273: 'NewtonHeightFieldSetUserRayCastCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(637,17):
+      see previous definition of 'NewtonHeightFieldSetUserRayCastCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3763,6): warning C4273: 'NewtonTreeCollisionBeginBuild': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(645,17):
+      see previous definition of 'NewtonTreeCollisionBeginBuild'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3790,6): warning C4273: 'NewtonTreeCollisionAddFace': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(646,17):
+      see previous definition of 'NewtonTreeCollisionAddFace'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3818,6): warning C4273: 'NewtonTreeCollisionEndBuild': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(647,17):
+      see previous definition of 'NewtonTreeCollisionEndBuild'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3840,5): warning C4273: 'NewtonTreeCollisionGetFaceAtribute': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(649,16):
+      see previous definition of 'NewtonTreeCollisionGetFaceAtribute'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3867,6): warning C4273: 'NewtonTreeCollisionSetFaceAtribute': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(650,17):
+      see previous definition of 'NewtonTreeCollisionSetFaceAtribute'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3902,5): warning C4273: 'NewtonTreeCollisionGetVertexListIndexListInAABB': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(651,16):
+      see previous definition of 'NewtonTreeCollisionGetVertexListIndexListInAABB'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3963,18): warning C4273: 'NewtonCreateHeightFieldCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(634,29):
+      see previous definition of 'NewtonCreateHeightFieldCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(3994,18): warning C4273: 'NewtonCreateSceneCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(606,29):
+      see previous definition of 'NewtonCreateSceneCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4009,19): warning C4273: 'NewtonSceneCollisionCreateProxy': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(607,30):
+      see previous definition of 'NewtonSceneCollisionCreateProxy'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4024,6): warning C4273: 'NewtonSceneCollisionDestroyProxy': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(609,17):
+      see previous definition of 'NewtonSceneCollisionDestroyProxy'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4032,6): warning C4273: 'NewtonSceneProxySetMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(610,17):
+      see previous definition of 'NewtonSceneProxySetMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4042,6): warning C4273: 'NewtonSceneProxyGetMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(611,17):
+      see previous definition of 'NewtonSceneProxyGetMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4053,6): warning C4273: 'NewtonSceneSetProxyUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(612,17):
+      see previous definition of 'NewtonSceneSetProxyUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4062,7): warning C4273: 'NewtonSceneGetProxyUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(613,18):
+      see previous definition of 'NewtonSceneGetProxyUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4071,19): warning C4273: 'NewtonSceneGetFirstProxy': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(615,30):
+      see previous definition of 'NewtonSceneGetFirstProxy'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4077,19): warning C4273: 'NewtonSceneGetNextProxy': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(616,30):
+      see previous definition of 'NewtonSceneGetNextProxy'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4087,6): warning C4273: 'NewtonSceneCollisionOptimize': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(618,17):
+      see previous definition of 'NewtonSceneCollisionOptimize'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4126,5): warning C4273: 'NewtonCollisionPointDistance': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(661,16):
+      see previous definition of 'NewtonCollisionPointDistance'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4168,5): warning C4273: 'NewtonCollisionClosestPoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(664,16):
+      see previous definition of 'NewtonCollisionClosestPoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4210,5): warning C4273: 'NewtonCollisionCollide': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(668,16):
+      see previous definition of 'NewtonCollisionCollide'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4263,5): warning C4273: 'NewtonCollisionCollideContinue': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(673,16):
+      see previous definition of 'NewtonCollisionCollideContinue'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4298,6): warning C4273: 'NewtonCollisionSupportVertex': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(678,17):
+      see previous definition of 'NewtonCollisionSupportVertex'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4342,8): warning C4273: 'NewtonCollisionRayCast': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(679,19):
+      see previous definition of 'NewtonCollisionRayCast'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4385,6): warning C4273: 'NewtonCollisionCalculateAABB': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(680,17):
+      see previous definition of 'NewtonCollisionCalculateAABB'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4429,6): warning C4273: 'NewtonCollisionForEachPolygonDo': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(681,17):
+      see previous definition of 'NewtonCollisionForEachPolygonDo'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4457,6): warning C4273: 'NewtonCollisionMakeUnique': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(527,17):
+      see previous definition of 'NewtonCollisionMakeUnique'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4481,5): warning C4273: 'NewtonAddCollisionReference': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(529,16):
+      see previous definition of 'NewtonAddCollisionReference'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4505,6): warning C4273: 'NewtonReleaseCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(528,17):
+      see previous definition of 'NewtonReleaseCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4530,6): warning C4273: 'NewtonCollisionSerialize': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(626,17):
+      see previous definition of 'NewtonCollisionSerialize'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4558,18): warning C4273: 'NewtonCreateCollisionFromSerialization': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(625,29):
+      see previous definition of 'NewtonCreateCollisionFromSerialization'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4627,6): warning C4273: 'NewtonCollisionGetInfo': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(627,17):
+      see previous definition of 'NewtonCollisionGetInfo'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4662,6): warning C4273: 'NewtonGetEulerAngle': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(689,17):
+      see previous definition of 'NewtonGetEulerAngle'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4690,6): warning C4273: 'NewtonSetEulerAngle': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(690,17):
+      see previous definition of 'NewtonSetEulerAngle'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4726,8): warning C4273: 'NewtonCalculateSpringDamperAcceleration': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(691,19):
+      see previous definition of 'NewtonCalculateSpringDamperAcceleration'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4763,13): warning C4273: 'NewtonCreateBody': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(698,24):
+      see previous definition of 'NewtonCreateBody'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4805,6): warning C4273: 'NewtonDestroyBody': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(699,18):
+      see previous definition of 'NewtonDestroyBody'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4830,6): warning C4273: 'NewtonBodySetUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(719,18):
+      see previous definition of 'NewtonBodySetUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4852,7): warning C4273: 'NewtonBodyGetUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(750,18):
+      see previous definition of 'NewtonBodyGetUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4873,14): warning C4273: 'NewtonBodyGetWorld': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(751,25):
+      see previous definition of 'NewtonBodyGetWorld'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4898,6): warning C4273: 'NewtonBodySetTransformCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(745,18):
+      see previous definition of 'NewtonBodySetTransformCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4924,20): warning C4273: 'NewtonBodyGetTransformCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(746,31):
+      see previous definition of 'NewtonBodyGetTransformCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4949,6): warning C4273: 'NewtonBodySetForceAndTorqueCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(748,18):
+      see previous definition of 'NewtonBodySetForceAndTorqueCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(4978,27): warning C4273: 'NewtonBodyGetForceAndTorqueCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(749,38):
+      see previous definition of 'NewtonBodyGetForceAndTorqueCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5007,6): warning C4273: 'NewtonBodySetDestructorCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(743,18):
+      see previous definition of 'NewtonBodySetDestructorCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5036,6): warning C4273: 'NewtonBodySetMassMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(707,18):
+      see previous definition of 'NewtonBodySetMassMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5076,6): warning C4273: 'NewtonBodyGetMassMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(760,18):
+      see previous definition of 'NewtonBodyGetMassMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5112,6): warning C4273: 'NewtonBodyGetInvMass': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(761,18):
+      see previous definition of 'NewtonBodyGetInvMass'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5149,6): warning C4273: 'NewtonBodySetMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(705,18):
+      see previous definition of 'NewtonBodySetMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5196,6): warning C4273: 'NewtonBodySetMatrixRecursive': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(706,18):
+      see previous definition of 'NewtonBodySetMatrixRecursive'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5223,6): warning C4273: 'NewtonBodyGetMatrix': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(758,18):
+      see previous definition of 'NewtonBodyGetMatrix'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5253,6): warning C4273: 'NewtonBodyGetRotation': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(759,18):
+      see previous definition of 'NewtonBodyGetRotation'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5275,6): warning C4273: 'NewtonBodySetForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(713,18):
+      see previous definition of 'NewtonBodySetForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5298,6): warning C4273: 'NewtonBodyAddForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(701,18):
+      see previous definition of 'NewtonBodyAddForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5322,6): warning C4273: 'NewtonBodyGetForceAcc': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(766,18):
+      see previous definition of 'NewtonBodyGetForceAcc'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5345,6): warning C4273: 'NewtonBodyGetForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(764,18):
+      see previous definition of 'NewtonBodyGetForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5377,6): warning C4273: 'NewtonBodyCalculateInverseDynamicsForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(703,18):
+      see previous definition of 'NewtonBodyCalculateInverseDynamicsForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5406,6): warning C4273: 'NewtonBodySetTorque': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(714,18):
+      see previous definition of 'NewtonBodySetTorque'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5429,6): warning C4273: 'NewtonBodyAddTorque': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(702,18):
+      see previous definition of 'NewtonBodyAddTorque'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5450,6): warning C4273: 'NewtonBodyGetTorque': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(765,18):
+      see previous definition of 'NewtonBodyGetTorque'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5475,6): warning C4273: 'NewtonBodyGetTorqueAcc': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(767,18):
+      see previous definition of 'NewtonBodyGetTorqueAcc'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5526,6): warning C4273: 'NewtonBodySetCentreOfMass': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(716,18):
+      see previous definition of 'NewtonBodySetCentreOfMass'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5554,6): warning C4273: 'NewtonBodyGetCentreOfMass': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(768,18):
+      see previous definition of 'NewtonBodyGetCentreOfMass'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5580,14): warning C4273: 'NewtonBodyGetFirstJoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(773,25):
+      see previous definition of 'NewtonBodyGetFirstJoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5603,14): warning C4273: 'NewtonBodyGetNextJoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(774,25):
+      see previous definition of 'NewtonBodyGetNextJoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5622,14): warning C4273: 'NewtonBodyGetFirstContactJoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(775,25):
+      see previous definition of 'NewtonBodyGetFirstContactJoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5641,14): warning C4273: 'NewtonBodyGetNextContactJoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(776,25):
+      see previous definition of 'NewtonBodyGetNextContactJoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5660,5): warning C4273: 'NewtonContactJointGetContactCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(781,16):
+      see previous definition of 'NewtonContactJointGetContactCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5686,7): warning C4273: 'NewtonContactJointGetFirstContact': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(778,18):
+      see previous definition of 'NewtonContactJointGetFirstContact'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5713,7): warning C4273: 'NewtonContactJointGetNextContact': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(779,18):
+      see previous definition of 'NewtonContactJointGetNextContact'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5742,6): warning C4273: 'NewtonContactJointRemoveContact': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(782,17):
+      see previous definition of 'NewtonContactJointRemoveContact'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5767,17): warning C4273: 'NewtonContactGetMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(784,28):
+      see previous definition of 'NewtonContactGetMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5801,6): warning C4273: 'NewtonBodyAddBuoyancyForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(787,18):
+      see previous definition of 'NewtonBodyAddBuoyancyForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5832,6): warning C4273: 'NewtonBodySetCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(720,18):
+      see previous definition of 'NewtonBodySetCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5898,18): warning C4273: 'NewtonBodyGetCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(752,29):
+      see previous definition of 'NewtonBodyGetCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5919,6): warning C4273: 'NewtonBodySetMaterialGroupID': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(708,18):
+      see previous definition of 'NewtonBodySetMaterialGroupID'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5937,5): warning C4273: 'NewtonBodyGetMaterialGroupID': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(753,18):
+      see previous definition of 'NewtonBodyGetMaterialGroupID'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(5975,6): warning C4273: 'NewtonBodySetContinuousCollisionMode': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(709,18):
+      see previous definition of 'NewtonBodySetContinuousCollisionMode'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6001,5): warning C4273: 'NewtonBodyGetContinuousCollisionMode': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(755,18):
+      see previous definition of 'NewtonBodyGetContinuousCollisionMode'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6027,6): warning C4273: 'NewtonBodySetJointRecursiveCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(710,18):
+      see previous definition of 'NewtonBodySetJointRecursiveCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6046,5): warning C4273: 'NewtonBodyGetJointRecursiveCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(756,18):
+      see previous definition of 'NewtonBodyGetJointRecursiveCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6071,5): warning C4273: 'NewtonBodyGetFreezeState': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(728,17):
+      see previous definition of 'NewtonBodyGetFreezeState'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6092,6): warning C4273: 'NewtonBodySetFreezeState': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(729,17):
+      see previous definition of 'NewtonBodySetFreezeState'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6119,6): warning C4273: 'NewtonBodySetAutoSleep': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(726,17):
+      see previous definition of 'NewtonBodySetAutoSleep'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6138,5): warning C4273: 'NewtonBodyGetAutoSleep': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(725,17):
+      see previous definition of 'NewtonBodyGetAutoSleep'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6156,5): warning C4273: 'NewtonBodyGetSleepState': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(724,17):
+      see previous definition of 'NewtonBodyGetSleepState'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6234,6): warning C4273: 'NewtonBodyGetAABB': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(772,18):
+      see previous definition of 'NewtonBodyGetAABB'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6264,6): warning C4273: 'NewtonBodySetVelocity': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(712,18):
+      see previous definition of 'NewtonBodySetVelocity'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6283,6): warning C4273: 'NewtonBodyGetVelocity': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(763,18):
+      see previous definition of 'NewtonBodyGetVelocity'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6308,6): warning C4273: 'NewtonBodySetOmega': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(711,18):
+      see previous definition of 'NewtonBodySetOmega'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6327,6): warning C4273: 'NewtonBodyGetOmega': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(762,18):
+      see previous definition of 'NewtonBodyGetOmega'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6360,6): warning C4273: 'NewtonBodySetLinearDamping': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(717,18):
+      see previous definition of 'NewtonBodySetLinearDamping'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6379,8): warning C4273: 'NewtonBodyGetLinearDamping': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(770,19):
+      see previous definition of 'NewtonBodyGetLinearDamping'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6406,6): warning C4273: 'NewtonBodySetAngularDamping': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(718,18):
+      see previous definition of 'NewtonBodySetAngularDamping'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6426,6): warning C4273: 'NewtonBodyGetAngularDamping': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(771,18):
+      see previous definition of 'NewtonBodyGetAngularDamping'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6502,6): warning C4273: 'NewtonBodyAddImpulse': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(792,17):
+      see previous definition of 'NewtonBodyAddImpulse'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6538,6): warning C4273: 'NewtonBodyApplyImpulseArray': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(795,17):
+      see previous definition of 'NewtonBodyApplyImpulseArray'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6571,14): warning C4273: 'NewtonConstraintCreateBall': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(827,25):
+      see previous definition of 'NewtonConstraintCreateBall'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6600,6): warning C4273: 'NewtonBallSetConeLimits': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(833,17):
+      see previous definition of 'NewtonBallSetConeLimits'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6654,6): warning C4273: 'NewtonBallSetUserCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(829,17):
+      see previous definition of 'NewtonBallSetUserCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6677,6): warning C4273: 'NewtonBallGetJointAngle': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(830,17):
+      see previous definition of 'NewtonBallGetJointAngle'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6703,6): warning C4273: 'NewtonBallGetJointOmega': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(831,17):
+      see previous definition of 'NewtonBallGetJointOmega'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6728,6): warning C4273: 'NewtonBallGetJointForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(832,17):
+      see previous definition of 'NewtonBallGetJointForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6759,14): warning C4273: 'NewtonConstraintCreateHinge': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(840,25):
+      see previous definition of 'NewtonConstraintCreateHinge'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6790,6): warning C4273: 'NewtonHingeSetUserCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(844,17):
+      see previous definition of 'NewtonHingeSetUserCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6812,8): warning C4273: 'NewtonHingeGetJointAngle': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(845,19):
+      see previous definition of 'NewtonHingeGetJointAngle'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6834,8): warning C4273: 'NewtonHingeGetJointOmega': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(846,19):
+      see previous definition of 'NewtonHingeGetJointOmega'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6856,8): warning C4273: 'NewtonHingeCalculateStopAlpha': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(848,19):
+      see previous definition of 'NewtonHingeCalculateStopAlpha'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6879,6): warning C4273: 'NewtonHingeGetJointForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(847,17):
+      see previous definition of 'NewtonHingeGetJointForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6911,14): warning C4273: 'NewtonConstraintCreateSlider': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(855,25):
+      see previous definition of 'NewtonConstraintCreateSlider'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6942,6): warning C4273: 'NewtonSliderSetUserCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(858,17):
+      see previous definition of 'NewtonSliderSetUserCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6964,8): warning C4273: 'NewtonSliderGetJointPosit': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(859,19):
+      see previous definition of 'NewtonSliderGetJointPosit'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(6985,8): warning C4273: 'NewtonSliderGetJointVeloc': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(860,19):
+      see previous definition of 'NewtonSliderGetJointVeloc'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7007,8): warning C4273: 'NewtonSliderCalculateStopAccel': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(862,19):
+      see previous definition of 'NewtonSliderCalculateStopAccel'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7030,6): warning C4273: 'NewtonSliderGetJointForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(861,17):
+      see previous definition of 'NewtonSliderGetJointForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7062,14): warning C4273: 'NewtonConstraintCreateCorkscrew': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(870,25):
+      see previous definition of 'NewtonConstraintCreateCorkscrew'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7101,6): warning C4273: 'NewtonCorkscrewSetUserCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(873,17):
+      see previous definition of 'NewtonCorkscrewSetUserCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7123,8): warning C4273: 'NewtonCorkscrewGetJointPosit': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(874,19):
+      see previous definition of 'NewtonCorkscrewGetJointPosit'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7144,8): warning C4273: 'NewtonCorkscrewGetJointVeloc': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(876,19):
+      see previous definition of 'NewtonCorkscrewGetJointVeloc'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7165,8): warning C4273: 'NewtonCorkscrewGetJointAngle': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(875,19):
+      see previous definition of 'NewtonCorkscrewGetJointAngle'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7187,8): warning C4273: 'NewtonCorkscrewGetJointOmega': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(877,19):
+      see previous definition of 'NewtonCorkscrewGetJointOmega'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7209,8): warning C4273: 'NewtonCorkscrewCalculateStopAlpha': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(879,19):
+      see previous definition of 'NewtonCorkscrewCalculateStopAlpha'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7232,8): warning C4273: 'NewtonCorkscrewCalculateStopAccel': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(880,19):
+      see previous definition of 'NewtonCorkscrewCalculateStopAccel'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7253,6): warning C4273: 'NewtonCorkscrewGetJointForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(878,17):
+      see previous definition of 'NewtonCorkscrewGetJointForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7290,14): warning C4273: 'NewtonConstraintCreateUniversal': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(888,25):
+      see previous definition of 'NewtonConstraintCreateUniversal'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7330,6): warning C4273: 'NewtonUniversalSetUserCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(891,17):
+      see previous definition of 'NewtonUniversalSetUserCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7352,8): warning C4273: 'NewtonUniversalGetJointAngle0': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(892,19):
+      see previous definition of 'NewtonUniversalGetJointAngle0'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7373,8): warning C4273: 'NewtonUniversalGetJointAngle1': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(893,19):
+      see previous definition of 'NewtonUniversalGetJointAngle1'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7394,8): warning C4273: 'NewtonUniversalGetJointOmega0': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(894,19):
+      see previous definition of 'NewtonUniversalGetJointOmega0'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7415,8): warning C4273: 'NewtonUniversalGetJointOmega1': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(895,19):
+      see previous definition of 'NewtonUniversalGetJointOmega1'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7437,8): warning C4273: 'NewtonUniversalCalculateStopAlpha0': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(897,19):
+      see previous definition of 'NewtonUniversalCalculateStopAlpha0'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7460,8): warning C4273: 'NewtonUniversalCalculateStopAlpha1': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(898,19):
+      see previous definition of 'NewtonUniversalCalculateStopAlpha1'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7483,6): warning C4273: 'NewtonUniversalGetJointForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(896,17):
+      see previous definition of 'NewtonUniversalGetJointForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7518,14): warning C4273: 'NewtonConstraintCreateUpVector': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(906,25):
+      see previous definition of 'NewtonConstraintCreateUpVector'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7546,6): warning C4273: 'NewtonUpVectorGetPin': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(907,17):
+      see previous definition of 'NewtonUpVectorGetPin'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7573,6): warning C4273: 'NewtonUpVectorSetPin': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(908,17):
+      see previous definition of 'NewtonUpVectorSetPin'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7621,14): warning C4273: 'NewtonConstraintCreateUserJoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(916,25):
+      see previous definition of 'NewtonConstraintCreateUserJoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7660,6): warning C4273: 'NewtonUserJointAddLinearRow': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(921,17):
+      see previous definition of 'NewtonUserJointAddLinearRow'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7699,6): warning C4273: 'NewtonUserJointAddAngularRow': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(922,17):
+      see previous definition of 'NewtonUserJointAddAngularRow'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7731,6): warning C4273: 'NewtonUserJointAddGeneralRow': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(923,17):
+      see previous definition of 'NewtonUserJointAddGeneralRow'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7753,6): warning C4273: 'NewtonUserJointSetRowMaximumFriction': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(925,17):
+      see previous definition of 'NewtonUserJointSetRowMaximumFriction'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7775,6): warning C4273: 'NewtonUserJointSetRowMinimumFriction': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(924,17):
+      see previous definition of 'NewtonUserJointSetRowMinimumFriction'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7796,6): warning C4273: 'NewtonUserJointSetRowAcceleration': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(926,17):
+      see previous definition of 'NewtonUserJointSetRowAcceleration'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7824,6): warning C4273: 'NewtonUserJointSetRowSpringDamperAcceleration': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(927,17):
+      see previous definition of 'NewtonUserJointSetRowSpringDamperAcceleration'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7846,6): warning C4273: 'NewtonUserJointSetRowStiffness': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(928,17):
+      see previous definition of 'NewtonUserJointSetRowStiffness'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7867,8): warning C4273: 'NewtonUserJointGetRowForce': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(929,19):
+      see previous definition of 'NewtonUserJointGetRowForce'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7884,6): warning C4273: 'NewtonUserJointSetFeedbackCollectorCallback': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(920,17):
+      see previous definition of 'NewtonUserJointSetFeedbackCollectorCallback'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7913,6): warning C4273: 'NewtonJointSetUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(804,17):
+      see previous definition of 'NewtonJointSetUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(7936,7): warning C4273: 'NewtonJointGetUserData': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(803,18):
+      see previous definition of 'NewtonJointGetUserData'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8007,6): warning C4273: 'NewtonJointGetInfo': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(809,17):
+      see previous definition of 'NewtonJointGetInfo'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8025,13): warning C4273: 'NewtonJointGetBody0': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(806,24):
+      see previous definition of 'NewtonJointGetBody0'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8043,13): warning C4273: 'NewtonJointGetBody1': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(807,24):
+      see previous definition of 'NewtonJointGetBody1'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8075,6): warning C4273: 'NewtonJointSetCollisionState': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(811,17):
+      see previous definition of 'NewtonJointSetCollisionState'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8099,5): warning C4273: 'NewtonJointGetCollisionState': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(810,16):
+      see previous definition of 'NewtonJointGetCollisionState'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8130,6): warning C4273: 'NewtonJointSetStiffness': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(814,17):
+      see previous definition of 'NewtonJointSetStiffness'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8162,8): warning C4273: 'NewtonJointGetStiffness': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(813,19):
+      see previous definition of 'NewtonJointGetStiffness'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8185,6): warning C4273: 'NewtonJointSetDestructor': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(817,17):
+      see previous definition of 'NewtonJointSetDestructor'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8209,6): warning C4273: 'NewtonDestroyJoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(816,17):
+      see previous definition of 'NewtonDestroyJoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8226,13): warning C4273: 'NewtonMeshCreate': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(937,24):
+      see previous definition of 'NewtonMeshCreate'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8236,13): warning C4273: 'NewtonMeshCreateFromMesh': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(938,24):
+      see previous definition of 'NewtonMeshCreateFromMesh'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8245,13): warning C4273: 'NewtonMeshCreateFromCollision': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(939,24):
+      see previous definition of 'NewtonMeshCreateFromCollision'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8255,13): warning C4273: 'NewtonMeshConvexHull': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(940,24):
+      see previous definition of 'NewtonMeshConvexHull'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8288,6): warning C4273: 'NewtonMeshDestroy': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(943,17):
+      see previous definition of 'NewtonMeshDestroy'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8297,6): warning C4273: 'NewtonMesApplyTransform': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(945,18):
+      see previous definition of 'NewtonMesApplyTransform'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8307,6): warning C4273: 'NewtonMeshCalculateOOBB': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(946,17):
+      see previous definition of 'NewtonMeshCalculateOOBB'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8322,6): warning C4273: 'NewtonMeshCalculateVertexNormals': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(948,17):
+      see previous definition of 'NewtonMeshCalculateVertexNormals'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8332,6): warning C4273: 'NewtonMeshApplySphericalMapping': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(949,17):
+      see previous definition of 'NewtonMeshApplySphericalMapping'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8341,6): warning C4273: 'NewtonMeshApplyBoxMapping': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(950,17):
+      see previous definition of 'NewtonMeshApplyBoxMapping'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8351,6): warning C4273: 'NewtonMeshApplyCylindricalMapping': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(951,17):
+      see previous definition of 'NewtonMeshApplyCylindricalMapping'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8361,6): warning C4273: 'NewtonMeshTriangulate': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(958,17):
+      see previous definition of 'NewtonMeshTriangulate'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8367,6): warning C4273: 'NewtonMeshPolygonize': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(957,17):
+      see previous definition of 'NewtonMeshPolygonize'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8374,5): warning C4273: 'NewtonMeshIsOpenMesh': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(953,16):
+      see previous definition of 'NewtonMeshIsOpenMesh'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8381,6): warning C4273: 'NewtonMeshFixTJoints': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(954,17):
+      see previous definition of 'NewtonMeshFixTJoints'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8388,6): warning C4273: 'NewtonMeshClip': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(962,17):
+      see previous definition of 'NewtonMeshClip'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8402,6): warning C4273: 'NewtonMeshPlaneClip': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(963,17):
+      see previous definition of 'NewtonMeshPlaneClip'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8424,13): warning C4273: 'NewtonMeshTetrahedralization': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(966,24):
+      see previous definition of 'NewtonMeshTetrahedralization'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8433,13): warning C4273: 'NewtonMeshVoronoiDecomposition': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(967,24):
+      see previous definition of 'NewtonMeshVoronoiDecomposition'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8443,13): warning C4273: 'NewtonMeshUnion': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(959,24):
+      see previous definition of 'NewtonMeshUnion'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8453,13): warning C4273: 'NewtonMeshDifference': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(960,24):
+      see previous definition of 'NewtonMeshDifference'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8463,13): warning C4273: 'NewtonMeshIntersection': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(961,24):
+      see previous definition of 'NewtonMeshIntersection'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8473,6): warning C4273: 'NewtonRemoveUnusedVertices': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(970,17):
+      see previous definition of 'NewtonRemoveUnusedVertices'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8481,6): warning C4273: 'NewtonMeshBeginFace': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(972,17):
+      see previous definition of 'NewtonMeshBeginFace'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8490,6): warning C4273: 'NewtonMeshAddFace': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(973,17):
+      see previous definition of 'NewtonMeshAddFace'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8499,6): warning C4273: 'NewtonMeshEndFace': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(974,17):
+      see previous definition of 'NewtonMeshEndFace'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8507,6): warning C4273: 'NewtonMeshBuildFromVertexListIndexList': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(976,17):
+      see previous definition of 'NewtonMeshBuildFromVertexListIndexList'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8525,5): warning C4273: 'NewtonMeshGetVertexCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1023,16):
+      see previous definition of 'NewtonMeshGetVertexCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8535,5): warning C4273: 'NewtonMeshGetVertexStrideInByte': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1024,16):
+      see previous definition of 'NewtonMeshGetVertexStrideInByte'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8543,11): warning C4273: 'NewtonMeshGetVertexArray': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1025,22):
+      see previous definition of 'NewtonMeshGetVertexArray'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8551,5): warning C4273: 'NewtonMeshGetPointCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1016,16):
+      see previous definition of 'NewtonMeshGetPointCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8559,5): warning C4273: 'NewtonMeshGetPointStrideInByte': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1017,16):
+      see previous definition of 'NewtonMeshGetPointStrideInByte'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8568,11): warning C4273: 'NewtonMeshGetPointArray': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1018,22):
+      see previous definition of 'NewtonMeshGetPointArray'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8576,11): warning C4273: 'NewtonMeshGetNormalArray': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1019,22):
+      see previous definition of 'NewtonMeshGetNormalArray'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8584,11): warning C4273: 'NewtonMeshGetUV0Array': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1020,22):
+      see previous definition of 'NewtonMeshGetUV0Array'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8592,11): warning C4273: 'NewtonMeshGetUV1Array': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1021,22):
+      see previous definition of 'NewtonMeshGetUV1Array'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8600,6): warning C4273: 'NewtonMeshGetVertexStreams': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(985,17):
+      see previous definition of 'NewtonMeshGetVertexStreams'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8614,6): warning C4273: 'NewtonMeshGetIndirectVertexStreams': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(990,17):
+      see previous definition of 'NewtonMeshGetIndirectVertexStreams'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8635,7): warning C4273: 'NewtonMeshBeginHandle': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(995,18):
+      see previous definition of 'NewtonMeshBeginHandle'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8644,6): warning C4273: 'NewtonMeshEndHandle': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(996,17):
+      see previous definition of 'NewtonMeshEndHandle'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8654,5): warning C4273: 'NewtonMeshFirstMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(997,16):
+      see previous definition of 'NewtonMeshFirstMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8663,5): warning C4273: 'NewtonMeshNextMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(998,16):
+      see previous definition of 'NewtonMeshNextMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8674,5): warning C4273: 'NewtonMeshMaterialGetMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(999,16):
+      see previous definition of 'NewtonMeshMaterialGetMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8685,5): warning C4273: 'NewtonMeshMaterialGetIndexCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1000,16):
+      see previous definition of 'NewtonMeshMaterialGetIndexCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8696,6): warning C4273: 'NewtonMeshMaterialGetIndexStream': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1001,17):
+      see previous definition of 'NewtonMeshMaterialGetIndexStream'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8707,6): warning C4273: 'NewtonMeshMaterialGetIndexStreamShort': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1002,17):
+      see previous definition of 'NewtonMeshMaterialGetIndexStreamShort'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8716,13): warning C4273: 'NewtonMeshCreateFirstSingleSegment': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1004,24):
+      see previous definition of 'NewtonMeshCreateFirstSingleSegment'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8737,13): warning C4273: 'NewtonMeshCreateNextSingleSegment': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1005,24):
+      see previous definition of 'NewtonMeshCreateNextSingleSegment'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8763,13): warning C4273: 'NewtonMeshCreateFirstLayer': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1007,24):
+      see previous definition of 'NewtonMeshCreateFirstLayer'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8771,13): warning C4273: 'NewtonMeshCreateNextLayer': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1008,24):
+      see previous definition of 'NewtonMeshCreateNextLayer'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8780,5): warning C4273: 'NewtonMeshGetTotalFaceCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1011,16):
+      see previous definition of 'NewtonMeshGetTotalFaceCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8786,5): warning C4273: 'NewtonMeshGetTotalIndexCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1012,16):
+      see previous definition of 'NewtonMeshGetTotalIndexCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8792,6): warning C4273: 'NewtonMeshGetFaces': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1013,17):
+      see previous definition of 'NewtonMeshGetFaces'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8798,7): warning C4273: 'NewtonMeshGetFirstVertex': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1028,18):
+      see previous definition of 'NewtonMeshGetFirstVertex'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8804,7): warning C4273: 'NewtonMeshGetNextVertex': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1029,18):
+      see previous definition of 'NewtonMeshGetNextVertex'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8811,5): warning C4273: 'NewtonMeshGetVertexIndex': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1030,16):
+      see previous definition of 'NewtonMeshGetVertexIndex'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8818,7): warning C4273: 'NewtonMeshGetFirstPoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1032,18):
+      see previous definition of 'NewtonMeshGetFirstPoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8823,7): warning C4273: 'NewtonMeshGetNextPoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1033,18):
+      see previous definition of 'NewtonMeshGetNextPoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8830,5): warning C4273: 'NewtonMeshGetPointIndex': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1034,16):
+      see previous definition of 'NewtonMeshGetPointIndex'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8837,5): warning C4273: 'NewtonMeshGetVertexIndexFromPoint': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1035,16):
+      see previous definition of 'NewtonMeshGetVertexIndexFromPoint'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8844,7): warning C4273: 'NewtonMeshGetFirstEdge': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1038,18):
+      see previous definition of 'NewtonMeshGetFirstEdge'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8850,7): warning C4273: 'NewtonMeshGetNextEdge': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1039,18):
+      see previous definition of 'NewtonMeshGetNextEdge'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8857,6): warning C4273: 'NewtonMeshGetEdgeIndices': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1040,17):
+      see previous definition of 'NewtonMeshGetEdgeIndices'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8869,7): warning C4273: 'NewtonMeshGetFirstFace': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1043,18):
+      see previous definition of 'NewtonMeshGetFirstFace'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8875,7): warning C4273: 'NewtonMeshGetNextFace': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1044,18):
+      see previous definition of 'NewtonMeshGetNextFace'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8882,5): warning C4273: 'NewtonMeshIsFaceOpen': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1045,16):
+      see previous definition of 'NewtonMeshIsFaceOpen'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8888,5): warning C4273: 'NewtonMeshGetFaceIndexCount': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1047,16):
+      see previous definition of 'NewtonMeshGetFaceIndexCount'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8895,5): warning C4273: 'NewtonMeshGetFaceMaterial': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1046,16):
+      see previous definition of 'NewtonMeshGetFaceMaterial'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8902,6): warning C4273: 'NewtonMeshGetFaceIndices': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1048,17):
+      see previous definition of 'NewtonMeshGetFaceIndices'
+  
+E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.cpp(8909,6): warning C4273: 'NewtonMeshGetFacePointIndices': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\External\newton-dynamics-2.35\coreLibrary_200\Newton.vcxproj]
+      E:\Nutmeg\Nutmeg\External\newton-dynamics-2.35\coreLibrary_200\source\newton\Newton.h(1049,17):
+      see previous definition of 'NewtonMeshGetFacePointIndices'
+  
+  NutmegLib.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegLib.dll
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: static void __cdecl Nutmeg::Log::message(char const *,...)" (?message@Log@Nutmeg@@SAXPEBDZZ) referenced in function "public: virtual int __cdecl Nutmeg::PlatformWindows::main(class Nutmeg::Application *,int,char const * *)" (?main@PlatformWindows@Nutmeg@@UEAAHPEAVApplication@2@HPEAPEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "void __cdecl fatal(char const *,...)" (?fatal@@YAXPEBDZZ) referenced in function "private: __cdecl Nutmeg::Resource<class Nutmeg::RenderTexture>::Resource<class Nutmeg::RenderTexture>(class Nutmeg::ResourceItem<class Nutmeg::RenderTexture> *)" (??0?$Resource@VRenderTexture@Nutmeg@@@Nutmeg@@AEAA@PEAV?$ResourceItem@VRenderTexture@Nutmeg@@@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "void __cdecl warning(char const *,...)" (?warning@@YAXPEBDZZ) referenced in function "public: virtual void __cdecl Nutmeg::PlatformWindows::setClipboard(char const *)const " (?setClipboard@PlatformWindows@Nutmeg@@UEBAXPEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Str::write(class Nutmeg::Stream &)const " (?write@Str@Nutmeg@@UEBAXAEAVStream@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Str::read(class Nutmeg::Stream const &)" (?read@Str@Nutmeg@@UEAAXAEBVStream@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "class Nutmeg::Str __cdecl Nutmeg::extractFileName(char const *)" (?extractFileName@Nutmeg@@YA?AVStr@1@PEBD@Z) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "protected: void __cdecl Nutmeg::Application::initSystemVariables(class Nutmeg::Engine *)" (?initSystemVariables@Application@Nutmeg@@IEAAXPEAVEngine@2@@Z) referenced in function "public: __cdecl Nutmeg::Subsystem<class Nutmeg::AbstractPlatform>::Subsystem<class Nutmeg::AbstractPlatform>(class Nutmeg::Engine *)" (??0?$Subsystem@VAbstractPlatform@Nutmeg@@@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::Application::Application(void)" (??0Application@Nutmeg@@QEAA@XZ) referenced in function "public: __cdecl Nutmeg::Subsystem<class Nutmeg::AbstractPlatform>::Subsystem<class Nutmeg::AbstractPlatform>(class Nutmeg::Engine *)" (??0?$Subsystem@VAbstractPlatform@Nutmeg@@@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl Nutmeg::Application::~Application(void)" (??1Application@Nutmeg@@UEAA@XZ) referenced in function "int `public: __cdecl Nutmeg::Subsystem<class Nutmeg::AbstractPlatform>::Subsystem<class Nutmeg::AbstractPlatform>(class Subsystem<class Nutmeg::AbstractPlatform>::Engine *)'::`1'::dtor$0" (?dtor$0@?0???0?$Subsystem@VAbstractPlatform@Nutmeg@@@Nutmeg@@QEAA@PEAVEngine@1@@Z@4HA) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onStartup(int,char const * *)" (?onStartup@Application@Nutmeg@@UEAAXHPEAPEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onShutdown(void)" (?onShutdown@Application@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onRender(void)" (?onRender@Application@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onUpdate(float)" (?onUpdate@Application@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onResize(int,int)" (?onResize@Application@Nutmeg@@UEAAXHH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onActivate(bool)" (?onActivate@Application@Nutmeg@@UEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onError(char const *)" (?onError@Application@Nutmeg@@UEAAXPEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onKeyDown(int)" (?onKeyDown@Application@Nutmeg@@UEAAXH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onKeyRepeat(int)" (?onKeyRepeat@Application@Nutmeg@@UEAAXH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onKeyUp(int)" (?onKeyUp@Application@Nutmeg@@UEAAXH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onKeyChar(char)" (?onKeyChar@Application@Nutmeg@@UEAAXD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onMouseDoubleClick(int,int,int)" (?onMouseDoubleClick@Application@Nutmeg@@UEAAXHHH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onMouseDown(int,int,int)" (?onMouseDown@Application@Nutmeg@@UEAAXHHH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onMouseUp(int,int,int)" (?onMouseUp@Application@Nutmeg@@UEAAXHHH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onMouseMove(int,int)" (?onMouseMove@Application@Nutmeg@@UEAAXHH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Nutmeg::Application::onAccelerationSensor(float,float,float)" (?onAccelerationSensor@Application@Nutmeg@@UEAAXMMM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol __imp_wglCreateContext referenced in function "private: virtual void __cdecl Nutmeg::PlatformWindows::init(void)" (?init@PlatformWindows@Nutmeg@@EEAAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol __imp_wglDeleteContext referenced in function "public: virtual __cdecl Nutmeg::PlatformWindows::~PlatformWindows(void)" (??1PlatformWindows@Nutmeg@@UEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol __imp_wglMakeCurrent referenced in function "public: virtual __cdecl Nutmeg::PlatformWindows::~PlatformWindows(void)" (??1PlatformWindows@Nutmeg@@UEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::File::File(char const *,char const *)" (??0File@Nutmeg@@QEAA@PEBD0@Z) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl Nutmeg::File::~File(void)" (??1File@Nutmeg@@UEAA@XZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::File::close(void)" (?close@File@Nutmeg@@QEAAXXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: virtual int __cdecl Nutmeg::File::size(void)" (?size@File@Nutmeg@@UEAAHXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: int __cdecl Nutmeg::File::getTime(void)const " (?getTime@File@Nutmeg@@QEBAHXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "class Nutmeg::Str __cdecl Nutmeg::findFile(char const *,char const *)" (?findFile@Nutmeg@@YA?AVStr@1@PEBD0@Z) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::Timer::Timer(void)" (??0Timer@Nutmeg@@QEAA@XZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::Timer::~Timer(void)" (??1Timer@Nutmeg@@QEAA@XZ) referenced in function "public: __cdecl Nutmeg::FPSTimer::~FPSTimer(void)" (??1FPSTimer@Nutmeg@@QEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::Timer::start(void)" (?start@Timer@Nutmeg@@QEAAXXZ) referenced in function "public: virtual void __cdecl Nutmeg::PlatformWindows::clearTimer(void)const " (?clearTimer@PlatformWindows@Nutmeg@@UEBAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: double __cdecl Nutmeg::Timer::elapsed(void)" (?elapsed@Timer@Nutmeg@@QEAANXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::FPSTimer::FPSTimer(void)" (??0FPSTimer@Nutmeg@@QEAA@XZ) referenced in function "public: __cdecl Nutmeg::PlatformWindows::PlatformWindows(class Nutmeg::Engine *)" (??0PlatformWindows@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: float __cdecl Nutmeg::FPSTimer::finish(void)" (?finish@FPSTimer@Nutmeg@@QEAAMXZ) referenced in function "public: virtual void __cdecl Nutmeg::PlatformWindows::clearTimer(void)const " (?clearTimer@PlatformWindows@Nutmeg@@UEBAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Nutmeg::ResourceManager::isDelayedLoading(void)const " (?isDelayedLoading@ResourceManager@Nutmeg@@QEBA_NXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::ResourceManager::addDelayedResource(int)" (?addDelayedResource@ResourceManager@Nutmeg@@QEAAXH@Z) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: class Nutmeg::ResourceEventListener * __cdecl Nutmeg::ResourceManager::getEventListener(void)" (?getEventListener@ResourceManager@Nutmeg@@QEAAPEAVResourceEventListener@2@XZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: char const * __cdecl Nutmeg::ResourceManager::getResourcePath(void)" (?getResourcePath@ResourceManager@Nutmeg@@QEAAPEBDXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Nutmeg::ResourceManager::isAutoPath(void)" (?isAutoPath@ResourceManager@Nutmeg@@QEAA_NXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "protected: void __cdecl Nutmeg::Console::addFunction(class Nutmeg::Func *)" (?addFunction@Console@Nutmeg@@IEAAXPEAVFunc@2@@Z) referenced in function "public: void __cdecl Nutmeg::Console::addMember<class Nutmeg::PlatformWindows>(char const *,void (__cdecl Nutmeg::PlatformWindows::*)(void),class Nutmeg::PlatformWindows *)" (??$addMember@VPlatformWindows@Nutmeg@@@Console@Nutmeg@@QEAAXPEBDP8PlatformWindows@1@EAAXXZPEAV21@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::VideoMode::VideoMode(void)" (??0VideoMode@Nutmeg@@QEAA@XZ) referenced in function "public: __cdecl Nutmeg::PlatformWindows::PlatformWindows(class Nutmeg::Engine *)" (??0PlatformWindows@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::VideoMode::VideoMode(int,int,int)" (??0VideoMode@Nutmeg@@QEAA@HHH@Z) referenced in function "public: __cdecl Nutmeg::PlatformWindows::PlatformWindows(class Nutmeg::Engine *)" (??0PlatformWindows@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: __cdecl Nutmeg::VideoMode::VideoMode(int,int,int,int)" (??0VideoMode@Nutmeg@@QEAA@HHHH@Z) referenced in function "public: virtual struct Nutmeg::VideoMode __cdecl Nutmeg::PlatformWindows::getVideoMode(int)const " (?getVideoMode@PlatformWindows@Nutmeg@@UEBA?AUVideoMode@2@H@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Nutmeg::VideoMode::operator==(struct Nutmeg::VideoMode const &)const " (??8VideoMode@Nutmeg@@QEBA_NAEBU01@@Z) referenced in function "public: virtual bool __cdecl Nutmeg::PlatformWindows::setVideoMode(struct Nutmeg::VideoMode const &,bool)" (?setVideoMode@PlatformWindows@Nutmeg@@UEAA_NAEBUVideoMode@2@_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "private: static class Nutmeg::ResourceMan<class Nutmeg::RenderTexture> * Nutmeg::Resource<class Nutmeg::RenderTexture>::manager" (?manager@?$Resource@VRenderTexture@Nutmeg@@@Nutmeg@@0PEAV?$ResourceMan@VRenderTexture@Nutmeg@@@2@EA) referenced in function "public: __cdecl Nutmeg::Resource<class Nutmeg::RenderTexture>::Resource<class Nutmeg::RenderTexture>(void)" (??0?$Resource@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "protected: static class Nutmeg::Factory<class Nutmeg::AbstractPlatform,class Nutmeg::Engine *> Nutmeg::Subsystem<class Nutmeg::AbstractPlatform>::factory" (?factory@?$Subsystem@VAbstractPlatform@Nutmeg@@@Nutmeg@@1V?$Factory@VAbstractPlatform@Nutmeg@@PEAVEngine@2@@2@A) referenced in function "public: static void __cdecl Nutmeg::Subsystem<class Nutmeg::AbstractPlatform>::addImplementation(char const *,class Nutmeg::AbstractPlatform * (__cdecl*)(class Nutmeg::Engine *))" (?addImplementation@?$Subsystem@VAbstractPlatform@Nutmeg@@@Nutmeg@@SAXPEBDP6APEAVAbstractPlatform@2@PEAVEngine@2@@Z@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\NutmegPlatform.dll : fatal error LNK1120: 52 unresolved externals [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+ERROR: Build failed.
