@@ -50,8 +50,28 @@ if(UNIX)
 endif()
 
 find_package(GLEW REQUIRED)
-find_package(DevIL REQUIRED)
 find_package(OpenGL REQUIRED)
+
+# Find DevIL (Developer's Image Library).
+# Module mode works with system packages on Linux.
+# Config mode works with Conan-generated packages on Windows.
+find_package(DevIL QUIET)
+if(NOT IL_FOUND)
+	find_package(DevIL CONFIG QUIET)
+	if(DevIL_FOUND)
+		set(IL_LIBRARIES DevIL::IL)
+		set(ILU_LIBRARIES DevIL::ILU)
+		set(ILUT_LIBRARIES DevIL::ILUT)
+	else()
+		message(FATAL_ERROR
+			"DevIL (Developer's Image Library) not found.\n"
+			"  Linux:   sudo apt install libdevil-dev\n"
+			"  Windows: install Conan 2.x, then run:\n"
+			"             conan install . --output-folder=<build_dir> --build=missing\n"
+			"           and configure CMake with:\n"
+			"             cmake -B <build_dir> -DCMAKE_TOOLCHAIN_FILE=<build_dir>/conan_toolchain.cmake")
+	endif()
+endif()
 
 set(NUTMEG_INCLUDES
 	CoreSrc
@@ -66,8 +86,11 @@ set(NUTMEG_INCLUDES
 	CoreSrc/Scene
 	Library/Squall
 	Library/OpenGL
-	Library/Newton
-	${IL_INCLUDE_DIR})
+	Library/Newton)
+
+if(IL_INCLUDE_DIR)
+	list(APPEND NUTMEG_INCLUDES ${IL_INCLUDE_DIR})
+endif()
 
 include_directories(${NUTMEG_INCLUDES})
 link_directories(${CMAKE_CURRENT_BINARY_DIR})

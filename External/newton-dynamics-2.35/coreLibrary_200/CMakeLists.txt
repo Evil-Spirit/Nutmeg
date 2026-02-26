@@ -82,7 +82,14 @@ target_include_directories(Newton PUBLIC
 	${NEWTON_PHYSICS_PATH}
 	${NEWTON_NEWTON_PATH})
 
-target_compile_definitions(Newton PRIVATE _LINUX_VER _LINUX_VER_64)
-
-set_target_properties(Newton PROPERTIES
-	COMPILE_FLAGS "-fPIC -O2 -msse -msse2 -mfpmath=sse -ffast-math -fsingle-precision-constant -Wno-strict-aliasing -Wno-deprecated-declarations -Wno-unused-result -Wno-maybe-uninitialized")
+if(MSVC)
+	# On MSVC Newton.h uses __declspec(dllimport) unless _NEWTON_USE_LIB is defined.
+	# Mark PUBLIC so consumers that include Newton.h also see the definition.
+	target_compile_definitions(Newton PUBLIC _NEWTON_USE_LIB)
+	target_compile_definitions(Newton PRIVATE _CRT_SECURE_NO_WARNINGS)
+	target_compile_options(Newton PRIVATE /O2 /fp:fast /W3)
+else()
+	target_compile_options(Newton PRIVATE
+		-fPIC -O2 -msse -msse2 -mfpmath=sse -ffast-math -fsingle-precision-constant
+		-Wno-strict-aliasing -Wno-deprecated-declarations -Wno-unused-result -Wno-maybe-uninitialized)
+endif()
