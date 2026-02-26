@@ -32,11 +32,7 @@ if %ERRORLEVEL% NEQ 0 (
 conan remote list 2>nul | findstr /b /c:"conancenter " >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
     echo Adding ConanCenter remote...
-    conan remote add conancenter https://center2.conan.io
-    if %ERRORLEVEL% NEQ 0 (
-        echo ERROR: Failed to add ConanCenter remote.
-        exit /b 1
-    )
+    conan remote add conancenter --force https://center2.conan.io
 )
 
 :: ------------------------------------------------------------
