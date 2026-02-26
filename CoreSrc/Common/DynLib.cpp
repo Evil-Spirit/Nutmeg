@@ -18,13 +18,25 @@ namespace Nutmeg {
 		name += ".so";
 		handle = dlopen(name.str(), RTLD_LAZY | RTLD_GLOBAL);
 		return handle != 0;
+		#elif defined(NUTMEG_PLATFORM_WINDOWS)
+		Str name = filename;
+		name += ".dll";
+		handle = LoadLibraryA(name.str());
+		return handle != NULL;
 		#endif
 	}
 
 	void DynLib::unload() {
 		#ifdef NUTMEG_PLATFORM_LINUX
-		if (handle)
+		if (handle) {
 			dlclose(handle);
+			handle = 0;
+		}
+		#elif defined(NUTMEG_PLATFORM_WINDOWS)
+		if (handle) {
+			FreeLibrary(handle);
+			handle = NULL;
+		}
 		#endif
 	}
 
@@ -34,6 +46,11 @@ namespace Nutmeg {
 			return dlsym(handle, symbol);
 		}
 		return 0;
+		#elif defined(NUTMEG_PLATFORM_WINDOWS)
+		if (handle) {
+			return reinterpret_cast<void*>(GetProcAddress(handle, symbol));
+		}
+		return NULL;
 		#endif
 	}
 }
