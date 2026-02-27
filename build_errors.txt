@@ -21,38 +21,8 @@ Building...
 MSBuild version 17.11.2+c078802d4 for .NET Framework
 
   Newton.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\Newton.lib
-  Resource.cpp
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(43,66): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(44,60): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(45,60): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(46,58): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(47,62): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(48,80): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(49,56): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(50,56): error C2370: 'manager': redefinition; different storage class [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(138,27):
-      see declaration of 'manager'
-  
+     Creating library E:/Nutmeg/Nutmeg/build/Release/NutmegCore.lib and object E:/Nutmeg/Nutmeg/build/Release/NutmegCore.exp
+Resource.obj : error LNK2019: unresolved external symbol "protected: static class Nutmeg::Factory<class Nutmeg::ResourceManager,class Nutmeg::Engine *> Nutmeg::Subsystem<class Nutmeg::ResourceManager>::factory" (?factory@?$Subsystem@VResourceManager@Nutmeg@@@Nutmeg@@1V?$Factory@VResourceManager@Nutmeg@@PEAVEngine@2@@2@A) referenced in function "public: static void __cdecl Nutmeg::Subsystem<class Nutmeg::ResourceManager>::addImplementation(char const *,class Nutmeg::ResourceManager * (__cdecl*)(class Nutmeg::Engine *))" (?addImplementation@?$Subsystem@VResourceManager@Nutmeg@@@Nutmeg@@SAXPEBDP6APEAVResourceManager@2@PEAVEngine@2@@Z@Z) [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\NutmegCore.dll : fatal error LNK1120: 1 unresolved externals [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
   NutmegLib.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegLib.dll
 ERROR: Build failed.
