@@ -13,15 +13,381 @@ Configuring CMake...
 -- Conan: Target declared 'GLEW::GLEW'
 -- Conan: Target declared 'glu::glu'
 -- Conan: Target declared 'opengl::opengl'
--- Configuring done (0.3s)
--- Generating done (0.2s)
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
 -- Build files have been written to: E:/Nutmeg/Nutmeg/build
 
 Building...
 MSBuild version 17.11.2+c078802d4 for .NET Framework
 
   Newton.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\Newton.lib
-Engine.obj : error LNK2019: unresolved external symbol "int __cdecl Nutmeg::engineMain(int,char const * *)" (?engineMain@Nutmeg@@YAHHPEAPEBD@Z) referenced in function WinMain [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\build\Release\NutmegCore.dll : fatal error LNK1120: 1 unresolved externals [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
+  NutmegCore.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegCore.dll
   NutmegLib.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegLib.dll
+  EntityActor.cpp
+  EntityPlayer.cpp
+  EntityWeapon.cpp
+  main.cpp
+  winmain.cpp
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityActor.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityWeapon.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityPlayer.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,20): error C2062: type 'unknown-type' unexpected [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,60): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,60): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,20): error C2144: syntax error: 'unknown-type' should be preceded by ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,20): error C2144: syntax error: 'unknown-type' should be preceded by ';' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2143: syntax error: missing ')' before '<' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2143: syntax error: missing ';' before '<' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,41): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,20): error C2144: syntax error: 'unknown-type' should be preceded by ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,20): error C2144: syntax error: 'unknown-type' should be preceded by ';' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2143: syntax error: missing ')' before '>' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2086: 'unknown-type start': redefinition [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26):
+      see declaration of 'start'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2143: syntax error: missing ';' before '>' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2059: syntax error: '>' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,41): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityWeapon.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,24): error C2062: type 'unknown-type' unexpected [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityWeapon.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityWeapon.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityPlayer.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,24): error C2062: type 'unknown-type' unexpected [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityPlayer.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityPlayer.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityActor.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,24): error C2062: type 'unknown-type' unexpected [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityActor.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/EntityActor.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,24): error C2062: type 'unknown-type' unexpected [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\Samples\Boets\Source\EntityWeapon.h(134,30): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+  (compiling source file '../../../Samples/Boets/Source/main.cpp')
+  
+  EntityCreature.cpp
+  main.cpp
+  winmain.cpp
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/EntityCreature.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,20): error C2062: type 'unknown-type' unexpected [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,60): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,60): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,20): error C2144: syntax error: 'unknown-type' should be preceded by ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,20): error C2144: syntax error: 'unknown-type' should be preceded by ';' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2143: syntax error: missing ')' before '<' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2143: syntax error: missing ';' before '<' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,41): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,20): error C2144: syntax error: 'unknown-type' should be preceded by ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,20): error C2144: syntax error: 'unknown-type' should be preceded by ';' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2143: syntax error: missing ')' before '>' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2086: 'unknown-type start': redefinition [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26):
+      see declaration of 'start'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2143: syntax error: missing ';' before '>' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2059: syntax error: '>' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,41): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+  (compiling source file '../../../Samples/DiabloRemix/Source/main.cpp')
+  
+  main.cpp
+  winmain.cpp
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,20): error C2062: type 'unknown-type' unexpected [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,60): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(266,60): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,20): error C2144: syntax error: 'unknown-type' should be preceded by ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,20): error C2144: syntax error: 'unknown-type' should be preceded by ';' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2143: syntax error: missing ')' before '<' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2143: syntax error: missing ';' before '<' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,41): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2589: '(': illegal token on right side of '::' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,20): error C2144: syntax error: 'unknown-type' should be preceded by ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,20): error C2144: syntax error: 'unknown-type' should be preceded by ';' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2143: syntax error: missing ')' before '>' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2086: 'unknown-type start': redefinition [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(378,26):
+      see declaration of 'start'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2143: syntax error: missing ';' before '>' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2059: syntax error: '>' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,26): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Render\Skeleton.h(379,41): error C2059: syntax error: ')' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  (compiling source file '../../../Samples/EntitySample/Source/main.cpp')
+  
+AudioSquall.obj : error LNK2005: init already defined in AudioDummy.obj [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+     Creating library E:/Nutmeg/Nutmeg/build/Release/NutmegAudio.lib and object E:/Nutmeg/Nutmeg/build/Release/NutmegAudio.exp
+AudioDummy.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static void __cdecl Nutmeg::Subsystem<class Nutmeg::AbstractAudio>::addImplementation(char const *,class Nutmeg::AbstractAudio * (__cdecl*)(class Nutmeg::Engine *))" (__imp_?addImplementation@?$Subsystem@VAbstractAudio@Nutmeg@@@Nutmeg@@SAXPEBDP6APEAVAbstractAudio@2@PEAVEngine@2@@Z@Z) referenced in function init [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static void __cdecl Nutmeg::Subsystem<class Nutmeg::AbstractAudio>::addImplementation(char const *,class Nutmeg::AbstractAudio * (__cdecl*)(class Nutmeg::Engine *))" (__imp_?addImplementation@?$Subsystem@VAbstractAudio@Nutmeg@@@Nutmeg@@SAXPEBDP6APEAVAbstractAudio@2@PEAVEngine@2@@Z@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Init referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::onStartup(int,char const * *)" (?onStartup@AudioSquall@Nutmeg@@UEAAXHPEAPEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Free referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::onShutdown(void)" (?onShutdown@AudioSquall@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Pause referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::pauseSounds(void)" (?pauseSounds@AudioSquall@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_ChannelGroup_SetVolume referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::setVolume(int)" (?setVolume@AudioSquall@Nutmeg@@UEAAXH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Sample_LoadFile referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::loadSound(char const *,class Nutmeg::Sound &)" (?loadSound@AudioSquall@Nutmeg@@UEAAXPEBDAEAVSound@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Sample_Unload referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::releaseSound(class Nutmeg::Sound &)" (?releaseSound@AudioSquall@Nutmeg@@UEAAXAEAVSound@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Sample_PlayEx referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::playSound(class Nutmeg::Sound const &,bool,bool)" (?playSound@AudioSquall@Nutmeg@@UEAAXAEBVSound@2@_N1@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Sample_Pause referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::pauseSound(class Nutmeg::Sound const &)" (?pauseSound@AudioSquall@Nutmeg@@UEAAXAEBVSound@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol SQUALL_Sample_Stop referenced in function "public: virtual void __cdecl Nutmeg::AudioSquall::stopSound(class Nutmeg::Sound const &)" (?stopSound@AudioSquall@Nutmeg@@UEAAXAEBVSound@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+AudioSquall.obj : error LNK2019: unresolved external symbol "private: static class Nutmeg::ResourceMan<class Nutmeg::Sound> * Nutmeg::Resource<class Nutmeg::Sound>::manager" (?manager@?$Resource@VSound@Nutmeg@@@Nutmeg@@0PEAV?$ResourceMan@VSound@Nutmeg@@@2@EA) referenced in function "public: static class Nutmeg::ResourceMan<class Nutmeg::Sound> * __cdecl Nutmeg::Resource<class Nutmeg::Sound>::getManager(void)" (?getManager@?$Resource@VSound@Nutmeg@@@Nutmeg@@SAPEAV?$ResourceMan@VSound@Nutmeg@@@2@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\NutmegAudio.dll : fatal error LNK1120: 11 unresolved externals [E:\Nutmeg\Nutmeg\build\Subsystems\Audio\NutmegAudio.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static void __cdecl Nutmeg::Subsystem<class Nutmeg::PhysicsWorld>::addImplementation(char const *,class Nutmeg::PhysicsWorld * (__cdecl*)(class Nutmeg::Engine *))" (__imp_?addImplementation@?$Subsystem@VPhysicsWorld@Nutmeg@@@Nutmeg@@SAXPEBDP6APEAVPhysicsWorld@2@PEAVEngine@2@@Z@Z) referenced in function init [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonWorldGetVersion referenced in function "public: virtual int __cdecl Nutmeg::WorldNewton::getVersion(void)const " (?getVersion@WorldNewton@Nutmeg@@UEBAHXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreate referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonDestroy referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonUpdate referenced in function "protected: void __cdecl Nutmeg::WorldNewton::step(float)" (?step@WorldNewton@Nutmeg@@IEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonSetSolverModel referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonSetFrictionModel referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonSetWorldSize referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialGetDefaultGroupID referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultSoftness referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultElasticity referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultCollidable referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultFriction referenced in function "public: virtual void __cdecl Nutmeg::WorldNewton::setFriction(float,float)" (?setFriction@WorldNewton@Nutmeg@@UEAAXMM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateNull referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateSphere referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateBox referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCone referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCapsule referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCylinder referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateChamferCylinder referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonConvexCollisionCalculateInertialMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setMass(float)" (?setMass@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonReleaseCollision referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCompoundCollision referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCollisionGetInfo referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::getMatrix(class Nutmeg::mat4 &)const " (?getMatrix@BodyNewton@Nutmeg@@UEBAXAEAVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateBody referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonDestroyBody referenced in function "public: virtual __cdecl Nutmeg::BodyNewton::~BodyNewton(void)" (??1BodyNewton@Nutmeg@@UEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setMatrix(class Nutmeg::mat4 const &)" (?setMatrix@BodyNewton@Nutmeg@@UEAAXAEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetMassMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setMass(float)" (?setMass@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetOmega referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::clearOmega(void)" (?clearOmega@BodyNewton@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetVelocity referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::addVelocity(class Nutmeg::vec3 const &)" (?addVelocity@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetForce referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetTorque referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetCentreOfMass referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setCentreOfMass(class Nutmeg::vec3 const &)" (?setCentreOfMass@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetLinearDamping referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setLinearDamping(float)" (?setLinearDamping@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetAngularDamping referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setAngularDamping(float)" (?setAngularDamping@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetUserData referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetCollision referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetSleepState referenced in function "public: virtual bool __cdecl Nutmeg::BodyNewton::getFreeze(void)const " (?getFreeze@BodyNewton@Nutmeg@@UEBA_NXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetAutoSleep referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetForceAndTorqueCallback referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetUserData referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetWorld referenced in function "public: virtual __cdecl Nutmeg::BodyNewton::~BodyNewton(void)" (??1BodyNewton@Nutmeg@@UEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::getMatrix(class Nutmeg::mat4 &)const " (?getMatrix@BodyNewton@Nutmeg@@UEBAXAEAVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetRotation referenced in function "public: virtual class Nutmeg::quat __cdecl Nutmeg::BodyNewton::getRot(void)const " (?getRot@BodyNewton@Nutmeg@@UEBA?AVquat@2@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetMassMatrix referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetOmega referenced in function "public: virtual class Nutmeg::vec3 __cdecl Nutmeg::BodyNewton::getOmega(void)const " (?getOmega@BodyNewton@Nutmeg@@UEBA?AVvec3@2@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetVelocity referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::addVelocity(class Nutmeg::vec3 const &)" (?addVelocity@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetCentreOfMass referenced in function "public: virtual class Nutmeg::vec3 __cdecl Nutmeg::BodyNewton::getMassCentre(void)const " (?getMassCentre@BodyNewton@Nutmeg@@UEBA?AVvec3@2@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyAddImpulse referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::addImpulse(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?addImpulse@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@0@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonConstraintCreateUpVector referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::jointUpVector(class Nutmeg::vec3 const &)" (?jointUpVector@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\NutmegPhysics.dll : fatal error LNK1120: 50 unresolved externals [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "class Nutmeg::Str __cdecl Nutmeg::findFile(char const *,char const *)" (?findFile@Nutmeg@@YA?AVStr@1@PEBD0@Z) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Nutmeg::ResourceManager::isDelayedLoading(void)const " (?isDelayedLoading@ResourceManager@Nutmeg@@QEBA_NXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::ResourceManager::addDelayedResource(int)" (?addDelayedResource@ResourceManager@Nutmeg@@QEAAXH@Z) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: class Nutmeg::ResourceEventListener * __cdecl Nutmeg::ResourceManager::getEventListener(void)" (?getEventListener@ResourceManager@Nutmeg@@QEAAPEAVResourceEventListener@2@XZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: char const * __cdecl Nutmeg::ResourceManager::getResourcePath(void)" (?getResourcePath@ResourceManager@Nutmeg@@QEAAPEBDXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Nutmeg::ResourceManager::isAutoPath(void)" (?isAutoPath@ResourceManager@Nutmeg@@QEAA_NXZ) referenced in function "public: class Nutmeg::Resource<class Nutmeg::RenderTexture> __cdecl Nutmeg::ResourceMan<class Nutmeg::RenderTexture>::load(char const *)" (?load@?$ResourceMan@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA?AV?$Resource@VRenderTexture@Nutmeg@@@2@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static void __cdecl Nutmeg::Subsystem<class Nutmeg::AbstractPlatform>::addImplementation(char const *,class Nutmeg::AbstractPlatform * (__cdecl*)(class Nutmeg::Engine *))" (__imp_?addImplementation@?$Subsystem@VAbstractPlatform@Nutmeg@@@Nutmeg@@SAXPEBDP6APEAVAbstractPlatform@2@PEAVEngine@2@@Z@Z) referenced in function init [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+PlatformWindows.obj : error LNK2019: unresolved external symbol "private: static class Nutmeg::ResourceMan<class Nutmeg::RenderTexture> * Nutmeg::Resource<class Nutmeg::RenderTexture>::manager" (?manager@?$Resource@VRenderTexture@Nutmeg@@@Nutmeg@@0PEAV?$ResourceMan@VRenderTexture@Nutmeg@@@2@EA) referenced in function "public: __cdecl Nutmeg::Resource<class Nutmeg::RenderTexture>::Resource<class Nutmeg::RenderTexture>(void)" (??0?$Resource@VRenderTexture@Nutmeg@@@Nutmeg@@QEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\NutmegPlatform.dll : fatal error LNK1120: 8 unresolved externals [E:\Nutmeg\Nutmeg\build\Subsystems\Platform\NutmegPlatform.vcxproj]
+  RenderBadaOpenGL1.cpp
+  RenderOpenGL1.cpp
+  RenderOpenGL2.cpp
+  RenderPlugin.cpp
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+  (compiling source file '../../../Subsystems/Render/RenderOpenGL1.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+  (compiling source file '../../../Subsystems/Render/RenderOpenGL2.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL1.cpp(30,10): error C1083: Cannot open include file: 'il.h': No such file or directory [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(30,10): error C1083: Cannot open include file: 'il.h': No such file or directory [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
 ERROR: Build failed.
