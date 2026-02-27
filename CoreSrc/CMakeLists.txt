@@ -1,5 +1,5 @@
 
-FILE (GLOB SRC
+file(GLOB SRC
 	*.cpp
 	Audio/*.cpp
 	Common/*.cpp
@@ -11,7 +11,7 @@ FILE (GLOB SRC
 	Render/*.cpp
 	Scene/*.cpp)
 
-FILE (GLOB HDR
+file(GLOB HDR
 	*.h
 	Audio/*.h
 	Common/*.h
@@ -23,9 +23,9 @@ FILE (GLOB HDR
 	Render/*.h
 	Scene/*.h)
 
-IF (LINUX)
-	SET (NUTMEG_PLATFORM_LIBS X11 dl)
-ENDIF ()
+if(UNIX)
+	set(NUTMEG_PLATFORM_LIBS X11 dl)
+endif()
 
-ADD_LIBRARY (NutmegCore SHARED ${SRC} ${HDR})
-TARGET_LINK_LIBRARIES (NutmegCore IL ILU ILUT GL Newton ${NUTMEG_PLATFORM_LIBS})
+add_library(NutmegCore SHARED ${SRC} ${HDR})
+target_link_libraries(NutmegCore ${IL_LIBRARIES} ${ILU_LIBRARIES} ${ILUT_LIBRARIES} OpenGL::GL Newton ${NUTMEG_PLATFORM_LIBS})

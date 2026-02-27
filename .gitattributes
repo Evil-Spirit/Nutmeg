@@ -1,0 +1,5 @@
+# Normalize line endings to LF in the repository
+* text=auto eol=lf
+
+# Keep Windows batch files with CRLF
+*.bat text eol=crlf

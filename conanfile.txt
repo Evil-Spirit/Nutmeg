@@ -1,0 +1,7 @@
+[requires]
+glew/2.2.0
+devil/1.8.0
+
+[generators]
+CMakeDeps
+CMakeToolchain

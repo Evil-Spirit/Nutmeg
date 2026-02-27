@@ -10,4 +10,6 @@ set(NUTMEG_PLATFORM_SUBSYSTEM_SRC MapX11Key.h
 add_library(NutmegPlatform SHARED ${NUTMEG_PLATFORM_SUBSYSTEM_SRC})
 if(UNIX)
 target_link_libraries(NutmegPlatform NutmegCore X11 GL)
+elseif(WIN32)
+target_link_libraries(NutmegPlatform NutmegCore opengl32)
 endif()

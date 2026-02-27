@@ -1,4 +1,5 @@
 
-SET (NUTMEG_LIBRARY_SRC OpenGL/OpenGL.cpp OpenGL/OpenGL.h)
+set(NUTMEG_LIBRARY_SRC OpenGL/OpenGL.cpp OpenGL/OpenGL.h)
 
-ADD_LIBRARY (NutmegLib SHARED ${NUTMEG_LIBRARY_SRC})
+add_library(NutmegLib SHARED ${NUTMEG_LIBRARY_SRC})
+target_link_libraries(NutmegLib GLEW::GLEW OpenGL::GL)

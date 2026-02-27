@@ -6,4 +6,6 @@ set(NUTMEG_PHYSICS_SUBSYSTEM_SRC PhysicsNewton.cpp PhysicsNewton.h
 								PhysicsPlugin.cpp)
 
 add_library(NutmegPhysics SHARED ${NUTMEG_PHYSICS_SUBSYSTEM_SRC})
+target_include_directories(NutmegPhysics PRIVATE
+	${CMAKE_SOURCE_DIR}/External/newton-dynamics-2.35/coreLibrary_200/source/newton)
 target_link_libraries(NutmegPhysics NutmegCore Newton)
