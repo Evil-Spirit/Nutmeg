@@ -63,14 +63,14 @@ namespace Nutmeg {
 
 		//----------------------------------------------------------------------
 
-		virtual void onResourceLoad(const char *type, const char *name) {
+		virtual void onResourceLoad(const ResourceItemBase &resource) {
 		}
 
 		//----------------------------------------------------------------------
 
-		virtual void onResourceReload(const char *type, const char *name) {
-			console->message(format("Reloading <%s> \"%s\"", type, name));
-			console->echo(format("Reloading <%s> \"%s\"", type, name));
+		virtual void onResourceReload(const ResourceItemBase &resource) {
+			console->message(format("Reloading \"%s\"", resource.name.str()));
+			console->echo(format("Reloading \"%s\"", resource.name.str()));
 		}
 
 		//----------------------------------------------------------------------
