@@ -69,7 +69,7 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 	
-	Str findFile(const char *name, const char *path);
+	NUTMEG_API Str findFile(const char *name, const char *path);
 
 	//--------------------------------------------------------------------------
 	

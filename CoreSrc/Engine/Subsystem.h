@@ -99,7 +99,7 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	#define IMP_SUBSYSTEM(subsystem) \
-		template <> Factory <subsystem, Engine *> Subsystem <subsystem>::factory = Factory <subsystem, Engine *> ();
+		template <> NUTMEG_API Factory <subsystem, Engine *> Subsystem <subsystem>::factory = Factory <subsystem, Engine *> ();
 
 	//--------------------------------------------------------------------------
 

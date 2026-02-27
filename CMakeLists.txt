@@ -42,7 +42,7 @@ if(UNIX)
 endif()
 
 if(WIN32)
-	add_definitions(-DNUTMEG_PLATFORM_WINDOWS)
+	add_definitions(-DNUTMEG_PLATFORM_WINDOWS -DNOMINMAX)
 endif()
 
 if(UNIX)
@@ -62,6 +62,10 @@ if(NOT IL_FOUND)
 		set(IL_LIBRARIES DevIL::IL)
 		set(ILU_LIBRARIES DevIL::ILU)
 		set(ILUT_LIBRARIES DevIL::ILUT)
+		# Conan puts headers under include/IL/; extract that path so
+		# code using #include "il.h" finds them without path qualification.
+		get_target_property(_il_inc DevIL::IL INTERFACE_INCLUDE_DIRECTORIES)
+		set(IL_INCLUDE_DIR "${_il_inc}/IL")
 	else()
 		message(FATAL_ERROR
 			"DevIL (Developer's Image Library) not found.\n"

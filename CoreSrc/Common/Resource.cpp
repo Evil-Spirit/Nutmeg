@@ -40,14 +40,26 @@ namespace Nutmeg {
 	template <> SoundMan *SoundRef::manager = NULL;
 	*/
 
-	template <> ResourceMan <RenderTexture> *TextureRef::manager = NULL;
-	template <> ResourceMan <RenderMesh> *MeshRef::manager = NULL;
-	template <> ResourceMan <RenderFont> *FontRef::manager = NULL;
-	template <> ResourceMan <Sprite> *SpriteRef::manager = NULL;
-	template <> ResourceMan <Skeleton> *SkeletonRef::manager = NULL;
-	template <> ResourceMan <AnimationSequence> *AnimationSequenceRef::manager = NULL;
-	template <> ResourceMan <Sound> *SoundRef::manager = NULL;
-	template <> ResourceMan <Scene> *SceneRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <RenderTexture> *TextureRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <RenderMesh> *MeshRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <RenderFont> *FontRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <Sprite> *SpriteRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <Skeleton> *SkeletonRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <AnimationSequence> *AnimationSequenceRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <Sound> *SoundRef::manager = NULL;
+	template <> NUTMEG_API ResourceMan <Scene> *SceneRef::manager = NULL;
+
+#ifdef NUTMEG_BUILD_DLL
+	template class NUTMEG_API Resource<RenderTexture>;
+	template class NUTMEG_API Resource<RenderMesh>;
+	template class NUTMEG_API Resource<RenderFont>;
+	template class NUTMEG_API Resource<Skeleton>;
+	template class NUTMEG_API Resource<AnimationSequence>;
+	template class NUTMEG_API Resource<Sound>;
+	template class NUTMEG_API Resource<Scene>;
+	template class NUTMEG_API Resource<Sprite>;
+	template class NUTMEG_API Subsystem<ResourceManager>;
+#endif
 
 	//--------------------------------------------------------------------------
 	//
