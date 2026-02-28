@@ -1175,7 +1175,7 @@ namespace Nutmeg {
 
 		for (int i=0; i<6; i++) {
 			if (/*distance(planes[i], l.src) > 0 && */planes[i].trace(l, itr, fs, fd)) {
-				vec3 p = itr.point - planes[i].normal * getExtents(); // смещаем пересечение к центру, чтобы не применять эпсилон в проверке
+				vec3 p = itr.point - planes[i].normal * getExtents(); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				if (p >= min && p <= max - planes[i].normal * 0.01f) {
 					float len = (itr.point - l.src).lengthSquared();
 					if (len < dist || dist < 0) {
@@ -1962,6 +1962,12 @@ namespace Nutmeg {
 
 		mat[15] = atof(str);
 	}
+
+	//--------------------------------------------------------------------------
+
+#ifdef NUTMEG_BUILD_DLL
+	template class NUTMEG_API Integrator<vec3>;
+#endif
 
 	//--------------------------------------------------------------------------
 

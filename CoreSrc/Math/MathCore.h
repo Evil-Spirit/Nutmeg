@@ -254,9 +254,9 @@ namespace Nutmeg {
 
 		//----------------------------------------------------------------------
 
-		friend float dot(const vec3 &, const vec3 &);
-		friend vec3 cross(const vec3 &, const vec3 &);
-		friend vec3 normalize(const vec3 &);
+		friend NUTMEG_API float dot(const vec3 &, const vec3 &);
+		friend NUTMEG_API vec3 cross(const vec3 &, const vec3 &);
+		friend NUTMEG_API vec3 normalize(const vec3 &);
 
 		//----------------------------------------------------------------------
 
@@ -815,6 +815,14 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 }
+
+//------------------------------------------------------------------------------
+
+#ifdef NUTMEG_USE_DLL
+namespace Nutmeg {
+	extern template class NUTMEG_API Integrator<vec3>;
+}
+#endif
 
 //------------------------------------------------------------------------------
 

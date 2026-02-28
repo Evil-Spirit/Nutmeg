@@ -83,7 +83,7 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	class Scene {
+	class NUTMEG_API Scene {
 
 	protected:
 

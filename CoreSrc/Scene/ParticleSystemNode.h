@@ -76,7 +76,7 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	class ParticleSystemNode : public Node {
+	class NUTMEG_API ParticleSystemNode : public Node {
 
 	//	void invalidate();
 	//	MeshRef mesh;
