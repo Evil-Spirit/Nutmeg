@@ -25,11 +25,12 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	class AbstractRender;
+	class Engine;
 	
 	//--------------------------------------------------------------------------
 
 	bool isRenderOpenGL2Supported();
-	AbstractRender *createRenderOpenGL2();
+	AbstractRender *createRenderOpenGL2(Engine* engine);
 
 	//--------------------------------------------------------------------------
 

@@ -81,7 +81,7 @@ namespace Nutmeg {
 		//
 		//----------------------------------------------------------------------
 
-		RenderOpenGL2();
+		RenderOpenGL2(Engine* engine);
 		virtual ~RenderOpenGL2();
 
 		//----------------------------------------------------------------------
@@ -114,7 +114,7 @@ namespace Nutmeg {
 
 		//virtual void drawText2d(float x, float y, const char *text)
 
-		virtual float getTextWidth(const char *text) { return 0.0f; }
+		virtual float getTextWidth(const char *text, int start = 0, int size = -1) { return 0.0f; }
 		virtual float getTextHeight() { return 0.0f; }
 
 		//virtual void setFont(const Font &font) { }
@@ -141,11 +141,11 @@ namespace Nutmeg {
 		virtual void drawBox(const BBox &, bool solid = false) { }
 		virtual void drawFrustum(const Frustum &frustum) { }
 		virtual void drawPlane(const Plane &) { }
-		virtual void drawBillboard(const vec3 &pos, float size);
+		virtual void drawBillboard(const vec3 &pos, float size, vec3 anchor = vec3(0.0f, 0.0f, 0.0f));
 		virtual void drawText3d(const vec3 &pos, float cw, float ch, const char *text) { }
-		virtual void renderRotateManipulator(const BSphere &m, const vec3 &x_color, const vec3 &y_color, const vec3 &z_color) { }
-		virtual void renderSolidCircle(float radius) { }
-		virtual void renderCircle(float radius) { }
+		virtual void drawRotateManipulator(const BSphere &m, const vec3 &x_color, const vec3 &y_color, const vec3 &z_color) { }
+		virtual void drawSolidCircle(float radius) { }
+		virtual void drawCircle(float radius) { }
 
 		//----------------------------------------------------------------------
 		// frame buffers routines
@@ -166,6 +166,7 @@ namespace Nutmeg {
 		virtual void setResolution(int w, int h);
 		virtual int getWidth() const;
 		virtual int getHeight() const;
+		virtual void setViewport(int x, int y, int w, int h) { }
 
 		//----------------------------------------------------------------------
 		// matrix routines
@@ -186,6 +187,8 @@ namespace Nutmeg {
 		virtual void getFrustum(Frustum &f);
 		virtual float getAspectRatio() const;
 		virtual void setAspectRatio(float ratio);
+		virtual float getPixelAspectRatio() const { return aspect_ratio; }
+		virtual void setPixelAspectRatio(float ratio) { aspect_ratio = ratio; }
 
 		//----------------------------------------------------------------------
 		// misc
@@ -200,6 +203,9 @@ namespace Nutmeg {
 		virtual void setColor(const vec3 &color, float alpha);
 		virtual vec3 getColor() const;
 		virtual float getAlpha() const;
+
+		virtual bool isAlphaTest() { return false; }
+		virtual void setAlphaTest(bool state) { }
 
 		//----------------------------------------------------------------------
 		// texture
@@ -218,7 +224,7 @@ namespace Nutmeg {
 		virtual RenderMesh *loadMesh(const char *name);
 		virtual void releaseMesh(RenderMesh &mesh);
 		virtual void drawMesh(const RenderMesh &mesh, bool wire);
-		virtual void drawSkinnedMesh(const RenderMesh &mesh, const SolidArray <mat4> &matrices) { }
+		virtual void drawSkinnedMesh(const RenderMesh &mesh, const FinalPose &pose) { }
 
 		//----------------------------------------------------------------------
 		// material
@@ -292,6 +298,10 @@ namespace Nutmeg {
 			return mesh.trace(ray, i, fs, fd);
 		}
 
+		virtual const Mesh &getMesh() const {
+			return mesh;
+		}
+
 	};
 
 	//--------------------------------------------------------------------------
@@ -346,7 +356,8 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	RenderOpenGL2::RenderOpenGL2() {
+	RenderOpenGL2::RenderOpenGL2(Engine* engine)
+		: AbstractRender(engine) {
 
 		textureMatrixIdentity = true;
 
@@ -622,7 +633,7 @@ namespace Nutmeg {
 
 		Str file_name = name;
 
-		texture.id = ilutGLLoadImage((const ILstring)file_name.str());
+		texture.id = ilutGLLoadImage(const_cast<ILstring>(file_name.str()));
 
 		if (texture.id == 0) {
 			fatal(format("RenderOpenGL2::loadTexture(Texture): can not load \"%s\" file.\nError: %s", name, iluErrorString(ilGetError())));
@@ -844,7 +855,7 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 	*/
-	void RenderOpenGL2::drawBillboard(const vec3 &pos, float size) {
+	void RenderOpenGL2::drawBillboard(const vec3 &pos, float size, vec3 anchor) {
 
 		size *= 0.5f;
 
@@ -1128,8 +1139,8 @@ namespace Nutmeg {
 			return true;
 		}
 
-		AbstractRender *createRenderOpenGL2() {
-			return new RenderOpenGL2();
+		AbstractRender *createRenderOpenGL2(Engine* engine) {
+			return new RenderOpenGL2(engine);
 		}
 
 	#else
@@ -1138,7 +1149,7 @@ namespace Nutmeg {
 			return false;
 		}
 
-		AbstractRender *createRenderOpenGL2() {
+		AbstractRender *createRenderOpenGL2(Engine* engine) {
 			return 0x0;
 		}
 
