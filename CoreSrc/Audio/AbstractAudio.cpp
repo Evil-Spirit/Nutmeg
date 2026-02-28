@@ -27,6 +27,10 @@ namespace Nutmeg {
 	
 	//--------------------------------------------------------------------------
 
+#ifdef NUTMEG_BUILD_DLL
+	template class NUTMEG_API Subsystem<AbstractAudio>;
+#endif
+
     IMP_SUBSYSTEM(AbstractAudio);
 	
 	//--------------------------------------------------------------------------

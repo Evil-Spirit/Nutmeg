@@ -49,6 +49,20 @@ namespace Nutmeg {
 	template <> ResourceMan <Sound> *SoundRef::manager = NULL;
 	template <> ResourceMan <Scene> *SceneRef::manager = NULL;
 
+	IMP_SUBSYSTEM(ResourceManager);
+
+#ifdef NUTMEG_BUILD_DLL
+	template class NUTMEG_API Resource<RenderTexture>;
+	template class NUTMEG_API Resource<RenderMesh>;
+	template class NUTMEG_API Resource<RenderFont>;
+	template class NUTMEG_API Resource<Skeleton>;
+	template class NUTMEG_API Resource<AnimationSequence>;
+	template class NUTMEG_API Resource<Sound>;
+	template class NUTMEG_API Resource<Scene>;
+	template class NUTMEG_API Resource<Sprite>;
+	template class NUTMEG_API Subsystem<ResourceManager>;
+#endif
+
 	//--------------------------------------------------------------------------
 	//
 	// ResourceManager

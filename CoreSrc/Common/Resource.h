@@ -303,7 +303,7 @@ namespace Nutmeg {
 	//
 	//--------------------------------------------------------------------------
 
-	class ResourceManager : public Subsystem <ResourceManager>, public ResourceEventListener {
+	class NUTMEG_API ResourceManager : public Subsystem <ResourceManager>, public ResourceEventListener {
 
 		//----------------------------------------------------------------------
 
@@ -710,6 +710,18 @@ namespace Nutmeg {
 	typedef Resource <Sprite> SpriteRef;
 
 	//--------------------------------------------------------------------------
+
+#ifdef NUTMEG_USE_DLL
+	extern template class NUTMEG_API Resource<RenderTexture>;
+	extern template class NUTMEG_API Resource<RenderMesh>;
+	extern template class NUTMEG_API Resource<RenderFont>;
+	extern template class NUTMEG_API Resource<Skeleton>;
+	extern template class NUTMEG_API Resource<AnimationSequence>;
+	extern template class NUTMEG_API Resource<Sound>;
+	extern template class NUTMEG_API Resource<Scene>;
+	extern template class NUTMEG_API Resource<Sprite>;
+	extern template class NUTMEG_API Subsystem<ResourceManager>;
+#endif
 
 }
 

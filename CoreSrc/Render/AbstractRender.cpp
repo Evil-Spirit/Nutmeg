@@ -37,6 +37,10 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
+#ifdef NUTMEG_BUILD_DLL
+	template class NUTMEG_API Subsystem<AbstractRender>;
+#endif
+
 	IMP_SUBSYSTEM(AbstractRender);
 
 	//--------------------------------------------------------------------------

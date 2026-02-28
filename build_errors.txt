@@ -13,198 +13,53 @@ Configuring CMake...
 -- Conan: Target declared 'GLEW::GLEW'
 -- Conan: Target declared 'glu::glu'
 -- Conan: Target declared 'opengl::opengl'
--- Configuring done (0.3s)
--- Generating done (0.1s)
+-- Configuring done (0.4s)
+-- Generating done (0.2s)
 -- Build files have been written to: E:/Nutmeg/Nutmeg/build
 
 Building...
 MSBuild version 17.11.2+c078802d4 for .NET Framework
 
   Newton.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\Newton.lib
-  AbstractAudio.cpp
-  Debug.cpp
-  DynLib.cpp
-  File.cpp
-  Log.cpp
-  PluginManager.cpp
-  Resource.cpp
-  Str.cpp
-  Xml.cpp
-  Application.cpp
-  Console.cpp
-  Engine.cpp
-  Profiler.cpp
-  Subsystem.cpp
-  Timer.cpp
-  Entity.cpp
-  Game.cpp
-  Level.cpp
-  MathCore.cpp
-  AbstractPhysics.cpp
-  AbstractPlatform.cpp
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Common/Resource.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.cpp(306,30): error C2027: use of undefined type 'Nutmeg::Sprite' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(49,8):
-      see declaration of 'Nutmeg::Sprite'
-  
-  Input.cpp
-  AbstractRender.cpp
-  Camera.cpp
-  Light.cpp
-  Material.cpp
-  Mesh.cpp
-  Skeleton.cpp
-  Sprite.cpp
-  BoneNode.cpp
-  CameraNode.cpp
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,9): error C2143: syntax error: missing ';' before '*' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,10): error C2825: 'Sprite': must be a class or namespace when followed by '::' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,18): error C2510: 'Sprite': left of '::' must be a class/struct/union [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,49): error C2059: syntax error: '{' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,49): error C2143: syntax error: missing ';' before '{' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(5,49): error C2447: '{': missing function header (old-style formal list?) [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(12,9): error C2825: 'Sprite': must be a class or namespace when followed by '::' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(12,17): error C2510: 'Sprite': left of '::' must be a class/struct/union [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(12,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(12,27): error C2143: syntax error: missing ';' before '*' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(12,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(12,44): error C2065: 'sprite': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(12,65): error C2065: 'id': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(14,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(14,11): error C2065: 'speed_': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(15,3): error C2059: syntax error: 'if' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(16,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(16,21): error C2440: 'initializing': cannot convert from 'int *' to 'int' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(16,21):
-      There is no context in which this conversion is possible
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(17,3): error C2059: syntax error: '}' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.cpp(17,3): error C2143: syntax error: missing ';' before '}' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  ControllerNode.cpp
-  EntityNode.cpp
-  LightNode.cpp
-  MeshNode.cpp
-  Node.cpp
-  OriginNode.cpp
-  ParticleNode.cpp
-  ParticleSystemNode.cpp
-  PhysicsNode.cpp
-  Scene.cpp
-  SkinnedMeshNode.cpp
-  TextNode.cpp
-  TriggerNode.cpp
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,12): error C2027: use of undefined type 'Nutmeg::Sprite' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(49,8):
-      see declaration of 'Nutmeg::Sprite'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,18): error C2143: syntax error: missing ';' before '*' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,24): error C2238: unexpected token(s) preceding ';' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(72,15): error C3646: 'sprite_state': unknown override specifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(72,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(49,5): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(124,4): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(128,11): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/ParticleNode.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(102,17): error C2027: use of undefined type 'Nutmeg::Sprite' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(49,8):
-      see declaration of 'Nutmeg::Sprite'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(102,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(102,23): error C2143: syntax error: missing ';' before '*' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(102,24): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(183,4): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(183,12): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(185,8): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(187,20): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(188,24): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(189,25): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(191,19): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(194,27): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(204,7): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(205,13): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(219,7): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(221,24): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(222,47): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(222,68): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(222,12): error C2660: 'Nutmeg::AbstractRender::setTextureMatrixFrame': function does not take 1 arguments [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(140,16):
-      see declaration of 'Nutmeg::AbstractRender::setTextureMatrixFrame'
-      E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(222,12):
-      while trying to match the argument list '(int)'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(228,55): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(228,76): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(228,13): error C2660: 'Nutmeg::AbstractRender::setTextureMatrixFrame': function does not take 1 arguments [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(140,16):
-      see declaration of 'Nutmeg::AbstractRender::setTextureMatrixFrame'
-      E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(228,13):
-      while trying to match the argument list '(int)'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(258,3): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(258,20): error C2039: 'sprite_state': is not a member of 'Nutmeg::ParticleNode' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-      E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(39,19):
-      see declaration of 'Nutmeg::ParticleNode'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(276,3): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(290,3): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(403,3): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.cpp(409,3): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\CoreSrc\Render\Sprite.h(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,12): error C2027: use of undefined type 'Nutmeg::Sprite' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-      E:\Nutmeg\Nutmeg\CoreSrc\Common\Resource.h(49,8):
-      see declaration of 'Nutmeg::Sprite'
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,18): error C2143: syntax error: missing ';' before '*' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(43,24): error C2238: unexpected token(s) preceding ';' [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(72,15): error C3646: 'sprite_state': unknown override specifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(72,3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(49,5): error C2065: 'image': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(124,4): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-E:\Nutmeg\Nutmeg\CoreSrc\Scene\ParticleNode.h(128,11): error C2065: 'sprite_state': undeclared identifier [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-  (compiling source file '../../CoreSrc/Scene/Scene.cpp')
-  
-  NutmegLib.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegLib.dll
+  NutmegCore.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegCore.dll
+  NutmegLib.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegLib.lib
+EntityActor.obj : error LNK2019: unresolved external symbol "float __cdecl Nutmeg::dot(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?dot@Nutmeg@@YAMAEBVvec3@1@0@Z) referenced in function "private: void __cdecl Nutmeg::EntityActor::calculateState(void)" (?calculateState@EntityActor@Nutmeg@@AEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+EntityActor.obj : error LNK2019: unresolved external symbol "class Nutmeg::vec3 __cdecl Nutmeg::cross(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?cross@Nutmeg@@YA?AVvec3@1@AEBV21@0@Z) referenced in function "private: void __cdecl Nutmeg::EntityActor::calculateState(void)" (?calculateState@EntityActor@Nutmeg@@AEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+EntityActor.obj : error LNK2019: unresolved external symbol "class Nutmeg::vec3 __cdecl Nutmeg::normalize(class Nutmeg::vec3 const &)" (?normalize@Nutmeg@@YA?AVvec3@1@AEBV21@@Z) referenced in function "private: void __cdecl Nutmeg::EntityActor::calculateState(void)" (?calculateState@EntityActor@Nutmeg@@AEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+EntityActor.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::Scene::restore(void)" (?restore@Scene@Nutmeg@@QEAAXXZ) referenced in function "protected: virtual void __cdecl Nutmeg::EntityActor::onKeyDown(int)" (?onKeyDown@EntityActor@Nutmeg@@MEAAXH@Z) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+EntityActor.obj : error LNK2019: unresolved external symbol "public: class Nutmeg::PhysicsWorld & __cdecl Nutmeg::Scene::getPhysicsWorld(void)" (?getPhysicsWorld@Scene@Nutmeg@@QEAAAEAVPhysicsWorld@2@XZ) referenced in function "protected: virtual void __cdecl Nutmeg::EntityActor::onCreate(void)" (?onCreate@EntityActor@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2001: unresolved external symbol "public: class Nutmeg::PhysicsWorld & __cdecl Nutmeg::Scene::getPhysicsWorld(void)" (?getPhysicsWorld@Scene@Nutmeg@@QEAAAEAVPhysicsWorld@2@XZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+EntityActor.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::Scene::setActiveCamera(class Nutmeg::CameraNode *)" (?setActiveCamera@Scene@Nutmeg@@QEAAXPEAVCameraNode@2@@Z) referenced in function "protected: virtual void __cdecl Nutmeg::EntityActor::onCreate(void)" (?onCreate@EntityActor@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: int __cdecl Nutmeg::Scene::getNodesCount(void)const " (?getNodesCount@Scene@Nutmeg@@QEBAHXZ) referenced in function "public: virtual void __cdecl Nutmeg::BoetsApp::onRender(void)" (?onRender@BoetsApp@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: static enum Nutmeg::NodeType __cdecl Nutmeg::ParticleSystemNode::getStaticType(void)" (?getStaticType@ParticleSystemNode@Nutmeg@@SA?AW4NodeType@2@XZ) referenced in function "public: class Nutmeg::ParticleSystemNode * __cdecl Nutmeg::EntityNode::getEntityNode<class Nutmeg::ParticleSystemNode>(char const *)" (??$getEntityNode@VParticleSystemNode@Nutmeg@@@EntityNode@Nutmeg@@QEAAPEAVParticleSystemNode@1@PEBD@Z) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::ParticleSystemNode::setGrowth(float,float)" (?setGrowth@ParticleSystemNode@Nutmeg@@QEAAXMM@Z) referenced in function "protected: virtual void __cdecl Nutmeg::EntityWeaponRpg::onCreate(void)" (?onCreate@EntityWeaponRpg@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: float __cdecl Nutmeg::ParticleSystemNode::getSpawnRate(void)const " (?getSpawnRate@ParticleSystemNode@Nutmeg@@QEBAMXZ) referenced in function "protected: virtual void __cdecl Nutmeg::EntityWeaponRpgRocket::onCreate(void)" (?onCreate@EntityWeaponRpgRocket@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::ParticleSystemNode::setSpawnRate(float,bool)" (?setSpawnRate@ParticleSystemNode@Nutmeg@@QEAAXM_N@Z) referenced in function "protected: virtual bool __cdecl Nutmeg::EntityBulletRifle::onBulletEndLife(void)" (?onBulletEndLife@EntityBulletRifle@Nutmeg@@MEAA_NXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::ParticleSystemNode::setLife(float,float)" (?setLife@ParticleSystemNode@Nutmeg@@QEAAXMM@Z) referenced in function "protected: virtual void __cdecl Nutmeg::EntityBulletRifle::onCreate(void)" (?onCreate@EntityBulletRifle@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::ParticleSystemNode::setSpeed(float,float,float)" (?setSpeed@ParticleSystemNode@Nutmeg@@QEAAXMMM@Z) referenced in function "protected: virtual void __cdecl Nutmeg::EntityWeaponRpg::onCreate(void)" (?onCreate@EntityWeaponRpg@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::ParticleSystemNode::setGravity(float)" (?setGravity@ParticleSystemNode@Nutmeg@@QEAAXM@Z) referenced in function "protected: virtual void __cdecl Nutmeg::EntityWeaponRifle::onCreate(void)" (?onCreate@EntityWeaponRifle@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: class Nutmeg::Particle * __cdecl Nutmeg::ParticleSystemNode::emit(int,float)" (?emit@ParticleSystemNode@Nutmeg@@QEAAPEAVParticle@2@HM@Z) referenced in function "public: void __cdecl Nutmeg::EntityWeaponRpgRocket::explode(void)" (?explode@EntityWeaponRpgRocket@Nutmeg@@QEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: int __cdecl Nutmeg::ParticleSystemNode::getParticlesCount(void)" (?getParticlesCount@ParticleSystemNode@Nutmeg@@QEAAHXZ) referenced in function "protected: virtual bool __cdecl Nutmeg::EntityBulletRifle::onBulletEndLife(void)" (?onBulletEndLife@EntityBulletRifle@Nutmeg@@MEAA_NXZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __cdecl Nutmeg::Integrator<class Nutmeg::vec3>::update(float)" (__imp_?update@?$Integrator@Vvec3@Nutmeg@@@Nutmeg@@QEAAXM@Z) referenced in function "protected: virtual bool __cdecl Nutmeg::EntityBullet::onUpdate(float)" (?onUpdate@EntityBullet@Nutmeg@@MEAA_NM@Z) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+    Hint on symbols that are defined and could potentially match:
+      "__declspec(dllimport) public: void __cdecl Nutmeg::Game::update(float)" (__imp_?update@Game@Nutmeg@@QEAAXM@Z)
+      "__declspec(dllimport) public: bool __cdecl Nutmeg::Particle::update(float)" (__imp_?update@Particle@Nutmeg@@QEAA_NM@Z)
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class Nutmeg::vec3 __cdecl Nutmeg::Integrator<class Nutmeg::vec3>::getPosDelta(float)const " (__imp_?getPosDelta@?$Integrator@Vvec3@Nutmeg@@@Nutmeg@@QEBA?AVvec3@2@M@Z) referenced in function "protected: virtual bool __cdecl Nutmeg::EntityBullet::onUpdate(float)" (?onUpdate@EntityBullet@Nutmeg@@MEAA_NM@Z) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl Nutmeg::Integrator<class Nutmeg::vec3>::Integrator<class Nutmeg::vec3>(void)" (__imp_??0?$Integrator@Vvec3@Nutmeg@@@Nutmeg@@QEAA@XZ) referenced in function "public: __cdecl Nutmeg::EntityBullet::EntityBullet(void)" (??0EntityBullet@Nutmeg@@QEAA@XZ) [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\Boets.exe : fatal error LNK1120: 19 unresolved externals [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "float __cdecl Nutmeg::dot(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?dot@Nutmeg@@YAMAEBVvec3@1@0@Z) referenced in function "protected: virtual void __cdecl Diablo::ComponentMoveTo::onUpdate(float)" (?onUpdate@ComponentMoveTo@Diablo@@MEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "class Nutmeg::vec3 __cdecl Nutmeg::cross(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?cross@Nutmeg@@YA?AVvec3@1@AEBV21@0@Z) referenced in function "protected: virtual void __cdecl Diablo::ComponentMoveTo::onUpdate(float)" (?onUpdate@ComponentMoveTo@Diablo@@MEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "class Nutmeg::vec3 __cdecl Nutmeg::normalize(class Nutmeg::vec3 const &)" (?normalize@Nutmeg@@YA?AVvec3@1@AEBV21@@Z) referenced in function "protected: virtual void __cdecl Diablo::ComponentMoveTo::onUpdate(float)" (?onUpdate@ComponentMoveTo@Diablo@@MEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: int __cdecl Nutmeg::Scene::getNodesCount(void)const " (?getNodesCount@Scene@Nutmeg@@QEBAHXZ) referenced in function "public: virtual void __cdecl Nutmeg::BoetsApp::onRender(void)" (?onRender@BoetsApp@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::Scene::setActiveCamera(class Nutmeg::CameraNode *)" (?setActiveCamera@Scene@Nutmeg@@QEAAXPEAVCameraNode@2@@Z) referenced in function "protected: virtual void __cdecl Diablo::EntityPlayer::onCreate(void)" (?onCreate@EntityPlayer@Diablo@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\DiabloRemix.exe : fatal error LNK1120: 5 unresolved externals [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: int __cdecl Nutmeg::Scene::getNodesCount(void)const " (?getNodesCount@Scene@Nutmeg@@QEBAHXZ) referenced in function "public: virtual void __cdecl Nutmeg::EntitySampleApp::onRender(void)" (?onRender@EntitySampleApp@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Nutmeg::Scene::setActiveCamera(class Nutmeg::CameraNode *)" (?setActiveCamera@Scene@Nutmeg@@QEAAXPEAVCameraNode@2@@Z) referenced in function "protected: virtual void __cdecl Nutmeg::EntityPlayer::onActivate(void)" (?onActivate@EntityPlayer@Nutmeg@@MEAAXXZ) [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\EntitySample.exe : fatal error LNK1120: 2 unresolved externals [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  NutmegAudio.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegAudio.dll
+  NutmegPhysics.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegPhysics.dll
+  NutmegPlatform.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegPlatform.dll
+RenderOpenGL1.obj : error LNK2019: unresolved external symbol "class Nutmeg::vec3 __cdecl Nutmeg::cross(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?cross@Nutmeg@@YA?AVvec3@1@AEBV21@0@Z) referenced in function "public: virtual void __cdecl Nutmeg::RenderOpenGL1::drawBillboard(class Nutmeg::vec3 const &,float,class Nutmeg::vec3)" (?drawBillboard@RenderOpenGL1@Nutmeg@@UEAAXAEBVvec3@2@MV32@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+RenderOpenGL2.obj : error LNK2001: unresolved external symbol "class Nutmeg::vec3 __cdecl Nutmeg::cross(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?cross@Nutmeg@@YA?AVvec3@1@AEBV21@0@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\NutmegRender.dll : fatal error LNK1120: 1 unresolved externals [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
 ERROR: Build failed.

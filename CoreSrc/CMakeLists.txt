@@ -29,3 +29,9 @@ endif()
 
 add_library(NutmegCore SHARED ${SRC} ${HDR})
 target_link_libraries(NutmegCore ${IL_LIBRARIES} ${ILU_LIBRARIES} ${ILUT_LIBRARIES} OpenGL::GL Newton ${NUTMEG_PLATFORM_LIBS})
+
+if(WIN32)
+	target_compile_definitions(NutmegCore
+		PRIVATE NUTMEG_BUILD_DLL
+		INTERFACE NUTMEG_USE_DLL)
+endif()
