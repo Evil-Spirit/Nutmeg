@@ -13,16 +13,207 @@ Configuring CMake...
 -- Conan: Target declared 'GLEW::GLEW'
 -- Conan: Target declared 'glu::glu'
 -- Conan: Target declared 'opengl::opengl'
--- Configuring done (0.2s)
--- Generating done (0.1s)
+-- Configuring done (0.3s)
+-- Generating done (0.2s)
 -- Build files have been written to: E:/Nutmeg/Nutmeg/build
 
 Building...
 MSBuild version 17.11.2+c078802d4 for .NET Framework
 
   Newton.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\Newton.lib
-     Creating library E:/Nutmeg/Nutmeg/build/Release/NutmegCore.lib and object E:/Nutmeg/Nutmeg/build/Release/NutmegCore.exp
-Resource.obj : error LNK2019: unresolved external symbol "protected: static class Nutmeg::Factory<class Nutmeg::ResourceManager,class Nutmeg::Engine *> Nutmeg::Subsystem<class Nutmeg::ResourceManager>::factory" (?factory@?$Subsystem@VResourceManager@Nutmeg@@@Nutmeg@@1V?$Factory@VResourceManager@Nutmeg@@PEAVEngine@2@@2@A) referenced in function "public: static void __cdecl Nutmeg::Subsystem<class Nutmeg::ResourceManager>::addImplementation(char const *,class Nutmeg::ResourceManager * (__cdecl*)(class Nutmeg::Engine *))" (?addImplementation@?$Subsystem@VResourceManager@Nutmeg@@@Nutmeg@@SAXPEBDP6APEAVResourceManager@2@PEAVEngine@2@@Z@Z) [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
-E:\Nutmeg\Nutmeg\build\Release\NutmegCore.dll : fatal error LNK1120: 1 unresolved externals [E:\Nutmeg\Nutmeg\build\CoreSrc\NutmegCore.vcxproj]
+  NutmegCore.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegCore.dll
   NutmegLib.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegLib.dll
+LINK : fatal error LNK1181: cannot open input file '..\..\Release\NutmegLib.lib' [E:\Nutmeg\Nutmeg\build\Samples\Boets\Boets.vcxproj]
+LINK : fatal error LNK1181: cannot open input file '..\..\Release\NutmegLib.lib' [E:\Nutmeg\Nutmeg\build\Samples\DiabloRemix\DiabloRemix.vcxproj]
+LINK : fatal error LNK1181: cannot open input file '..\..\Release\NutmegLib.lib' [E:\Nutmeg\Nutmeg\build\Samples\EntitySample\EntitySample.vcxproj]
+  NutmegAudio.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegAudio.dll
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonWorldGetVersion referenced in function "public: virtual int __cdecl Nutmeg::WorldNewton::getVersion(void)const " (?getVersion@WorldNewton@Nutmeg@@UEBAHXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreate referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonDestroy referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonUpdate referenced in function "protected: void __cdecl Nutmeg::WorldNewton::step(float)" (?step@WorldNewton@Nutmeg@@IEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonSetSolverModel referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonSetFrictionModel referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonSetWorldSize referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialGetDefaultGroupID referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultSoftness referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultElasticity referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultCollidable referenced in function "public: __cdecl Nutmeg::WorldNewton::WorldNewton(class Nutmeg::Engine *)" (??0WorldNewton@Nutmeg@@QEAA@PEAVEngine@1@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonMaterialSetDefaultFriction referenced in function "public: virtual void __cdecl Nutmeg::WorldNewton::setFriction(float,float)" (?setFriction@WorldNewton@Nutmeg@@UEAAXMM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateNull referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateSphere referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateBox referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCone referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCapsule referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCylinder referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateChamferCylinder referenced in function "private: struct NewtonCollision * __cdecl Nutmeg::BodyNewton::createCollision(class Nutmeg::mat4 const *)" (?createCollision@BodyNewton@Nutmeg@@AEAAPEAUNewtonCollision@@PEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonConvexCollisionCalculateInertialMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setMass(float)" (?setMass@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonReleaseCollision referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateCompoundCollision referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCollisionGetInfo referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::getMatrix(class Nutmeg::mat4 &)const " (?getMatrix@BodyNewton@Nutmeg@@UEBAXAEAVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonCreateBody referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonDestroyBody referenced in function "public: virtual __cdecl Nutmeg::BodyNewton::~BodyNewton(void)" (??1BodyNewton@Nutmeg@@UEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setMatrix(class Nutmeg::mat4 const &)" (?setMatrix@BodyNewton@Nutmeg@@UEAAXAEBVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetMassMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setMass(float)" (?setMass@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetOmega referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::clearOmega(void)" (?clearOmega@BodyNewton@Nutmeg@@UEAAXXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetVelocity referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::addVelocity(class Nutmeg::vec3 const &)" (?addVelocity@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetForce referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetTorque referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetCentreOfMass referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setCentreOfMass(class Nutmeg::vec3 const &)" (?setCentreOfMass@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetLinearDamping referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setLinearDamping(float)" (?setLinearDamping@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetAngularDamping referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::setAngularDamping(float)" (?setAngularDamping@BodyNewton@Nutmeg@@UEAAXM@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetUserData referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetCollision referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetSleepState referenced in function "public: virtual bool __cdecl Nutmeg::BodyNewton::getFreeze(void)const " (?getFreeze@BodyNewton@Nutmeg@@UEBA_NXZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetAutoSleep referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodySetForceAndTorqueCallback referenced in function "private: void __cdecl Nutmeg::BodyNewton::updateBody(bool)" (?updateBody@BodyNewton@Nutmeg@@AEAAX_N@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetUserData referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetWorld referenced in function "public: virtual __cdecl Nutmeg::BodyNewton::~BodyNewton(void)" (??1BodyNewton@Nutmeg@@UEAA@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetMatrix referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::getMatrix(class Nutmeg::mat4 &)const " (?getMatrix@BodyNewton@Nutmeg@@UEBAXAEAVmat4@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetRotation referenced in function "public: virtual class Nutmeg::quat __cdecl Nutmeg::BodyNewton::getRot(void)const " (?getRot@BodyNewton@Nutmeg@@UEBA?AVquat@2@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetMassMatrix referenced in function "void __cdecl Nutmeg::PhysicsApplyForceAndTorque(struct NewtonBody const *,float,int)" (?PhysicsApplyForceAndTorque@Nutmeg@@YAXPEBUNewtonBody@@MH@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetOmega referenced in function "public: virtual class Nutmeg::vec3 __cdecl Nutmeg::BodyNewton::getOmega(void)const " (?getOmega@BodyNewton@Nutmeg@@UEBA?AVvec3@2@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetVelocity referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::addVelocity(class Nutmeg::vec3 const &)" (?addVelocity@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyGetCentreOfMass referenced in function "public: virtual class Nutmeg::vec3 __cdecl Nutmeg::BodyNewton::getMassCentre(void)const " (?getMassCentre@BodyNewton@Nutmeg@@UEBA?AVvec3@2@XZ) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonBodyAddImpulse referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::addImpulse(class Nutmeg::vec3 const &,class Nutmeg::vec3 const &)" (?addImpulse@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@0@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+PhysicsNewton.obj : error LNK2019: unresolved external symbol __imp_NewtonConstraintCreateUpVector referenced in function "public: virtual void __cdecl Nutmeg::BodyNewton::jointUpVector(class Nutmeg::vec3 const &)" (?jointUpVector@BodyNewton@Nutmeg@@UEAAXAEBVvec3@2@@Z) [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+E:\Nutmeg\Nutmeg\build\Release\NutmegPhysics.dll : fatal error LNK1120: 49 unresolved externals [E:\Nutmeg\Nutmeg\build\Subsystems\Physics\NutmegPhysics.vcxproj]
+  NutmegPlatform.vcxproj -> E:\Nutmeg\Nutmeg\build\Release\NutmegPlatform.dll
+  RenderOpenGL2.cpp
+E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(95,8): warning C4273: 'Nutmeg::math::abs': inconsistent dll linkage [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+  (compiling source file '../../../Subsystems/Render/RenderOpenGL2.cpp')
+      E:\Nutmeg\Nutmeg\CoreSrc\Math\MathCore.h(70,20):
+      see previous definition of 'Nutmeg::math::abs'
+  
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(349,33): error C2512: 'Nutmeg::AbstractRender': no appropriate default constructor available [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(37,19):
+      see declaration of 'Nutmeg::AbstractRender'
+  
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(566,33): error C2259: 'Nutmeg::RenderMeshOpenGL1': cannot instantiate abstract class [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(245,8):
+      see declaration of 'Nutmeg::RenderMeshOpenGL1'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(566,33):
+      due to following members:
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(566,33):
+      'const Nutmeg::Mesh &Nutmeg::RenderMesh::getMesh(void) const': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(248,23):
+      see declaration of 'Nutmeg::RenderMesh::getMesh'
+  
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(566,50): error C2259: 'Nutmeg::RenderMeshOpenGL1': cannot instantiate abstract class [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(245,8):
+      see declaration of 'Nutmeg::RenderMeshOpenGL1'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(566,50):
+      due to following members:
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(566,50):
+      'const Nutmeg::Mesh &Nutmeg::RenderMesh::getMesh(void) const': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(248,23):
+      see declaration of 'Nutmeg::RenderMesh::getMesh'
+  
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(625,16): error C2664: 'GLuint ilutGLLoadImage(char *)': cannot convert argument 1 from 'const char *' to 'char *' [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(625,61):
+      Conversion loses qualifiers
+      E:\Conan\b\devil44df5e975ff21\p\include\IL\ilut.h(215,26):
+      see declaration of 'ilutGLLoadImage'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(625,16):
+      while trying to match the argument list '(const char *)'
+  
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15): error C2259: 'Nutmeg::RenderOpenGL2': cannot instantiate abstract class [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(53,8):
+      see declaration of 'Nutmeg::RenderOpenGL2'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      due to following members:
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'float Nutmeg::AbstractRender::getTextWidth(const char *,int,int)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(85,17):
+      see declaration of 'Nutmeg::AbstractRender::getTextWidth'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::drawBillboard(const Nutmeg::vec3 &,float,Nutmeg::vec3)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(108,16):
+      see declaration of 'Nutmeg::AbstractRender::drawBillboard'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::drawRotateManipulator(const Nutmeg::BSphere &,const Nutmeg::vec3 &,const Nutmeg::vec3 &,const Nutmeg::vec3 &)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(110,16):
+      see declaration of 'Nutmeg::AbstractRender::drawRotateManipulator'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::drawSolidCircle(float)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(111,16):
+      see declaration of 'Nutmeg::AbstractRender::drawSolidCircle'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::drawCircle(float)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(112,16):
+      see declaration of 'Nutmeg::AbstractRender::drawCircle'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::setViewport(int,int,int,int)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(134,16):
+      see declaration of 'Nutmeg::AbstractRender::setViewport'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'float Nutmeg::AbstractRender::getPixelAspectRatio(void) const': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(153,17):
+      see declaration of 'Nutmeg::AbstractRender::getPixelAspectRatio'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::setPixelAspectRatio(float)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(155,16):
+      see declaration of 'Nutmeg::AbstractRender::setPixelAspectRatio'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'bool Nutmeg::AbstractRender::isAlphaTest(void)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(171,16):
+      see declaration of 'Nutmeg::AbstractRender::isAlphaTest'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::setAlphaTest(bool)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(172,16):
+      see declaration of 'Nutmeg::AbstractRender::setAlphaTest'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,15):
+      'void Nutmeg::AbstractRender::drawSkinnedMesh(const Nutmeg::RenderMesh &,const Nutmeg::FinalPose &)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(191,16):
+      see declaration of 'Nutmeg::AbstractRender::drawSkinnedMesh'
+  
+E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28): error C2259: 'Nutmeg::RenderOpenGL2': cannot instantiate abstract class [E:\Nutmeg\Nutmeg\build\Subsystems\Render\NutmegRender.vcxproj]
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(53,8):
+      see declaration of 'Nutmeg::RenderOpenGL2'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      due to following members:
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'float Nutmeg::AbstractRender::getTextWidth(const char *,int,int)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(85,17):
+      see declaration of 'Nutmeg::AbstractRender::getTextWidth'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::drawBillboard(const Nutmeg::vec3 &,float,Nutmeg::vec3)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(108,16):
+      see declaration of 'Nutmeg::AbstractRender::drawBillboard'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::drawRotateManipulator(const Nutmeg::BSphere &,const Nutmeg::vec3 &,const Nutmeg::vec3 &,const Nutmeg::vec3 &)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(110,16):
+      see declaration of 'Nutmeg::AbstractRender::drawRotateManipulator'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::drawSolidCircle(float)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(111,16):
+      see declaration of 'Nutmeg::AbstractRender::drawSolidCircle'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::drawCircle(float)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(112,16):
+      see declaration of 'Nutmeg::AbstractRender::drawCircle'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::setViewport(int,int,int,int)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(134,16):
+      see declaration of 'Nutmeg::AbstractRender::setViewport'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'float Nutmeg::AbstractRender::getPixelAspectRatio(void) const': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(153,17):
+      see declaration of 'Nutmeg::AbstractRender::getPixelAspectRatio'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::setPixelAspectRatio(float)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(155,16):
+      see declaration of 'Nutmeg::AbstractRender::setPixelAspectRatio'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'bool Nutmeg::AbstractRender::isAlphaTest(void)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(171,16):
+      see declaration of 'Nutmeg::AbstractRender::isAlphaTest'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::setAlphaTest(bool)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(172,16):
+      see declaration of 'Nutmeg::AbstractRender::setAlphaTest'
+      E:\Nutmeg\Nutmeg\Subsystems\Render\RenderOpenGL2.cpp(1132,28):
+      'void Nutmeg::AbstractRender::drawSkinnedMesh(const Nutmeg::RenderMesh &,const Nutmeg::FinalPose &)': is abstract
+      E:\Nutmeg\Nutmeg\CoreSrc\Render\AbstractRender.h(191,16):
+      see declaration of 'Nutmeg::AbstractRender::drawSkinnedMesh'
+  
 ERROR: Build failed.
